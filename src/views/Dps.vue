@@ -270,6 +270,9 @@
             <el-checkbox label="wand">
               <img class="icon-weapon" src="/dl-sim/pic/weapon/wand.png" />
             </el-checkbox>
+            <el-checkbox label="staff">
+              <img class="icon-weapon" src="/dl-sim/pic/weapon/staff.png" />
+            </el-checkbox>
           </el-checkbox-group>
         </div>
         <section v-if="lastCommits.length > 0">
@@ -434,7 +437,7 @@ export default class DpsComponent extends Vue {
 
   private toggleWeapon() {
     if (this.weapons.length === 0) {
-      this.weapons =  ['sword', 'blade', 'dagger', 'axe', 'lance', 'bow', 'wand'];
+      this.weapons =  ['sword', 'blade', 'dagger', 'axe', 'lance', 'bow', 'wand', 'staff'];
     } else {
       this.weapons = [];
     }
