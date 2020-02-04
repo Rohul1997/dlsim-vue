@@ -329,7 +329,7 @@ export default class DpsComponent extends Vue {
   public teamDPS: number = this.defaultTeamDPS;
   public rarities: string[] = []; // ['5', '4', '3'];
   public elements: string[] = []; // ['flame', 'water', 'wind', 'light', 'shadow'];
-  public weapons: string[] = []; // ['sword', 'blade', 'dagger', 'axe', 'lance', 'bow', 'wand'];
+  public weapons: string[] = []; // ['sword', 'blade', 'dagger', 'axe', 'lance', 'bow', 'wand', 'staff'];
 
   public allDpsCategories: string[] = ['Atk', 'S1', 'S2', 'S3', 'Fs', 'Buff', 'Bleed', 'Others'];
   public dpsCategories: string[] = ['Atk', 'S1', 'S2', 'S3', 'Fs', 'Buff', 'Bleed', 'Others'];
@@ -410,7 +410,7 @@ export default class DpsComponent extends Vue {
       });
     };
     const $changelog = document.createElement('script');
-    $changelog.setAttribute('src', 'https://api.github.com/repos/b1ueb1ues/b1ueb1ues.github.io/commits?page=1&callback=changelog');
+    $changelog.setAttribute('src', 'https://api.github.com/repos/mushymato/mushymato.github.io/commits?page=1&callback=changelog');
     document.head.appendChild($changelog);
   }
 
