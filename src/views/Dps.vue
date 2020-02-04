@@ -188,16 +188,16 @@
         <div class="filter">
           <el-checkbox-group class="cb-filter" v-model="exs" size="small" @change="reload()">
             <el-checkbox label="k">
-              <img class="icon-weapon" src="/dl-sim/pic/weapon/blade.png" alt="K"/>
+              <img class="icon-weapon" src="/dl-sim/pic/icons/blade.png" alt="K"/>
             </el-checkbox>
             <el-checkbox label="r">
-              <img class="icon-weapon" src="/dl-sim/pic/weapon/wand.png" alt="K"/>
+              <img class="icon-weapon" src="/dl-sim/pic/icons/wand.png" alt="K"/>
             </el-checkbox>
             <el-checkbox label="d">
-              <img class="icon-weapon" src="/dl-sim/pic/weapon/dagger.png" alt="K"/>
+              <img class="icon-weapon" src="/dl-sim/pic/icons/dagger.png" alt="K"/>
             </el-checkbox>
             <el-checkbox label="b">
-              <img class="icon-weapon" src="/dl-sim/pic/weapon/bow.png" alt="K"/>
+              <img class="icon-weapon" src="/dl-sim/pic/icons/bow.png" alt="K"/>
             </el-checkbox>
           </el-checkbox-group>
         </div>
@@ -226,20 +226,20 @@
         <div class="filter">
           <el-checkbox-group class="cb-filter" v-model="elements" size="mini" @change="reload()">
             <el-checkbox label="flame">
-              <img class="icon-element" src="/dl-sim/pic/element/flame.png" alt="K"/>
+              <img class="icon-element" src="/dl-sim/pic/icons/flame.png" alt="K"/>
             </el-checkbox>
             <el-checkbox label="water">
-              <img class="icon-element" src="/dl-sim/pic/element/water.png" alt="K"/>
+              <img class="icon-element" src="/dl-sim/pic/icons/water.png" alt="K"/>
             </el-checkbox>
             <el-checkbox label="wind">
-              <img class="icon-element" src="/dl-sim/pic/element/wind.png" alt="K"/>
+              <img class="icon-element" src="/dl-sim/pic/icons/wind.png" alt="K"/>
             </el-checkbox>
             <br/>
             <el-checkbox label="light">
-              <img class="icon-element" src="/dl-sim/pic/element/light.png" alt="K"/>
+              <img class="icon-element" src="/dl-sim/pic/icons/light.png" alt="K"/>
             </el-checkbox>
             <el-checkbox label="shadow">
-              <img class="icon-element" src="/dl-sim/pic/element/shadow.png" alt="K"/>
+              <img class="icon-element" src="/dl-sim/pic/icons/shadow.png" alt="K"/>
             </el-checkbox>
           </el-checkbox-group>
         </div>
@@ -250,28 +250,28 @@
         <div class="filter">
           <el-checkbox-group class="cb-filter" v-model="weapons" size="mini" @change="reload()">
             <el-checkbox label="sword">
-              <img class="icon-weapon" src="/dl-sim/pic/weapon/sword.png" />
+              <img class="icon-weapon" src="/dl-sim/pic/icons/sword.png" />
             </el-checkbox>
             <el-checkbox label="blade">
-              <img class="icon-weapon" src="/dl-sim/pic/weapon/blade.png" />
+              <img class="icon-weapon" src="/dl-sim/pic/icons/blade.png" />
             </el-checkbox>
             <el-checkbox label="dagger">
-              <img class="icon-weapon" src="/dl-sim/pic/weapon/dagger.png" />
+              <img class="icon-weapon" src="/dl-sim/pic/icons/dagger.png" />
             </el-checkbox>
             <el-checkbox label="lance">
-              <img class="icon-weapon" src="/dl-sim/pic/weapon/lance.png" />
+              <img class="icon-weapon" src="/dl-sim/pic/icons/lance.png" />
             </el-checkbox>
             <el-checkbox label="axe">
-              <img class="icon-weapon" src="/dl-sim/pic/weapon/axe.png" />
+              <img class="icon-weapon" src="/dl-sim/pic/icons/axe.png" />
             </el-checkbox>
             <el-checkbox label="bow">
-              <img class="icon-weapon" src="/dl-sim/pic/weapon/bow.png" />
+              <img class="icon-weapon" src="/dl-sim/pic/icons/bow.png" />
             </el-checkbox>
             <el-checkbox label="wand">
-              <img class="icon-weapon" src="/dl-sim/pic/weapon/wand.png" />
+              <img class="icon-weapon" src="/dl-sim/pic/icons/wand.png" />
             </el-checkbox>
             <el-checkbox label="staff">
-              <img class="icon-weapon" src="/dl-sim/pic/weapon/staff.png" />
+              <img class="icon-weapon" src="/dl-sim/pic/icons/staff.png" />
             </el-checkbox>
           </el-checkbox-group>
         </div>
