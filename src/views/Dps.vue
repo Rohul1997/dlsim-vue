@@ -17,6 +17,9 @@
           <div class="dib content">
             <div class="mt-2">
               <div class="dib drogon">
+                <!-- <img class="wyrmprint" :src="'/dl-sim/pic/weapon/' + ad.weapon + '_' + ad.element + '_' + ad.weaponType +  '.png'"/>
+              </div>
+              <div class="dib drogon"> -->
                 <img class="wyrmprint" :src="'/dl-sim/pic/dragon/' + ad.dragon + '.png'"/>
               </div>
               <div class="dib drogon">
@@ -74,6 +77,12 @@
                   {{ad.name.replace(/_/g, '!')}}
                 </div>
                  <img slot="reference" class="d-f avater" :src='"/dl-sim/pic/character/" + ad.name + ".png"'>
+              </popper>
+              <popper trigger="hover" :options="{placement: 'top'}">
+                <div class="popper">
+                  {{ad.weapon}}
+                </div>
+                 <img slot="reference" class="d-f wyrmprint" :src='"/dl-sim/pic/weapon/" + ad.weapon + "_" + ad.element + "_" + ad.weaponType + ".png"'>
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">
@@ -488,7 +497,7 @@ export default class DpsComponent extends Vue {
     if (this.elements.length > 0 && !this.elements.includes(adventurer.element)) {
       return false;
     }
-    if (this.weapons.length > 0 && !this.weapons.includes(adventurer.weapon)) {
+    if (this.weapons.length > 0 && !this.weapons.includes(adventurer.weaponType)) {
       return false;
     }
     return true;
@@ -639,7 +648,6 @@ export default class DpsComponent extends Vue {
 .holder .name img.wyrmprint {
   width: 30px;
   height: 30px;
-  padding-left: 5px;
 }
 
 .holder .dps {

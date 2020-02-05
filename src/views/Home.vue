@@ -149,7 +149,7 @@ export default class Home extends Vue {
     if (this.element !== 'all' && adventurer.element !== this.element) {
       return false;
     }
-    if (this.weapon !== 'all' && adventurer.weapon !== this.weapon) {
+    if (this.weapon !== 'all' && adventurer.weaponType !== this.weapon) {
       return false;
     }
     return true;
