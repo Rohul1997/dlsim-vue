@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build && (copyfiles -u 1 -V -a dist/css/* dist/fonts/* dist/js/* dist/index.html ../b1ueb1ues/b1ueb1ues.github.io/dl-sim-vue)",
+    "build": "vue-cli-service build && (copyfiles -u 1 -V -a dist/css/* dist/fonts/* dist/js/* dist/index.html ../www/dl-sim-vue)",
     "lint": "vue-cli-service lint",
     "start": "node server.js"
   },
@@ -22,7 +22,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-typescript": "^3.11.0",
-    "@vue/cli-service": "^3.11.0",
+    "@vue/cli-service": "^4.1.2",
     "copyfiles": "^2.1.1",
     "lint-staged": "^8.1.5",
     "typescript": "^3.4.3",
