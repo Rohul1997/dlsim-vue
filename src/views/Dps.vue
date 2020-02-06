@@ -419,7 +419,7 @@ export default class DpsComponent extends Vue {
     }.csv`;
   }
   public category: 'sp' | '60' | '120' | '180' = '180';
-  public exs: string[] = ['k', 'r'];
+  public exs: string[] = [];
   public defaultTeamDPS: number = 16000;
   public teamDPS: number = this.defaultTeamDPS;
   public rarities: string[] = []; // ['5', '4', '3'];
