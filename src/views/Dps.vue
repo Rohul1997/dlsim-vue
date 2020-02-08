@@ -204,7 +204,7 @@
           <img class="brand" src="/dl-sim/logo-new.png" />
         </div>
         <div class="closer fr" @click="asideHidden = true" v-if="mobileView">&times;</div>
-        <div class="title">
+        <div class="title custom-build">
           <a href="https://wildshinobu.pythonanywhere.com/ui/dl_simc.html">Custom Build</a>
         </div>
         <div class="splitter"></div>
@@ -757,9 +757,32 @@ export default class DpsComponent extends Vue {
 .title a {
   text-decoration: none;
   color: black;
+  position: relative;
 }
 .title a:hover {
   text-decoration: underline;
+}
+.title a:before {
+  position: absolute;
+  top: 4px;
+  right: -15px;
+  content: " ";
+  border: 1px solid black;
+  width: 8px;
+  height: 8px;
+}
+.title a:after {
+  position: absolute;
+  top: 2px;
+  right: -15px;
+  content: "\1f855";
+  font-size: 13px;
+  color: black;
+  line-height: 3px;
+  height: 5px;
+  width: 5px;
+  border-right: 3px solid white;
+  border-top: 3px solid white;
 }
 
 .holder .name {
