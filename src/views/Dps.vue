@@ -114,6 +114,7 @@
                 <img
                   slot="reference"
                   class="d-f wyrmprint"
+                  v-on:click="wikiRedirect(ad.wyrmprint0)"
                   :src="'/dl-sim/pic/amulet/' + ad.wyrmprint0 + '.png'"
                 />
               </popper>
@@ -122,6 +123,7 @@
                 <img
                   slot="reference"
                   class="d-f wyrmprint"
+                  v-on:click="wikiRedirect(ad.wyrmprint1)"
                   :src="'/dl-sim/pic/amulet/' + ad.wyrmprint1 + '.png'"
                 />
               </popper>
@@ -503,6 +505,10 @@ export default class DpsComponent extends Vue {
     this.reload();
   }
 
+// Potentially have a modal with information at some point instead of redirect to wiki
+  public wikiRedirect(name: string) {
+    window.location.href = `https://dragalialost.gamepedia.com/${name}`;
+  }
   public mounted() {
     (window as any).$dps = this;
     (window as any).$http = Http;
