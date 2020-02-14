@@ -137,7 +137,7 @@
                     <span v-for="(f, fi) in ad.dps1.filterd" :key="f.factor">
                       <span
                         class="f-title"
-                      >{{(fi > 0 ? ', ' : '') + (f.category !== 'Others' || f.category !== 'DOther' ? f.category : f.factor)}}:</span>
+                      >{{(fi > 0 ? ', ' : '') + (f.category !== 'Other' || f.category !== 'DOther' ? f.category : f.factor)}}:</span>
                       {{f.scaledDps}}
                     </span>
                   </div>
@@ -161,7 +161,7 @@
                     <span v-for="(f, fi) in ad.dps2.filterd" :key="f.factor">
                       <span
                         class="f-title"
-                      >{{(fi > 0 ? ', ' : '') + (f.category !== 'Others' || f.category !== 'Dragon-Other' ? f.category : f.factor)}}:</span>
+                      >{{(fi > 0 ? ', ' : '') + (f.category !== 'Other' || f.category !== 'DOther' ? f.category : f.factor)}}:</span>
                       {{f.scaledDps}}
                     </span>
                   </div>
@@ -456,13 +456,9 @@ export default class DpsComponent extends Vue {
     'Fs',
     'Buff',
     'Bleed',
-    'Others',
+    'Other',
   ];
-    public dragonDpsCategories: string[] = [
-    'DSkill',
-    'DAtk',
-    'DOther',
-  ];
+  public dragonDpsCategories: string[] = ['DSkill', 'DAtk', 'DOther'];
   public dpsCategories: string[] = [
     'Atk',
     'S1',
@@ -471,7 +467,7 @@ export default class DpsComponent extends Vue {
     'Fs',
     'Buff',
     'Bleed',
-    'Others',
+    'Other',
     'DAtk',
     'DSkill',
     'DOther',
@@ -513,16 +509,17 @@ export default class DpsComponent extends Vue {
       });
     }
 
-    this.adventurers = Adventurer.sort(this.adventurers);
-    const maxx = this.adventurers.length > 0 ? this.adventurers[0].dps1.all : 0;
+    this.filterd = Adventurer.sort(
+      this.adventurers.filter((a) => this.matched(a)),
+    );
+    const maxx = this.filterd.length > 0 ? this.filterd[0].dps1.all : 0;
 
-    this.adventurers.forEach((a) => {
+    this.filterd.forEach((a) => {
       a.condition = a.condition.replace(/[<>]/g, '');
       a.dps1.factors.forEach((f) => (f.width = (100 * f.scaledDps) / maxx));
       a.dps2.factors.forEach((f) => (f.width = (100 * f.scaledDps) / maxx));
     });
 
-    this.filterd = this.adventurers.filter((a) => this.matched(a));
     await this.$nextTick();
     await this.sleeep(200);
     this.loading = false;
@@ -951,10 +948,10 @@ div.full {
   background-color: #e64980 !important;
 }
 .c-datk {
-  background-color: #9370DB !important;
+  background-color: #9370db !important;
 }
 .c-dskill {
-  background-color: #8A2BE2 !important;
+  background-color: #8a2be2 !important;
 }
 .c-dother {
   background-color: #4addac !important;
@@ -965,7 +962,7 @@ div.full {
 .c-buff {
   background-color: #7950f2 !important;
 }
-.c-others {
+.c-other {
   background-color: #12b886 !important;
 }
 .c-gray {

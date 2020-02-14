@@ -58,8 +58,8 @@ dps,name,star,element,weapon,str,amulets,condition,comment,
 4008,_c_Emma,4*,flame,lance,3886,[Castle_Cheer_Corps+From_Whence_He_Came][Dreadking_Rathalos][Agito],!<buff all team>,,attack:3224,force_strike:783,skill_1:0,skill_2:0,skill_3:0,team_buff:0
 7100,Erik,3*,shadow,axe,3882,[Kung_Fu_Masters+Jewels_of_the_Sun][Fatalis][HDT2],<no shapeshift & hp70>,,attack:2651,force_strike:600,skill_1:2562,skill_2:769,skill_3:516,team_buff:0
 5261,_c_Erik,3*,shadow,axe,3882,[Kung_Fu_Masters+Jewels_of_the_Sun][Fatalis][HDT2],!<no shapeshift & hp70>,,attack:2956,force_strike:729,skill_1:1211,skill_2:363,skill_3:0,team_buff:0
-12914,Euden,4*,flame,sword,4028,[The_Shining_Overlord+Elegant_Escort][Apollo][Agito],<0 resist>,91% burn uptime,attack:2714,force_strike:1009,skill_1:3041,skill_2:1417,skill_3:0,team_buff:543,s1_burn:924,ds_burn:58,dx:2582,ds:622
-8423,_c_Euden,4*,flame,sword,4028,[The_Shining_Overlord+Elegant_Escort][Apollo][Agito],!<0 resist>,,attack:1895,force_strike:706,skill_1:2143,skill_2:945,skill_3:0,team_buff:543,s1_burn:0,ds_burn:0,dx:1766,ds:422
+12611,Euden,4*,flame,sword,4028,[The_Shining_Overlord+Elegant_Escort][Dreadking_Rathalos][Agito],<0 burn res>,c3fs c2fs c2fs s1; 93% burn uptime,attack:2661,force_strike:2118,skill_1:4142,skill_2:2079,skill_3:0,team_buff:540,s1_burn:1070
+9237,_c_Euden,4*,flame,sword,4028,[The_Shining_Overlord+Elegant_Escort][Dreadking_Rathalos][Agito],!<0 burn res>,c3fs c2fs c2fs s1,attack:2098,force_strike:1676,skill_1:3316,skill_2:1606,skill_3:0,team_buff:540,s1_burn:0
 8339,Fjorm,5*,water,lance,3874,[Resounding_Rendition+Beautiful_Nothingness][Siren][HDT2],<hp70 & reflect 500 damage on every s2>,,attack:1175,force_strike:34,skill_1:2746,skill_2:1804,skill_3:964,team_buff:1250,s2_reflect:363
 7143,_c_Fjorm,5*,water,lance,3874,[Resounding_Rendition+Beautiful_Nothingness][Siren][HDT2],!<hp70 & reflect 500 damage on every s2>,,attack:1029,force_strike:30,skill_1:2406,skill_2:1581,skill_3:844,team_buff:1250,s2_reflect:0
 12776,Fleur,4*,light,dagger,3625,[Twinfold_Bonds+Spirit_of_the_Season][Daikokuten][HDT2],<hp70 & hit15 & hp100 & 0 resist>,c4fs; 88% paralysis uptime,attack:3147,force_strike:715,skill_1:5493,skill_2:0,skill_3:1569,team_buff:0,s1_paralysis:1850
@@ -84,8 +84,8 @@ dps,name,star,element,weapon,str,amulets,condition,comment,
 5029,_c_H_Edward,3*,light,blade,3727,[Resounding_Rendition+Seaside_Princess][Cupid][HDT2],!<hp100 & hp70>,,attack:1972,force_strike:0,skill_1:1879,skill_2:798,skill_3:379,team_buff:0
 7811,H_Elisanne,5*,light,lance,3811,[Heralds_of_Hinomoto+Jewels_of_the_Sun][Cupid][HDT2],<hp70>,,attack:1282,force_strike:258,skill_1:2982,skill_2:786,skill_3:856,team_buff:1645
 7448,_c_H_Elisanne,5*,light,lance,3811,[Heralds_of_Hinomoto+Jewels_of_the_Sun][Cupid][HDT2],!<hp70>,,attack:1207,force_strike:243,skill_1:2806,skill_2:740,skill_3:805,team_buff:1645
-10514,H_Mym,5*,flame,axe,4010,[Kung_Fu_Masters+The_Lurker_in_the_Woods][Dreadking_Rathalos][Agito],<s1 defdown for 10s & buff all team>,,attack:4267,force_strike:930,skill_1:1444,skill_2:0,skill_3:0,team_buff:3872
-6108,_c_H_Mym,5*,flame,axe,4010,[Kung_Fu_Masters+The_Lurker_in_the_Woods][Dreadking_Rathalos][Agito],!<s1 defdown for 10s & buff all team>,,attack:3824,force_strike:839,skill_1:1444,skill_2:0,skill_3:0,team_buff:0
+10877,H_Mym,5*,flame,axe,4009,[Kung_Fu_Masters+Jewels_of_the_Sun][Dreadking_Rathalos][Agito],<hp70 & s1 defdown for 10s & buff all team>,,attack:4301,force_strike:726,skill_1:1510,skill_2:0,skill_3:0,team_buff:4337
+5501,_c_H_Mym,5*,flame,axe,4009,[Kung_Fu_Masters+Jewels_of_the_Sun][Dreadking_Rathalos][Agito],!<hp70 & s1 defdown for 10s & buff all team>,,attack:3553,force_strike:614,skill_1:1332,skill_2:0,skill_3:0,team_buff:0
 10995,H_Odetta,4*,water,sword,3786,[Mega_Friends+First_Rate_Hospitality][Dragonyule_Jeanne][HDT2],<buff all team & hp70>,,attack:2001,force_strike:2048,skill_1:2269,skill_2:0,skill_3:1133,team_buff:3542
 7522,_c_H_Odetta,4*,water,sword,3786,[Mega_Friends+First_Rate_Hospitality][Dragonyule_Jeanne][HDT2],!<buff all team & hp70>,,attack:1896,force_strike:1941,skill_1:2150,skill_2:0,skill_3:1074,team_buff:459
 5973,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][Garland][HDT2],<fullhp=stun & maintain shield & hp30 every 90s & 80 resist>,8% stun uptime,attack:1576,force_strike:894,skill_1:2513,skill_2:0,skill_3:908,team_buff:0,fs_boost:80

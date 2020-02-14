@@ -58,8 +58,8 @@ dps,name,star,element,weapon,str,amulets,condition,comment,
 4345,_c_Emma,4*,flame,lance,3886,[Castle_Cheer_Corps+From_Whence_He_Came][Dreadking_Rathalos][Agito],!<buff all team>,,attack:3588,force_strike:756,skill_1:0,skill_2:0,skill_3:0,team_buff:0
 8450,Erik,3*,shadow,axe,3875,[Kung_Fu_Masters+Crystalian_Envoy][Fatalis][HDT2],<no shapeshift & hp70>,,attack:3172,force_strike:510,skill_1:2925,skill_2:1197,skill_3:643,team_buff:0
 5976,_c_Erik,3*,shadow,axe,3875,[Kung_Fu_Masters+Crystalian_Envoy][Fatalis][HDT2],!<no shapeshift & hp70>,,attack:3252,force_strike:736,skill_1:1240,skill_2:446,skill_3:300,team_buff:0
-17206,Euden,4*,flame,sword,4028,[The_Shining_Overlord+Elegant_Escort][Apollo][Agito],<0 resist>,94% burn uptime,attack:3273,force_strike:1187,skill_1:4608,skill_2:1908,skill_3:0,team_buff:579,s1_burn:1475,ds_burn:240,dx:3052,ds:879
-10741,_c_Euden,4*,flame,sword,4028,[The_Shining_Overlord+Elegant_Escort][Apollo][Agito],!<0 resist>,,attack:2239,force_strike:813,skill_1:3165,skill_2:1278,skill_3:0,team_buff:579,s1_burn:0,ds_burn:0,dx:2071,ds:592
+14488,Euden,4*,flame,sword,4028,[The_Shining_Overlord+Elegant_Escort][Dreadking_Rathalos][Agito],<0 burn res>,c3fs c2fs c2fs s1; 86% burn uptime,attack:2793,force_strike:2252,skill_1:5338,skill_2:2288,skill_3:0,team_buff:635,s1_burn:1180
+10892,_c_Euden,4*,flame,sword,4028,[The_Shining_Overlord+Elegant_Escort][Dreadking_Rathalos][Agito],!<0 burn res>,c3fs c2fs c2fs s1,attack:2231,force_strike:1812,skill_1:4410,skill_2:1803,skill_3:0,team_buff:635,s1_burn:0
 8382,Fjorm,5*,water,lance,3874,[Resounding_Rendition+Beautiful_Nothingness][Siren][HDT2],<hp70 & reflect 500 damage on every s2>,,attack:1366,force_strike:55,skill_1:2963,skill_2:1880,skill_3:1106,team_buff:690,s2_reflect:319
 7171,_c_Fjorm,5*,water,lance,3874,[Resounding_Rendition+Beautiful_Nothingness][Siren][HDT2],!<hp70 & reflect 500 damage on every s2>,,attack:1201,force_strike:48,skill_1:2604,skill_2:1653,skill_3:972,team_buff:690,s2_reflect:0
 14732,Fleur,4*,light,dagger,3625,[Twinfold_Bonds+Spirit_of_the_Season][Daikokuten][HDT2],<hp70 & hit15 & hp100 & 0 resist>,c4fs; 87% paralysis uptime,attack:3071,force_strike:751,skill_1:6910,skill_2:0,skill_3:1850,team_buff:0,s1_paralysis:2150
@@ -84,8 +84,8 @@ dps,name,star,element,weapon,str,amulets,condition,comment,
 5818,_c_H_Edward,3*,light,blade,3727,[Resounding_Rendition+Seaside_Princess][Cupid][HDT2],!<hp100 & hp70>,,attack:2172,force_strike:0,skill_1:2123,skill_2:820,skill_3:701,team_buff:0
 8716,H_Elisanne,5*,light,lance,3811,[Resounding_Rendition+Jewels_of_the_Sun][Cupid][HDT2],<hp70>,,attack:1555,force_strike:222,skill_1:3186,skill_2:1025,skill_3:1022,team_buff:1703
 7980,_c_H_Elisanne,5*,light,lance,3811,[Resounding_Rendition+Jewels_of_the_Sun][Cupid][HDT2],!<hp70>,,attack:1392,force_strike:198,skill_1:2852,skill_2:917,skill_3:915,team_buff:1703
-12544,H_Mym,5*,flame,axe,4010,[Kung_Fu_Masters+The_Lurker_in_the_Woods][Dreadking_Rathalos][Agito],<s1 defdown for 10s & buff all team>,,attack:4862,force_strike:1546,skill_1:1672,skill_2:0,skill_3:0,team_buff:4463
-7429,_c_H_Mym,5*,flame,axe,4010,[Kung_Fu_Masters+The_Lurker_in_the_Woods][Dreadking_Rathalos][Agito],!<s1 defdown for 10s & buff all team>,,attack:4330,force_strike:1426,skill_1:1672,skill_2:0,skill_3:0,team_buff:0
+12182,H_Mym,5*,flame,axe,4009,[Kung_Fu_Masters+Jewels_of_the_Sun][Dreadking_Rathalos][Agito],<hp70 & s1 defdown for 10s & buff all team>,,attack:4802,force_strike:869,skill_1:1802,skill_2:0,skill_3:0,team_buff:4708
+6396,_c_H_Mym,5*,flame,axe,4009,[Kung_Fu_Masters+Jewels_of_the_Sun][Dreadking_Rathalos][Agito],!<hp70 & s1 defdown for 10s & buff all team>,,attack:3979,force_strike:723,skill_1:1693,skill_2:0,skill_3:0,team_buff:0
 12675,H_Odetta,4*,water,sword,3786,[Mega_Friends+First_Rate_Hospitality][Dragonyule_Jeanne][HDT2],<buff all team & hp70>,,attack:2129,force_strike:2202,skill_1:2964,skill_2:0,skill_3:1317,team_buff:4060
 8707,_c_H_Odetta,4*,water,sword,3786,[Mega_Friends+First_Rate_Hospitality][Dragonyule_Jeanne][HDT2],!<buff all team & hp70>,,attack:2018,force_strike:2087,skill_1:2809,skill_2:0,skill_3:1248,team_buff:543
 6951,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][Garland][HDT2],<fullhp=stun & maintain shield & hp30 every 90s & 80 resist>,4% stun uptime,attack:1700,force_strike:975,skill_1:3044,skill_2:0,skill_3:1117,team_buff:0,fs_boost:113
@@ -177,8 +177,8 @@ dps,name,star,element,weapon,str,amulets,condition,comment,
 6930,_c_Ranzal,4*,wind,axe,3673,[Kung_Fu_Masters+Jewels_of_the_Sun][Vayu][HDT2],!<hp70>,do not use fs,attack:2012,force_strike:0,skill_1:3598,skill_2:0,skill_3:1319,team_buff:0
 6739,Rawn,4*,light,bow,3492,[Forest_Bonds+Dear_Diary][Daikokuten][HDT2],<hit15 & hp30 every 90s>,,attack:1734,force_strike:429,skill_1:2378,skill_2:1241,skill_3:956,team_buff:0
 5157,_c_Rawn,4*,light,bow,3492,[Forest_Bonds+Dear_Diary][Daikokuten][HDT2],!<hit15 & hp30 every 90s>,,attack:1335,force_strike:329,skill_1:1816,skill_2:943,skill_3:731,team_buff:0
-15151,Rena,5*,flame,blade,3973,[Resounding_Rendition+Elegant_Escort][Sakuya][Agito],<hp70 & 0 resist>,81% burn uptime,attack:2810,force_strike:309,skill_1:8736,skill_2:0,skill_3:0,team_buff:0,s1_burn:2143,dx:363,ds:789
-8354,_c_Rena,5*,flame,blade,3973,[Resounding_Rendition+Elegant_Escort][Sakuya][Agito],!<hp70 & 0 resist>,,attack:2143,force_strike:230,skill_1:5124,skill_2:0,skill_3:0,team_buff:0,s1_burn:0,dx:262,ds:593
+14741,Rena,5*,flame,blade,3973,[Resounding_Rendition+Elegant_Escort][Sakuya][Agito],<hp70 & 0 resist>,84% burn uptime,attack:2990,force_strike:372,skill_1:9123,skill_2:0,skill_3:0,team_buff:0,s1_burn:2254
+7918,_c_Rena,5*,flame,blade,3973,[Resounding_Rendition+Elegant_Escort][Sakuya][Agito],!<hp70 & 0 resist>,,attack:2243,force_strike:277,skill_1:5397,skill_2:0,skill_3:0,team_buff:0,s1_burn:0
 7569,Renee,4*,water,dagger,3675,[Twinfold_Bonds+The_Prince_of_Dragonyule][Siren][HDT2],<hit15>,no bog,attack:1642,force_strike:173,skill_1:3233,skill_2:1302,skill_3:1218,team_buff:0
 6218,_c_Renee,4*,water,dagger,3675,[Twinfold_Bonds+The_Prince_of_Dragonyule][Siren][HDT2],!<hit15>,no bog,attack:1353,force_strike:142,skill_1:2665,skill_2:1070,skill_3:986,team_buff:0
 12680,Renelle,3*,flame,dagger,3956,[Twinfold_Bonds+Elegant_Escort][Dreadking_Rathalos][Agito],<hit15 & 0 resist>,81% burn uptime,attack:2513,force_strike:3104,skill_1:3850,skill_2:1865,skill_3:0,team_buff:149,s1_burn:815,s2_burn:380
@@ -266,8 +266,8 @@ dps,name,star,element,weapon,str,amulets,condition,comment,
 9332,_c_Patia,4*,shadow,lance,3702,[Valiant_Crown+Jewels_of_the_Sun][Fatalis][HDT2],!<no shapeshift & hp70>,,attack:3195,force_strike:542,skill_1:0,skill_2:977,skill_3:619,team_buff:2328,bleed:1668
 13167,Heinwald,5*,shadow,staff,3582,[Resounding_Rendition+Beautiful_Nothingness][Fatalis][HDT2],<buff all teammates & no shapeshift & hp70>,,attack:3046,force_strike:0,skill_1:6065,skill_2:0,skill_3:1533,team_buff:2521
 5675,_c_Heinwald,5*,shadow,staff,3582,[Resounding_Rendition+Beautiful_Nothingness][Fatalis][HDT2],!<buff all teammates & no shapeshift & hp70>,,attack:2976,force_strike:0,skill_1:2063,skill_2:0,skill_3:635,team_buff:0
-15070,G_Luca,5*,light,blade,3769,[The_Wyrmclan_Duo+Primal_Crisis][Daikokuten][HDT2],<hit15 & hp70>,,attack:3887,force_strike:0,skill_1:6550,skill_2:0,skill_3:1451,team_buff:337,dx:2339,ds:504
-9457,_c_G_Luca,5*,light,blade,3769,[The_Wyrmclan_Duo+Primal_Crisis][Daikokuten][HDT2],!<hit15 & hp70>,,attack:2432,force_strike:0,skill_1:4085,skill_2:0,skill_3:875,team_buff:339,dx:1424,ds:299
+14187,G_Luca,5*,light,blade,3769,[The_Wyrmclan_Duo+Primal_Crisis][Daikokuten][HDT2],<hit15 & hp70>,,attack:4412,force_strike:0,skill_1:7651,skill_2:0,skill_3:2123,team_buff:0
+8749,_c_G_Luca,5*,light,blade,3769,[The_Wyrmclan_Duo+Primal_Crisis][Daikokuten][HDT2],!<hit15 & hp70>,,attack:2740,force_strike:0,skill_1:4752,skill_2:0,skill_3:1257,team_buff:0
 5401,Aurien,3*,flame,staff,3836,[Resounding_Rendition+Beautiful_Nothingness][Apollo][Agito],<hp70 & 0 resist>,no s1; 45% burn uptime,attack:4030,force_strike:0,skill_1:0,skill_2:988,skill_3:0,team_buff:0,s2_burn:383
 4000,_c_Aurien,3*,flame,staff,3836,[Resounding_Rendition+Beautiful_Nothingness][Apollo][Agito],!<hp70 & 0 resist>,no s1,attack:3326,force_strike:0,skill_1:0,skill_2:674,skill_3:0,team_buff:0,s2_burn:0
 14135,MH_Berserker,5*,flame,sword,3916,[Resounding_Rendition+The_Lurker_in_the_Woods][Dreadking_Rathalos][Agito],<hp70>,,attack:0,force_strike:9920,skill_1:3305,skill_2:0,skill_3:0,team_buff:909

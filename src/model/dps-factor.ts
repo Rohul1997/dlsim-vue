@@ -25,7 +25,7 @@ export class DpsFactor {
     public width: number = 0;
 
     constructor(f: string, dps: number) {
-        this.category = f in NAME_MAP ? NAME_MAP[f] : f.charAt(0) === 'd' ? 'DOther' : 'Others';
+        this.category = f in NAME_MAP ? NAME_MAP[f] : f.charAt(0) === 'd' ? 'DOther' : 'Other';
         this.factor = f;
         this.dps = dps;
         this.scaledDps = this.dps;
