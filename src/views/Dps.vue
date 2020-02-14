@@ -137,7 +137,7 @@
                     <span v-for="(f, fi) in ad.dps1.filterd" :key="f.factor">
                       <span
                         class="f-title"
-                      >{{(fi > 0 ? ', ' : '') + (f.category !== 'Others' ? f.category : f.factor)}}:</span>
+                      >{{(fi > 0 ? ', ' : '') + (f.category !== 'Others' || f.category !== 'DOther' ? f.category : f.factor)}}:</span>
                       {{f.scaledDps}}
                     </span>
                   </div>
@@ -161,7 +161,7 @@
                     <span v-for="(f, fi) in ad.dps2.filterd" :key="f.factor">
                       <span
                         class="f-title"
-                      >{{(fi > 0 ? ', ' : '') + (f.category !== 'Others' ? f.category : f.factor)}}:</span>
+                      >{{(fi > 0 ? ', ' : '') + (f.category !== 'Others' || f.category !== 'Dragon-Other' ? f.category : f.factor)}}:</span>
                       {{f.scaledDps}}
                     </span>
                   </div>
@@ -224,6 +224,23 @@
             </span>
             <span class="dib">
               <div class="label">{{ c }}</div>
+            </span>
+          </div>
+        </div>
+        <div class="title">Dragon</div>
+        <div class="legend" style="line-height: 25px;">
+          <div
+            class="dib"
+            v-for="(c) in dragonDpsCategories"
+            :key="c"
+            @click="toggleFactor(c)"
+            :class="{'c-gray': !dpsCategories.includes(c)}"
+          >
+            <span class="dib">
+              <div class="indic" :class="'c-' + c.toLowerCase()"></div>
+            </span>
+            <span class="dib">
+              <div class="label">{{ c.substr(1) }}</div>
             </span>
           </div>
         </div>
@@ -438,6 +455,11 @@ export default class DpsComponent extends Vue {
     'Bleed',
     'Others',
   ];
+    public dragonDpsCategories: string[] = [
+    'DSkill',
+    'DAtk',
+    'DOther',
+  ];
   public dpsCategories: string[] = [
     'Atk',
     'S1',
@@ -447,6 +469,9 @@ export default class DpsComponent extends Vue {
     'Buff',
     'Bleed',
     'Others',
+    'DAtk',
+    'DSkill',
+    'DOther',
   ];
 
   private mobileView: boolean = false;
@@ -908,6 +933,15 @@ div.full {
 }
 .c-bleed {
   background-color: #e64980 !important;
+}
+.c-datk {
+  background-color: #9370DB !important;
+}
+.c-dskill {
+  background-color: #8A2BE2 !important;
+}
+.c-dother {
+  background-color: #4addac !important;
 }
 .c-fs {
   background-color: #15aabf !important;
