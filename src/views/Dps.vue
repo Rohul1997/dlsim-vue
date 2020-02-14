@@ -207,7 +207,10 @@
         </div>
         <div class="closer fr" @click="asideHidden = true" v-if="mobileView">&times;</div>
         <div class="title custom-build">
-          <a href="https://wildshinobu.pythonanywhere.com/ui/dl_simc.html">Custom Build</a>
+          <a
+            href="https://wildshinobu.pythonanywhere.com/ui/dl_simc.html"
+            target="blank"
+          >Custom Build</a>
         </div>
         <div class="splitter"></div>
         <div class="title">Legend</div>
@@ -530,7 +533,7 @@ export default class DpsComponent extends Vue {
     this.reload();
   }
 
-// Potentially have a modal with information at some point instead of redirect to wiki
+  // Potentially have a modal with information at some point instead of redirect to wiki
   public wikiRedirect(name: string) {
     window.location.href = `https://dragalialost.gamepedia.com/${name}`;
   }
@@ -793,7 +796,7 @@ export default class DpsComponent extends Vue {
 .title a:hover {
   text-decoration: underline;
 }
-.title a:before {
+/* .title a[target="blank"]:before {
   position: absolute;
   top: 4px;
   right: -15px;
@@ -801,19 +804,28 @@ export default class DpsComponent extends Vue {
   border: 1px solid black;
   width: 8px;
   height: 8px;
-}
-.title a:after {
-  position: absolute;
+} */
+.title a[target="blank"]:after {
+  /* position: absolute;
   top: 2px;
-  right: -15px;
-  content: "\1f855";
-  font-size: 13px;
+  right: -15px; */
+
+  content: " ";
+  background: url('data:image/svg+xml; utf8, <svg height="1024" width="768" xmlns="http://www.w3.org/2000/svg"><path d="M640 768H128V257.90599999999995L256 256V128H0v768h768V576H640V768zM384 128l128 128L320 448l128 128 192-192 128 128V128H384z"/></svg>');
+  background-size: cover;
+  display: inline-block;
+  width: 0.6em;
+  height: 0.75em;
+  position: relative;
+  left: 0.2em;
+  margin-right: 0.2em;
+  /* font-size: 13px;
   color: black;
   line-height: 3px;
   height: 5px;
   width: 5px;
   border-right: 3px solid white;
-  border-top: 3px solid white;
+  border-top: 3px solid white; */
 }
 
 .holder .name {
@@ -831,6 +843,10 @@ export default class DpsComponent extends Vue {
 .holder .name img.wyrmprint {
   width: 30px;
   height: 30px;
+}
+
+.holder .name img[src^="/dl-sim/pic/amulet"].d-f {
+  cursor: pointer;
 }
 
 .holder .dps {
