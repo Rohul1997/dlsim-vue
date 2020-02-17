@@ -17,7 +17,7 @@
       <ul class="mobile-holder" v-if="mobileView">
         <li v-for="(ad, idx) in filterd" :key="ad.name + idx" class="mb-10">
           <div class="dib">
-            <img class="avater" :src="'/dl-sim/pic/character/' + ad.name + '.png'" />
+            <img class="avatar" :src="'/dl-sim/pic/character/' + ad.name + '.png'" />
           </div>
           <div class="dib content">
             <div class="mt-2">
@@ -87,11 +87,9 @@
             <div class="dfac">
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.name.replace(/_/g, ' ')}}</div>
-                <a slot="reference" :href="'https://dragalialost.gamepedia.com/' + ad.name">
-                  <img
-                    class="d-f avater"
-                    :src="'/dl-sim/pic/character/' + ad.name + '.png'"
-                  />
+                <a slot="reference" class="d-f avatar"
+                   :href="'https://dragalialost.gamepedia.com/' + ad.name">
+                  <img :src="'/dl-sim/pic/character/' + ad.name + '.png'" />
                 </a>
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
@@ -834,11 +832,14 @@ export default class DpsComponent extends Vue {
   display: inline-block;
 }
 
-.holder .name img.avater {
+.holder .name .avatar img {
   width: 60px;
   height: 60px;
-  padding-right: 5px;
-  padding-left: 30px;
+}
+
+.holder .name a.avatar {
+  margin-right: 5px;
+  margin-left: 30px;
 }
 
 .holder .name img.wyrmprint {
@@ -1246,11 +1247,11 @@ span.f-title {
     height: 8px;
   }
 
-  .mobile-holder img.avater {
+  .mobile-holder img.avatar {
     width: 60px;
     height: 60px;
-    padding-left: 10px;
-    padding-right: 1px;
+    margin-left: 10px;
+    margin-right: 1px;
   }
   .mobile-holder img.wyrmprint {
     width: 30px;
