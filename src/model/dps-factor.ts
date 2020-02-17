@@ -8,6 +8,8 @@ export const NAME_MAP: any = {
     bleed: 'Bleed',
     team_buff: 'Buff',
     force_strike: 'Fs',
+    ds: 'DSkill',
+    dx: 'DAtk',
 };
 
 export class DpsFactor {
@@ -23,7 +25,7 @@ export class DpsFactor {
     public width: number = 0;
 
     constructor(f: string, dps: number) {
-        this.category = f in NAME_MAP ? NAME_MAP[f] : 'Others';
+        this.category = f in NAME_MAP ? NAME_MAP[f] : f.charAt(0) === 'd' ? 'DOther' : 'Other';
         this.factor = f;
         this.dps = dps;
         this.scaledDps = this.dps;
