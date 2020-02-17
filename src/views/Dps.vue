@@ -491,10 +491,10 @@ export default class DpsComponent extends Vue {
       const scaledTeamDPSRatio: number = this.teamDPS / this.defaultTeamDPS;
       this.adventurers.forEach((a) => {
         a.dps1.factors
-          .filter((f) => f.category === NAME_MAP.team_buff)
+          .filter((f) => f.category === NAME_MAP.team)
           .forEach((f) => f.scaleOriginalDPS(scaledTeamDPSRatio));
         a.dps2.factors
-          .filter((f) => f.category === NAME_MAP.team_buff)
+          .filter((f) => f.category === NAME_MAP.team)
           .forEach((f) => f.scaleOriginalDPS(scaledTeamDPSRatio));
       });
     }
