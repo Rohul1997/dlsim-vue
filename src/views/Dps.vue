@@ -824,10 +824,6 @@ export default class DpsComponent extends Vue {
   height: 30px;
 }
 
-.holder .name img[src^="/dl-sim/pic/amulet"].d-f {
-  cursor: pointer;
-}
-
 .holder .dps {
   padding: 0px 10px;
   min-width: 400px;
