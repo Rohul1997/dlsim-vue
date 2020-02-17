@@ -86,12 +86,13 @@
           <div class="dib name h-60">
             <div class="dfac">
               <popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.name.replace(/_/g, '!')}}</div>
-                <img
-                  slot="reference"
-                  class="d-f avater"
-                  :src="'/dl-sim/pic/character/' + ad.name + '.png'"
-                />
+                <div class="popper">{{ad.name.replace(/_/g, ' ')}}</div>
+                <a slot="reference" :href="'https://dragalialost.gamepedia.com/' + ad.name">
+                  <img
+                    class="d-f avater"
+                    :src="'/dl-sim/pic/character/' + ad.name + '.png'"
+                  />
+                </a>
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.weapon}}</div>
@@ -103,29 +104,32 @@
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.dragon}}</div>
-                <img
-                  slot="reference"
-                  class="d-f wyrmprint"
-                  :src="'/dl-sim/pic/dragon/' + ad.dragon + '.png'"
-                />
+                <!-- Potentially have a modal with information at some point instead of redirect to wiki-->
+                <a slot="reference" :href="'https://dragalialost.gamepedia.com/' + ad.dragon">
+                  <img
+                    class="d-f wyrmprint"
+                    :src="'/dl-sim/pic/dragon/' + ad.dragon + '.png'"
+                  />
+                </a>
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.wyrmprint0.replace(/_/g, ' ')}}</div>
-                <img
-                  slot="reference"
-                  class="d-f wyrmprint"
-                  v-on:click="wikiRedirect(ad.wyrmprint0)"
-                  :src="'/dl-sim/pic/amulet/' + ad.wyrmprint0 + '.png'"
-                />
+                <!-- Potentially have a modal with information at some point instead of redirect to wiki-->
+                <a slot="reference" :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint0">
+                  <img
+                    class="d-f wyrmprint"
+                    :src="'/dl-sim/pic/amulet/' + ad.wyrmprint0 + '.png'"
+                  />
+                </a>
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.wyrmprint1.replace(/_/g, ' ')}}</div>
-                <img
-                  slot="reference"
-                  class="d-f wyrmprint"
-                  v-on:click="wikiRedirect(ad.wyrmprint1)"
-                  :src="'/dl-sim/pic/amulet/' + ad.wyrmprint1 + '.png'"
-                />
+                <a slot="reference" :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint0">
+                  <img
+                    class="d-f wyrmprint"
+                    :src="'/dl-sim/pic/amulet/' + ad.wyrmprint1 + '.png'"
+                  />
+                </a>
               </popper>
             </div>
           </div>
@@ -508,10 +512,6 @@ export default class DpsComponent extends Vue {
     this.reload();
   }
 
-  // Potentially have a modal with information at some point instead of redirect to wiki
-  public wikiRedirect(name: string) {
-    window.location.href = `https://dragalialost.gamepedia.com/${name}`;
-  }
   public mounted() {
     (window as any).$dps = this;
     (window as any).$http = Http;
@@ -806,6 +806,10 @@ export default class DpsComponent extends Vue {
 .holder .name {
   padding: 0px;
   width: 210px;
+}
+
+.holder .name a {
+  display: inline-block;
 }
 
 .holder .name img.avater {
