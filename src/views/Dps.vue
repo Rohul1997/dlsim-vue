@@ -103,7 +103,7 @@
                 />
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.dragon}}</div>
+                <div class="popper">{{ad.dragon.replace(/_/g, ' ')}}</div>
                 <!-- Potentially have a modal with information at some point instead of redirect to wiki-->
                 <a slot="reference" :href="'https://dragalialost.gamepedia.com/' + ad.dragon">
                   <img
