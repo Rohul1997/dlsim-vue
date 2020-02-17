@@ -87,8 +87,11 @@
             <div class="dfac">
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.name.replace(/_/g, ' ')}}</div>
-                <a slot="reference" class="d-f avatar"
-                   :href="'https://dragalialost.gamepedia.com/' + ad.name">
+                <a
+                  slot="reference"
+                  class="d-f avatar"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.name"
+                >
                   <img :src="'/dl-sim/pic/character/' + ad.name + '.png'" />
                 </a>
               </popper>
@@ -104,29 +107,20 @@
                 <div class="popper">{{ad.dragon.replace(/_/g, ' ')}}</div>
                 <!-- Potentially have a modal with information at some point instead of redirect to wiki-->
                 <a slot="reference" :href="'https://dragalialost.gamepedia.com/' + ad.dragon">
-                  <img
-                    class="d-f wyrmprint"
-                    :src="'/dl-sim/pic/dragon/' + ad.dragon + '.png'"
-                  />
+                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/dragon/' + ad.dragon + '.png'" />
                 </a>
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.wyrmprint0.replace(/_/g, ' ')}}</div>
                 <!-- Potentially have a modal with information at some point instead of redirect to wiki-->
                 <a slot="reference" :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint0">
-                  <img
-                    class="d-f wyrmprint"
-                    :src="'/dl-sim/pic/amulet/' + ad.wyrmprint0 + '.png'"
-                  />
+                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint0 + '.png'" />
                 </a>
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.wyrmprint1.replace(/_/g, ' ')}}</div>
                 <a slot="reference" :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint0">
-                  <img
-                    class="d-f wyrmprint"
-                    :src="'/dl-sim/pic/amulet/' + ad.wyrmprint1 + '.png'"
-                  />
+                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint1 + '.png'" />
                 </a>
               </popper>
             </div>
@@ -137,9 +131,7 @@
                 <popper trigger="hover" :options="{placement: 'top'}">
                   <div class="popper dps-details">
                     <span v-for="(f, fi) in ad.dps1.filterd" :key="f.factor">
-                      <span
-                        class="f-title"
-                      >{{(fi > 0 ? ', ' : '') + (f.category !== 'Other' || f.category !== 'DOther' ? f.category : f.factor)}}:</span>
+                      <span class="f-title">{{(fi > 0 ? ', ' : '') + f.factorString()}}:</span>
                       {{f.scaledDps}}
                     </span>
                   </div>
@@ -161,9 +153,7 @@
                 <popper trigger="hover" :options="{placement: 'top'}">
                   <div class="popper dps-details">
                     <span v-for="(f, fi) in ad.dps2.filterd" :key="f.factor">
-                      <span
-                        class="f-title"
-                      >{{(fi > 0 ? ', ' : '') + (f.category !== 'Other' || f.category !== 'DOther' ? f.category : f.factor)}}:</span>
+                      <span class="f-title">{{(fi > 0 ? ', ' : '') + f.factorString()}}:</span>
                       {{f.scaledDps}}
                     </span>
                   </div>
@@ -420,7 +410,7 @@ import { Http } from '@/service/http';
 import { Adventurer } from '../model/adventurer';
 import { Dps } from '../model/dps';
 import { ElPopover } from 'element-ui/types/popover';
-import { NAME_MAP } from '../model/dps-factor';
+import { NAME_MAP, DpsFactor } from '../model/dps-factor';
 // @ts-ignore
 import Popper from 'vue-popperjs';
 import { GithubCommit } from '@/model/github-commit';
@@ -452,13 +442,12 @@ export default class DpsComponent extends Vue {
 
   public allDpsCategories: string[] = [
     'Atk',
+    'FS',
+    'Team',
+    'Other',
     'S1',
     'S2',
     'S3',
-    'Fs',
-    'Buff',
-    'Bleed',
-    'Other',
   ];
   public dragonDpsCategories: string[] = ['DSkill', 'DAtk', 'DOther'];
   public dpsCategories: string[] = [
@@ -466,9 +455,8 @@ export default class DpsComponent extends Vue {
     'S1',
     'S2',
     'S3',
-    'Fs',
-    'Buff',
-    'Bleed',
+    'FS',
+    'Team',
     'Other',
     'DAtk',
     'DSkill',
@@ -516,10 +504,13 @@ export default class DpsComponent extends Vue {
     );
     const maxx = this.filterd.length > 0 ? this.filterd[0].dps1.all : 0;
 
+    const roundTo = 10;
+    const calculateBarWidth = (f: DpsFactor) =>
+      (f.width = Math.floor(roundTo * ((100 * f.scaledDps) / maxx)) / roundTo);
     this.filterd.forEach((a) => {
       a.condition = a.condition.replace(/[<>]/g, '');
-      a.dps1.factors.forEach((f) => (f.width = (100 * f.scaledDps) / maxx));
-      a.dps2.factors.forEach((f) => (f.width = (100 * f.scaledDps) / maxx));
+      a.dps1.factors.forEach(calculateBarWidth);
+      a.dps2.factors.forEach(calculateBarWidth);
     });
 
     await this.$nextTick();
@@ -934,37 +925,34 @@ div.full {
   line-height: 12px;
 }
 .c-atk {
-  background-color: #228be6 !important;
-}
-.c-s1 {
-  background-color: #40c057 !important;
-}
-.c-s2 {
-  background-color: #fab005 !important;
-}
-.c-s3 {
-  background-color: #f76707 !important;
-}
-.c-bleed {
-  background-color: #e64980 !important;
-}
-.c-datk {
-  background-color: #9370db !important;
-}
-.c-dskill {
-  background-color: #8a2be2 !important;
-}
-.c-dother {
-  background-color: #4addac !important;
+  background-color: #6495ed !important;
 }
 .c-fs {
-  background-color: #15aabf !important;
+  background-color: #4682b4 !important;
 }
-.c-buff {
-  background-color: #7950f2 !important;
+.c-s1 {
+  background-color: #ff8c00 !important;
+}
+.c-s2 {
+  background-color: #ffaf00 !important;
+}
+.c-s3 {
+  background-color: #ffd700 !important;
+}
+.c-team {
+  background-color: #dc143c !important;
+}
+.c-datk {
+  background-color: #8a2be2 !important;
+}
+.c-dskill {
+  background-color: #9370db !important;
+}
+.c-dother {
+  background-color: #008080 !important;
 }
 .c-other {
-  background-color: #12b886 !important;
+  background-color: #008080 !important;
 }
 .c-gray {
   opacity: 0.2 !important;
