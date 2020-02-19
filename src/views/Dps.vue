@@ -119,7 +119,7 @@
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.wyrmprint1.replace(/_/g, ' ')}}</div>
-                <a slot="reference" :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint0">
+                <a slot="reference" :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint1">
                   <img class="d-f wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint1 + '.png'" />
                 </a>
               </popper>
