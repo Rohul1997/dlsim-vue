@@ -449,7 +449,7 @@ export default class DpsComponent extends Vue {
     'S2',
     'S3',
   ];
-  public dragonDpsCategories: string[] = ['DSkill', 'DAtk', 'DOther'];
+  public dragonDpsCategories: string[] = ['DAtk', 'DSkill', 'DOther'];
   public dpsCategories: string[] = [
     'Atk',
     'S1',
