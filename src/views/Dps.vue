@@ -392,10 +392,7 @@
             <a
               href="https://github.com/Mushymato/Mushymato.github.io/blob/master/dl-sim/README.md"
             >About</a>
-            <a
-              class="pl-15"
-              href="https://github.com/Mushymato/Mushymato.github.io/issues/new"
-            >Feedback</a>
+            <a class="pl-15" href="https://github.com/Mushymato/dl/issues/new">Feedback</a>
           </div>
           <!-- <div class="powerby mb-5">powered by <a href="https://cn.vuejs.org/">Vue</a> and <a href="https://element.eleme.cn/">Element</a></div> -->
         </div>
