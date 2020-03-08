@@ -15,6 +15,7 @@
     "express": "^4.17.1",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
+    "vue-gtag": "^1.6.2",
     "vue-popperjs": "^2.1.0",
     "vue-property-decorator": "^8.1.0",
     "vue-router": "^3.0.3"
@@ -22,7 +23,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-typescript": "^3.11.0",
-    "@vue/cli-service": "^4.1.2",
+    "@vue/cli-service": "^4.2.3",
     "copyfiles": "^2.1.1",
     "lint-staged": "^8.1.5",
     "typescript": "^3.4.3",
