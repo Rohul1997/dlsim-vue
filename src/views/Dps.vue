@@ -199,10 +199,7 @@
         </div>
         <div class="closer fr" @click="asideHidden = true" v-if="mobileView">&times;</div>
         <div class="title custom-build">
-          <a
-            href="https://wildshinobu.pythonanywhere.com/ui/dl_simc.html"
-            target="blank"
-          >Custom Build</a>
+          <a href="https://wildshinobu.pythonanywhere.com/ui/dl_simc.html" target="blank">Custom Sim</a>
         </div>
         <div class="splitter"></div>
         <div class="title">Legend</div>
@@ -270,7 +267,10 @@
             @change="changeTeamDPS()"
           ></el-input-number>
         </div>
-        <div class="title">Co-abilities</div>
+        <div class="title">
+          Co-abilities
+          <br />(Please use Custom Sim for Chain Co-Ab)
+        </div>
         <div class="filter">
           <el-checkbox-group class="cb-filter" v-model="exs" size="small" @change="reload()">
             <el-checkbox label="k">
