@@ -292,6 +292,10 @@
         </div>
         <div class="splitter"></div>
         <img :src="'ad2.png'">
+    <modal
+      v-show="isModalVisible"
+      @close="closeModal"
+    />
         <div class="title">
           Rarity
           <span v-if="rarities.length > 0">
@@ -415,14 +419,19 @@ import { NAME_MAP, DpsFactor } from '../model/dps-factor';
 // @ts-ignore
 import Popper from 'vue-popperjs';
 import { GithubCommit } from '@/model/github-commit';
+import { Divider } from 'element-ui';
+import modal from './components/Modal.vue';
 
 @Component({
   components: {
     Popper,
+    modal,
   },
 })
 export default class DpsComponent extends Vue {
   public lastCommits: GithubCommit[] = [];
+
+  public isModalVisible: boolean = false;
 
   public get csvUrl(): string {
     const condition = 'krdb'
@@ -528,6 +537,8 @@ export default class DpsComponent extends Vue {
     (window as any).$dps = this;
     (window as any).$http = Http;
 
+    this.isModalVisible = true;
+
     if (localStorage.getItem('teamdps')) {
       this.teamDPS = parseInt(localStorage.getItem('teamdps')!, 10);
     }
@@ -550,6 +561,13 @@ export default class DpsComponent extends Vue {
     );
     document.head.appendChild($changelog);
   }
+
+    private showModal() {
+        this.isModalVisible = true;
+      }
+  private closeModal() {
+        this.isModalVisible = false;
+      }
 
   private toggleRarity() {
     if (this.rarities.length === 0) {
