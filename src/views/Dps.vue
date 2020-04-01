@@ -83,6 +83,9 @@
           </div>
         </li>
         <li v-for="(ad, idx) in filterd" :key="ad.name + idx">
+          <div>
+        <img v-if="idx % 5 == 0" :src="'ad1.png'">
+          </div>
           <div class="dib name h-60">
             <div class="dfac">
               <popper trigger="hover" :options="{placement: 'top'}">
@@ -288,6 +291,7 @@
           </el-checkbox-group>
         </div>
         <div class="splitter"></div>
+        <img :src="'ad2.png'">
         <div class="title">
           Rarity
           <span v-if="rarities.length > 0">
