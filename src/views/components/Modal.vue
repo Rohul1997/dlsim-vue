@@ -9,6 +9,7 @@ export default {
   }
 };
 </script>
+const 
 
 <template>
   <div class="modal-backdrop">
@@ -19,7 +20,7 @@ export default {
         </slot>
       </header>
       <section class="modal-body">
-        <img :src="'ad4.png'" />
+        <img :src="'pic'+Math.floor(Math.random() * 5 + 1)+'.png'" width="50vw" />
       </section>
     </div>
   </div>
@@ -65,7 +66,12 @@ export default {
 
 .modal-body {
   position: relative;
-  padding: 20px 10px;
+  padding: 10px 10px;
+  max-width: 50vw;
+}
+
+.modal-body > img {
+  width: 100%;
 }
 
 .btn-close {

@@ -83,9 +83,7 @@
           </div>
         </li>
         <li v-for="(ad, idx) in filterd" :key="ad.name + idx">
-          <div>
-        <img v-if="idx % 5 == 0" :src="'ad1.png'">
-          </div>
+          <div></div>
           <div class="dib name h-60">
             <div class="dfac">
               <popper trigger="hover" :options="{placement: 'top'}">
@@ -291,11 +289,7 @@
           </el-checkbox-group>
         </div>
         <div class="splitter"></div>
-        <img :src="'ad2.png'">
-    <modal
-      v-show="isModalVisible"
-      @close="closeModal"
-    />
+        <modal v-show="isModalVisible" @close="closeModal" />
         <div class="title">
           Rarity
           <span v-if="rarities.length > 0">
@@ -562,12 +556,12 @@ export default class DpsComponent extends Vue {
     document.head.appendChild($changelog);
   }
 
-    private showModal() {
-        this.isModalVisible = true;
-      }
+  private showModal() {
+    this.isModalVisible = true;
+  }
   private closeModal() {
-        this.isModalVisible = false;
-      }
+    this.isModalVisible = false;
+  }
 
   private toggleRarity() {
     if (this.rarities.length === 0) {
