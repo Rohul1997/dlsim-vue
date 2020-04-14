@@ -17,7 +17,14 @@
       <ul class="mobile-holder" v-if="mobileView">
         <li v-for="(ad, idx) in filterd" :key="ad.name + idx" class="mb-10">
           <div class="dib">
-            <img class="avatar" :src="'/dl-sim/pic/character/' + ad.name + '.png'" />
+            <a
+              class="avatar-box"
+              :href="'https://wildshinobu.pythonanywhere.com/ui/dl_simc.html?adv_name=' + ad.name"
+              target="blank"
+            >
+              <img class="avatar" :src="'/dl-sim/pic/character/' + ad.name + '.png'" />
+              <span>Custom</span>
+            </a>
           </div>
           <div class="dib content">
             <div class="mt-2">
@@ -84,7 +91,7 @@
         </li>
         <li v-for="(ad, idx) in filterd" :key="ad.name + idx">
           <div class="dib name h-60">
-            <div class="dfac">
+            <div class="avatar-slot-grid">
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.name.replace(/_/g, ' ')}}</div>
                 <a
@@ -101,28 +108,72 @@
                   slot="reference"
                   class="d-f wyrmprint"
                   :src="'/dl-sim/pic/weapon/' + ad.weapon + '_' + ad.element + '_' + ad.weaponType + '.png'"
+                  target="blank"
                 />
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.dragon.replace(/_/g, ' ')}}</div>
                 <!-- Potentially have a modal with information at some point instead of redirect to wiki-->
-                <a slot="reference" :href="'https://dragalialost.gamepedia.com/' + ad.dragon">
+                <a
+                  slot="reference"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.dragon"
+                  target="blank"
+                >
                   <img class="d-f wyrmprint" :src="'/dl-sim/pic/dragon/' + ad.dragon + '.png'" />
                 </a>
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.wyrmprint0.replace(/_/g, ' ')}}</div>
                 <!-- Potentially have a modal with information at some point instead of redirect to wiki-->
-                <a slot="reference" :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint0">
+                <a
+                  slot="reference"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint0"
+                  target="blank"
+                >
                   <img class="d-f wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint0 + '.png'" />
                 </a>
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.wyrmprint1.replace(/_/g, ' ')}}</div>
-                <a slot="reference" :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint1">
+                <a
+                  slot="reference"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint1"
+                  target="blank"
+                >
                   <img class="d-f wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint1 + '.png'" />
                 </a>
               </popper>
+              <!-- chain coab test -->
+              <!-- <popper trigger="hover" :options="{placement: 'top'}">
+                <div class="popper">{{ad.wyrmprint1.replace(/_/g, ' ')}}</div>
+                <a
+                  slot="reference"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint1"
+                  target="blank"
+                >
+                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/character/Ieyasu.png'" />
+                </a>
+              </popper>
+              <popper trigger="hover" :options="{placement: 'top'}">
+                <div class="popper">{{ad.wyrmprint1.replace(/_/g, ' ')}}</div>
+                <a
+                  slot="reference"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint1"
+                  target="blank"
+                >
+                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/character/Nefaria.png'" />
+                </a>
+              </popper>
+              <popper trigger="hover" :options="{placement: 'top'}">
+                <div class="popper">{{ad.wyrmprint1.replace(/_/g, ' ')}}</div>
+                <a
+                  slot="reference"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint1"
+                  target="blank"
+                >
+                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/character/Delphi.png'" />
+                </a>
+              </popper>-->
             </div>
           </div>
           <div class="dib dps">
@@ -738,8 +789,8 @@ export default class DpsComponent extends Vue {
 }
 
 .non-condition-dps b {
-  color: #aaa !important;
   font-weight: 400 !important;
+  opacity: 0.7;
 }
 
 .main-scrollbar {
@@ -771,12 +822,15 @@ export default class DpsComponent extends Vue {
   color: #000 !important;
   font-weight: 500;
 }
-.title a {
+.title a,
+.avatar-box {
   text-decoration: none;
-  color: black;
+  color: rgba(64, 158, 255, 1);
   position: relative;
+  font-weight: bold;
 }
-.title a:hover {
+.title a:hover,
+.avatar-box:hover {
   text-decoration: underline;
 }
 /* .title a[target="blank"]:before {
@@ -821,12 +875,16 @@ export default class DpsComponent extends Vue {
 }
 
 .holder .name .avatar img {
-  width: 60px;
+  widows: 60px;
   height: 60px;
+  /* width: 65px;
+  height: 65px;
+  position: relative;
+  top: -2.5px; */
 }
 
 .holder .name a.avatar {
-  margin-right: 5px;
+  /* margin-right: 5px; */
   margin-left: 30px;
 }
 
@@ -868,9 +926,27 @@ div.comment {
   margin-bottom: 2px;
 }
 
+.avatar-slot-grid {
+  /* display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; */
+  display: flex;
+  align-items: center;
+}
+
+/* .avatar-slot-grid span {
+  height: 30px;
+}
+
+.avatar-slot-grid span:first-child {
+  grid-row: 1 / 3;
+} */
+
 .dps-progress {
   height: 100%;
   border-radius: 2px;
+  display: block;
+  color: black;
 }
 
 .dps-progress:hover {
@@ -1232,11 +1308,22 @@ span.f-title {
     height: 8px;
   }
 
+  .mobile-holder .avatar-box {
+    font-size: 12px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 1px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .mobile-holder .avatar-box span {
+    line-height: 30px;
+  }
+
   .mobile-holder img.avatar {
     width: 60px;
     height: 60px;
-    margin-left: 10px;
-    margin-right: 1px;
   }
   .mobile-holder img.wyrmprint {
     width: 30px;
