@@ -1,144 +1,144 @@
 -,60,_
-7694,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1521,force_strike:163,skill_1:2844,skill_2:0,skill_3:886,team_buff:330,s1_hit1:479,s1_hit2:489,s1_hit3:489,s1_hit4:489
-4681,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1246,force_strike:135,skill_1:2180,skill_2:0,skill_3:727,team_buff:0,s1_hit1:391
+7544,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2098,force_strike:222,skill_1:2410,s1_hit1:399,s1_hit2:408,s1_hit3:408,s1_hit4:408,skill_3:779,team_buff:409
+4238,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1557,force_strike:169,skill_1:1659,s1_hit1:297,skill_3:553
 -,60,k
-8431,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1673,force_strike:179,skill_1:3128,skill_2:0,skill_3:975,team_buff:330,s1_hit1:527,s1_hit2:538,s1_hit3:538,s1_hit4:538
-5150,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1370,force_strike:149,skill_1:2398,skill_2:0,skill_3:800,team_buff:0,s1_hit1:430
+8258,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2539,force_strike:244,skill_1:2651,s1_hit1:439,s1_hit2:448,s1_hit3:448,s1_hit4:448,skill_3:857,team_buff:409
+4662,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1884,force_strike:186,skill_1:1825,s1_hit1:327,skill_3:608
 -,60,r
-8546,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1521,force_strike:163,skill_1:3270,skill_2:0,skill_3:1019,team_buff:330,s1_hit1:551,s1_hit2:563,s1_hit3:563,s1_hit4:563
-5176,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1246,force_strike:135,skill_1:2508,skill_2:0,skill_3:836,team_buff:0,s1_hit1:449
+8266,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2098,force_strike:222,skill_1:2771,s1_hit1:459,s1_hit2:469,s1_hit3:469,s1_hit4:469,skill_3:896,team_buff:409
+4615,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1557,force_strike:169,skill_1:1908,s1_hit1:342,skill_3:636
 -,60,kr
-9368,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1673,force_strike:179,skill_1:3597,skill_2:0,skill_3:1121,team_buff:330,s1_hit1:606,s1_hit2:619,s1_hit3:619,s1_hit4:619
-5694,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1370,force_strike:149,skill_1:2758,skill_2:0,skill_3:920,team_buff:0,s1_hit1:494
+9052,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2539,force_strike:244,skill_1:3048,s1_hit1:505,s1_hit2:516,s1_hit3:516,s1_hit4:516,skill_3:985,team_buff:409
+5077,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1884,force_strike:186,skill_1:2099,s1_hit1:376,skill_3:700
 -,60,d
-7694,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1521,force_strike:163,skill_1:2844,skill_2:0,skill_3:886,team_buff:330,s1_hit1:479,s1_hit2:489,s1_hit3:489,s1_hit4:489
-4681,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1246,force_strike:135,skill_1:2180,skill_2:0,skill_3:727,team_buff:0,s1_hit1:391
+7544,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2098,force_strike:222,skill_1:2410,s1_hit1:399,s1_hit2:408,s1_hit3:408,s1_hit4:408,skill_3:779,team_buff:409
+4238,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1557,force_strike:169,skill_1:1659,s1_hit1:297,skill_3:553
 -,60,kd
-8431,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1673,force_strike:179,skill_1:3128,skill_2:0,skill_3:975,team_buff:330,s1_hit1:527,s1_hit2:538,s1_hit3:538,s1_hit4:538
-5150,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1370,force_strike:149,skill_1:2398,skill_2:0,skill_3:800,team_buff:0,s1_hit1:430
+8258,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2539,force_strike:244,skill_1:2651,s1_hit1:439,s1_hit2:448,s1_hit3:448,s1_hit4:448,skill_3:857,team_buff:409
+4662,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1884,force_strike:186,skill_1:1825,s1_hit1:327,skill_3:608
 -,60,rd
-8546,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1521,force_strike:163,skill_1:3270,skill_2:0,skill_3:1019,team_buff:330,s1_hit1:551,s1_hit2:563,s1_hit3:563,s1_hit4:563
-5176,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1246,force_strike:135,skill_1:2508,skill_2:0,skill_3:836,team_buff:0,s1_hit1:449
+8266,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2098,force_strike:222,skill_1:2771,s1_hit1:459,s1_hit2:469,s1_hit3:469,s1_hit4:469,skill_3:896,team_buff:409
+4615,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1557,force_strike:169,skill_1:1908,s1_hit1:342,skill_3:636
 -,60,krd
-9368,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1673,force_strike:179,skill_1:3597,skill_2:0,skill_3:1121,team_buff:330,s1_hit1:606,s1_hit2:619,s1_hit3:619,s1_hit4:619
-5694,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1370,force_strike:149,skill_1:2758,skill_2:0,skill_3:920,team_buff:0,s1_hit1:494
+9052,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2539,force_strike:244,skill_1:3048,s1_hit1:505,s1_hit2:516,s1_hit3:516,s1_hit4:516,skill_3:985,team_buff:409
+5077,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1884,force_strike:186,skill_1:2099,s1_hit1:376,skill_3:700
 -,60,b
-7689,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1459,force_strike:98,skill_1:3357,skill_2:0,skill_3:461,team_buff:340,s1_hit1:485,s1_hit2:495,s1_hit3:495,s1_hit4:495
-4681,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1246,force_strike:135,skill_1:2180,skill_2:0,skill_3:727,team_buff:0,s1_hit1:391
+7503,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2027,force_strike:128,skill_1:2836,s1_hit1:415,s1_hit2:424,s1_hit3:424,s1_hit4:424,skill_3:405,team_buff:415
+4108,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1496,force_strike:103,skill_1:1924,s1_hit1:302,skill_3:281
 -,60,kb
-8424,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1604,force_strike:108,skill_1:3692,skill_2:0,skill_3:507,team_buff:340,s1_hit1:533,s1_hit2:545,s1_hit3:545,s1_hit4:545
-5150,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1370,force_strike:149,skill_1:2398,skill_2:0,skill_3:800,team_buff:0,s1_hit1:430
+8212,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2452,force_strike:141,skill_1:3119,s1_hit1:457,s1_hit2:467,s1_hit3:467,s1_hit4:467,skill_3:446,team_buff:415
+4519,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1811,force_strike:113,skill_1:2117,s1_hit1:332,skill_3:309
 -,60,rb
-8558,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1459,force_strike:98,skill_1:3860,skill_2:0,skill_3:530,team_buff:340,s1_hit1:557,s1_hit2:570,s1_hit3:570,s1_hit4:570
-5176,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1246,force_strike:135,skill_1:2508,skill_2:0,skill_3:836,team_buff:0,s1_hit1:449
+8243,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2027,force_strike:128,skill_1:3261,s1_hit1:478,s1_hit2:488,s1_hit3:488,s1_hit4:488,skill_3:466,team_buff:415
+4484,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1496,force_strike:103,skill_1:2213,s1_hit1:347,skill_3:323
 -,60,krb
-9380,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1604,force_strike:108,skill_1:4246,skill_2:0,skill_3:583,team_buff:340,s1_hit1:613,s1_hit2:627,s1_hit3:627,s1_hit4:627
-5694,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1370,force_strike:149,skill_1:2758,skill_2:0,skill_3:920,team_buff:0,s1_hit1:494
+9026,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2452,force_strike:141,skill_1:3587,s1_hit1:525,s1_hit2:537,s1_hit3:537,s1_hit4:537,skill_3:513,team_buff:415
+4933,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1811,force_strike:113,skill_1:2434,s1_hit1:382,skill_3:355
 -,60,db
-7689,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1459,force_strike:98,skill_1:3357,skill_2:0,skill_3:461,team_buff:340,s1_hit1:485,s1_hit2:495,s1_hit3:495,s1_hit4:495
-4681,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1246,force_strike:135,skill_1:2180,skill_2:0,skill_3:727,team_buff:0,s1_hit1:391
+7503,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2027,force_strike:128,skill_1:2836,s1_hit1:415,s1_hit2:424,s1_hit3:424,s1_hit4:424,skill_3:405,team_buff:415
+4108,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1496,force_strike:103,skill_1:1924,s1_hit1:302,skill_3:281
 -,60,kdb
-8424,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1604,force_strike:108,skill_1:3692,skill_2:0,skill_3:507,team_buff:340,s1_hit1:533,s1_hit2:545,s1_hit3:545,s1_hit4:545
-5150,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1370,force_strike:149,skill_1:2398,skill_2:0,skill_3:800,team_buff:0,s1_hit1:430
+8212,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2452,force_strike:141,skill_1:3119,s1_hit1:457,s1_hit2:467,s1_hit3:467,s1_hit4:467,skill_3:446,team_buff:415
+4519,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1811,force_strike:113,skill_1:2117,s1_hit1:332,skill_3:309
 -,60,rdb
-8558,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1459,force_strike:98,skill_1:3860,skill_2:0,skill_3:530,team_buff:340,s1_hit1:557,s1_hit2:570,s1_hit3:570,s1_hit4:570
-5176,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1246,force_strike:135,skill_1:2508,skill_2:0,skill_3:836,team_buff:0,s1_hit1:449
+8243,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2027,force_strike:128,skill_1:3261,s1_hit1:478,s1_hit2:488,s1_hit3:488,s1_hit4:488,skill_3:466,team_buff:415
+4484,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1496,force_strike:103,skill_1:2213,s1_hit1:347,skill_3:323
 -,60,krdb
-9380,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1604,force_strike:108,skill_1:4246,skill_2:0,skill_3:583,team_buff:340,s1_hit1:613,s1_hit2:627,s1_hit3:627,s1_hit4:627
-5694,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1370,force_strike:149,skill_1:2758,skill_2:0,skill_3:920,team_buff:0,s1_hit1:494
+9026,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2452,force_strike:141,skill_1:3587,s1_hit1:525,s1_hit2:537,s1_hit3:537,s1_hit4:537,skill_3:513,team_buff:415
+4933,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1811,force_strike:113,skill_1:2434,s1_hit1:382,skill_3:355
 -,120,_
-7366,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1483,force_strike:150,skill_1:2842,skill_2:0,skill_3:898,team_buff:195,s1_hit1:444,s1_hit2:450,s1_hit3:450,s1_hit4:450
-4688,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1217,force_strike:124,skill_1:2242,skill_2:0,skill_3:739,team_buff:0,s1_hit1:364
+7323,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2093,force_strike:210,skill_1:2452,s1_hit1:379,s1_hit2:384,s1_hit3:384,s1_hit4:384,skill_3:790,team_buff:242
+4223,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1522,force_strike:155,skill_1:1705,s1_hit1:277,skill_3:562
 -,120,k
-8083,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1631,force_strike:165,skill_1:3126,skill_2:0,skill_3:988,team_buff:195,s1_hit1:489,s1_hit2:495,s1_hit3:495,s1_hit4:495
-5156,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1339,force_strike:136,skill_1:2466,skill_2:0,skill_3:813,team_buff:0,s1_hit1:400
+8031,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2532,force_strike:231,skill_1:2698,s1_hit1:417,s1_hit2:423,s1_hit3:423,s1_hit4:423,skill_3:869,team_buff:242
+4646,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1841,force_strike:171,skill_1:1876,s1_hit1:305,skill_3:618
 -,120,r
-8196,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1483,force_strike:150,skill_1:3268,skill_2:0,skill_3:1033,team_buff:195,s1_hit1:511,s1_hit2:518,s1_hit3:518,s1_hit4:518
-5189,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1217,force_strike:124,skill_1:2578,skill_2:0,skill_3:850,team_buff:0,s1_hit1:419
+8039,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2093,force_strike:210,skill_1:2820,s1_hit1:436,s1_hit2:442,s1_hit3:442,s1_hit4:442,skill_3:908,team_buff:242
+4605,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1522,force_strike:155,skill_1:1961,s1_hit1:318,skill_3:646
 -,120,kr
-8997,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1631,force_strike:165,skill_1:3595,skill_2:0,skill_3:1136,team_buff:195,s1_hit1:562,s1_hit2:570,s1_hit3:570,s1_hit4:570
-5708,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1339,force_strike:136,skill_1:2836,skill_2:0,skill_3:935,team_buff:0,s1_hit1:461
+8819,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2532,force_strike:231,skill_1:3102,s1_hit1:480,s1_hit2:486,s1_hit3:486,s1_hit4:486,skill_3:999,team_buff:242
+5066,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1841,force_strike:171,skill_1:2157,s1_hit1:350,skill_3:711
 -,120,d
-7366,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1483,force_strike:150,skill_1:2842,skill_2:0,skill_3:898,team_buff:195,s1_hit1:444,s1_hit2:450,s1_hit3:450,s1_hit4:450
-4688,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1217,force_strike:124,skill_1:2242,skill_2:0,skill_3:739,team_buff:0,s1_hit1:364
+7323,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2093,force_strike:210,skill_1:2452,s1_hit1:379,s1_hit2:384,s1_hit3:384,s1_hit4:384,skill_3:790,team_buff:242
+4223,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1522,force_strike:155,skill_1:1705,s1_hit1:277,skill_3:562
 -,120,kd
-8083,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1631,force_strike:165,skill_1:3126,skill_2:0,skill_3:988,team_buff:195,s1_hit1:489,s1_hit2:495,s1_hit3:495,s1_hit4:495
-5156,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1339,force_strike:136,skill_1:2466,skill_2:0,skill_3:813,team_buff:0,s1_hit1:400
+8031,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2532,force_strike:231,skill_1:2698,s1_hit1:417,s1_hit2:423,s1_hit3:423,s1_hit4:423,skill_3:869,team_buff:242
+4646,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1841,force_strike:171,skill_1:1876,s1_hit1:305,skill_3:618
 -,120,rd
-8196,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1483,force_strike:150,skill_1:3268,skill_2:0,skill_3:1033,team_buff:195,s1_hit1:511,s1_hit2:518,s1_hit3:518,s1_hit4:518
-5189,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1217,force_strike:124,skill_1:2578,skill_2:0,skill_3:850,team_buff:0,s1_hit1:419
+8039,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2093,force_strike:210,skill_1:2820,s1_hit1:436,s1_hit2:442,s1_hit3:442,s1_hit4:442,skill_3:908,team_buff:242
+4605,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1522,force_strike:155,skill_1:1961,s1_hit1:318,skill_3:646
 -,120,krd
-8997,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1631,force_strike:165,skill_1:3595,skill_2:0,skill_3:1136,team_buff:195,s1_hit1:562,s1_hit2:570,s1_hit3:570,s1_hit4:570
-5708,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1339,force_strike:136,skill_1:2836,skill_2:0,skill_3:935,team_buff:0,s1_hit1:461
+8819,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2532,force_strike:231,skill_1:3102,s1_hit1:480,s1_hit2:486,s1_hit3:486,s1_hit4:486,skill_3:999,team_buff:242
+5066,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1841,force_strike:171,skill_1:2157,s1_hit1:350,skill_3:711
 -,120,b
-7563,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1449,force_strike:66,skill_1:3223,skill_2:0,skill_3:679,team_buff:195,s1_hit1:482,s1_hit2:488,s1_hit3:488,s1_hit4:488
-4688,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1217,force_strike:124,skill_1:2242,skill_2:0,skill_3:739,team_buff:0,s1_hit1:364
+7452,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2053,force_strike:88,skill_1:2776,s1_hit1:419,s1_hit2:424,s1_hit3:424,s1_hit4:424,skill_3:597,team_buff:244
+4201,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1488,force_strike:68,skill_1:1921,s1_hit1:301,skill_3:420
 -,120,kb
-8300,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1594,force_strike:72,skill_1:3545,skill_2:0,skill_3:747,team_buff:195,s1_hit1:531,s1_hit2:537,s1_hit3:537,s1_hit4:537
-5156,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1339,force_strike:136,skill_1:2466,skill_2:0,skill_3:813,team_buff:0,s1_hit1:400
+8173,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2485,force_strike:97,skill_1:3054,s1_hit1:461,s1_hit2:466,s1_hit3:466,s1_hit4:466,skill_3:656,team_buff:244
+4622,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1801,force_strike:75,skill_1:2113,s1_hit1:331,skill_3:462
 -,120,rb
-8441,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1449,force_strike:66,skill_1:3706,skill_2:0,skill_3:781,team_buff:195,s1_hit1:555,s1_hit2:562,s1_hit3:562,s1_hit4:562
-5189,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1217,force_strike:124,skill_1:2578,skill_2:0,skill_3:850,team_buff:0,s1_hit1:419
+8212,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2053,force_strike:88,skill_1:3192,s1_hit1:482,s1_hit2:487,s1_hit3:487,s1_hit4:487,skill_3:686,team_buff:244
+4598,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1488,force_strike:68,skill_1:2209,s1_hit1:346,skill_3:483
 -,120,krb
-9266,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1594,force_strike:72,skill_1:4077,skill_2:0,skill_3:859,team_buff:195,s1_hit1:610,s1_hit2:618,s1_hit3:618,s1_hit4:618
-5708,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1339,force_strike:136,skill_1:2836,skill_2:0,skill_3:935,team_buff:0,s1_hit1:461
+9009,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2485,force_strike:97,skill_1:3512,s1_hit1:530,s1_hit2:536,s1_hit3:536,s1_hit4:536,skill_3:755,team_buff:244
+5058,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1801,force_strike:75,skill_1:2430,s1_hit1:381,skill_3:532
 -,120,db
-7563,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1449,force_strike:66,skill_1:3223,skill_2:0,skill_3:679,team_buff:195,s1_hit1:482,s1_hit2:488,s1_hit3:488,s1_hit4:488
-4688,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1217,force_strike:124,skill_1:2242,skill_2:0,skill_3:739,team_buff:0,s1_hit1:364
+7452,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2053,force_strike:88,skill_1:2776,s1_hit1:419,s1_hit2:424,s1_hit3:424,s1_hit4:424,skill_3:597,team_buff:244
+4201,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1488,force_strike:68,skill_1:1921,s1_hit1:301,skill_3:420
 -,120,kdb
-8300,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1594,force_strike:72,skill_1:3545,skill_2:0,skill_3:747,team_buff:195,s1_hit1:531,s1_hit2:537,s1_hit3:537,s1_hit4:537
-5156,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1339,force_strike:136,skill_1:2466,skill_2:0,skill_3:813,team_buff:0,s1_hit1:400
+8173,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2485,force_strike:97,skill_1:3054,s1_hit1:461,s1_hit2:466,s1_hit3:466,s1_hit4:466,skill_3:656,team_buff:244
+4622,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1801,force_strike:75,skill_1:2113,s1_hit1:331,skill_3:462
 -,120,rdb
-8441,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1449,force_strike:66,skill_1:3706,skill_2:0,skill_3:781,team_buff:195,s1_hit1:555,s1_hit2:562,s1_hit3:562,s1_hit4:562
-5189,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1217,force_strike:124,skill_1:2578,skill_2:0,skill_3:850,team_buff:0,s1_hit1:419
+8212,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2053,force_strike:88,skill_1:3192,s1_hit1:482,s1_hit2:487,s1_hit3:487,s1_hit4:487,skill_3:686,team_buff:244
+4598,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1488,force_strike:68,skill_1:2209,s1_hit1:346,skill_3:483
 -,120,krdb
-9266,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1594,force_strike:72,skill_1:4077,skill_2:0,skill_3:859,team_buff:195,s1_hit1:610,s1_hit2:618,s1_hit3:618,s1_hit4:618
-5708,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1339,force_strike:136,skill_1:2836,skill_2:0,skill_3:935,team_buff:0,s1_hit1:461
+9009,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2485,force_strike:97,skill_1:3512,s1_hit1:530,s1_hit2:536,s1_hit3:536,s1_hit4:536,skill_3:755,team_buff:244
+5058,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1801,force_strike:75,skill_1:2430,s1_hit1:381,skill_3:532
 -,180,_
-7250,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1459,force_strike:155,skill_1:2916,skill_2:0,skill_3:747,team_buff:132,s1_hit1:456,s1_hit2:460,s1_hit3:460,s1_hit4:460
-4655,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1200,force_strike:128,skill_1:2336,skill_2:0,skill_3:615,team_buff:0,s1_hit1:375
+7239,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2075,force_strike:220,skill_1:2533,s1_hit1:394,s1_hit2:397,s1_hit3:397,s1_hit4:397,skill_3:657,team_buff:165
+4193,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1500,force_strike:161,skill_1:1777,s1_hit1:285,skill_3:468
 -,180,k
-7962,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1605,force_strike:171,skill_1:3207,skill_2:0,skill_3:822,team_buff:132,s1_hit1:502,s1_hit2:506,s1_hit3:506,s1_hit4:506
-5121,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1320,force_strike:141,skill_1:2569,skill_2:0,skill_3:677,team_buff:0,s1_hit1:412
+7946,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2511,force_strike:242,skill_1:2786,s1_hit1:433,s1_hit2:437,s1_hit3:437,s1_hit4:437,skill_3:723,team_buff:165
+4612,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1815,force_strike:177,skill_1:1955,s1_hit1:313,skill_3:515
 -,180,r
-8076,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1459,force_strike:155,skill_1:3353,skill_2:0,skill_3:859,team_buff:132,s1_hit1:525,s1_hit2:529,s1_hit3:529,s1_hit4:529
-5154,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1200,force_strike:128,skill_1:2686,skill_2:0,skill_3:707,team_buff:0,s1_hit1:431
+7955,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2075,force_strike:220,skill_1:2913,s1_hit1:453,s1_hit2:456,s1_hit3:456,s1_hit4:456,skill_3:755,team_buff:165
+4572,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1500,force_strike:161,skill_1:2044,s1_hit1:328,skill_3:538
 -,180,kr
-8870,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1605,force_strike:171,skill_1:3688,skill_2:0,skill_3:945,team_buff:132,s1_hit1:577,s1_hit2:582,s1_hit3:582,s1_hit4:582
-5670,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1320,force_strike:141,skill_1:2955,skill_2:0,skill_3:778,team_buff:0,s1_hit1:474
+8734,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2511,force_strike:242,skill_1:3204,s1_hit1:498,s1_hit2:502,s1_hit3:502,s1_hit4:502,skill_3:831,team_buff:165
+5030,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1815,force_strike:177,skill_1:2248,s1_hit1:361,skill_3:592
 -,180,d
-7250,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1459,force_strike:155,skill_1:2916,skill_2:0,skill_3:747,team_buff:132,s1_hit1:456,s1_hit2:460,s1_hit3:460,s1_hit4:460
-4655,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1200,force_strike:128,skill_1:2336,skill_2:0,skill_3:615,team_buff:0,s1_hit1:375
+7239,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2075,force_strike:220,skill_1:2533,s1_hit1:394,s1_hit2:397,s1_hit3:397,s1_hit4:397,skill_3:657,team_buff:165
+4193,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1500,force_strike:161,skill_1:1777,s1_hit1:285,skill_3:468
 -,180,kd
-7962,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1605,force_strike:171,skill_1:3207,skill_2:0,skill_3:822,team_buff:132,s1_hit1:502,s1_hit2:506,s1_hit3:506,s1_hit4:506
-5121,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1320,force_strike:141,skill_1:2569,skill_2:0,skill_3:677,team_buff:0,s1_hit1:412
+7946,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2511,force_strike:242,skill_1:2786,s1_hit1:433,s1_hit2:437,s1_hit3:437,s1_hit4:437,skill_3:723,team_buff:165
+4612,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1815,force_strike:177,skill_1:1955,s1_hit1:313,skill_3:515
 -,180,rd
-8076,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1459,force_strike:155,skill_1:3353,skill_2:0,skill_3:859,team_buff:132,s1_hit1:525,s1_hit2:529,s1_hit3:529,s1_hit4:529
-5154,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1200,force_strike:128,skill_1:2686,skill_2:0,skill_3:707,team_buff:0,s1_hit1:431
+7955,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2075,force_strike:220,skill_1:2913,s1_hit1:453,s1_hit2:456,s1_hit3:456,s1_hit4:456,skill_3:755,team_buff:165
+4572,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1500,force_strike:161,skill_1:2044,s1_hit1:328,skill_3:538
 -,180,krd
-8870,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1605,force_strike:171,skill_1:3688,skill_2:0,skill_3:945,team_buff:132,s1_hit1:577,s1_hit2:582,s1_hit3:582,s1_hit4:582
-5670,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1320,force_strike:141,skill_1:2955,skill_2:0,skill_3:778,team_buff:0,s1_hit1:474
+8734,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2511,force_strike:242,skill_1:3204,s1_hit1:498,s1_hit2:502,s1_hit3:502,s1_hit4:502,skill_3:831,team_buff:165
+5030,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1815,force_strike:177,skill_1:2248,s1_hit1:361,skill_3:592
 -,180,b
-7513,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1455,force_strike:66,skill_1:3168,skill_2:0,skill_3:750,team_buff:132,s1_hit1:481,s1_hit2:485,s1_hit3:485,s1_hit4:485
-4655,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1200,force_strike:128,skill_1:2336,skill_2:0,skill_3:615,team_buff:0,s1_hit1:375
+7430,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2075,force_strike:91,skill_1:2747,s1_hit1:420,s1_hit2:423,s1_hit3:423,s1_hit4:423,skill_3:659,team_buff:165
+4255,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1496,force_strike:68,skill_1:1920,s1_hit1:301,skill_3:467
 -,180,kb
-8251,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1601,force_strike:72,skill_1:3485,skill_2:0,skill_3:825,team_buff:132,s1_hit1:530,s1_hit2:534,s1_hit3:534,s1_hit4:534
-5121,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1320,force_strike:141,skill_1:2569,skill_2:0,skill_3:677,team_buff:0,s1_hit1:412
+8157,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2511,force_strike:100,skill_1:3022,s1_hit1:462,s1_hit2:465,s1_hit3:465,s1_hit4:465,skill_3:725,team_buff:165
+4680,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1811,force_strike:75,skill_1:2112,s1_hit1:331,skill_3:514
 -,180,rb
-8391,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1455,force_strike:66,skill_1:3643,skill_2:0,skill_3:862,team_buff:132,s1_hit1:554,s1_hit2:558,s1_hit3:558,s1_hit4:558
-5154,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1200,force_strike:128,skill_1:2686,skill_2:0,skill_3:707,team_buff:0,s1_hit1:431
+8195,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2075,force_strike:91,skill_1:3159,s1_hit1:483,s1_hit2:486,s1_hit3:486,s1_hit4:486,skill_3:758,team_buff:165
+4658,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1496,force_strike:68,skill_1:2208,s1_hit1:346,skill_3:537
 -,180,krb
-9217,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1601,force_strike:72,skill_1:4008,skill_2:0,skill_3:949,team_buff:132,s1_hit1:609,s1_hit2:614,s1_hit3:614,s1_hit4:614
-5670,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1320,force_strike:141,skill_1:2955,skill_2:0,skill_3:778,team_buff:0,s1_hit1:474
+8998,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2511,force_strike:100,skill_1:3475,s1_hit1:531,s1_hit2:535,s1_hit3:535,s1_hit4:535,skill_3:834,team_buff:165
+5124,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1811,force_strike:75,skill_1:2429,s1_hit1:381,skill_3:591
 -,180,db
-7513,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1455,force_strike:66,skill_1:3168,skill_2:0,skill_3:750,team_buff:132,s1_hit1:481,s1_hit2:485,s1_hit3:485,s1_hit4:485
-4655,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1200,force_strike:128,skill_1:2336,skill_2:0,skill_3:615,team_buff:0,s1_hit1:375
+7430,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2075,force_strike:91,skill_1:2747,s1_hit1:420,s1_hit2:423,s1_hit3:423,s1_hit4:423,skill_3:659,team_buff:165
+4255,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1496,force_strike:68,skill_1:1920,s1_hit1:301,skill_3:467
 -,180,kdb
-8251,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1601,force_strike:72,skill_1:3485,skill_2:0,skill_3:825,team_buff:132,s1_hit1:530,s1_hit2:534,s1_hit3:534,s1_hit4:534
-5121,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1320,force_strike:141,skill_1:2569,skill_2:0,skill_3:677,team_buff:0,s1_hit1:412
+8157,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2511,force_strike:100,skill_1:3022,s1_hit1:462,s1_hit2:465,s1_hit3:465,s1_hit4:465,skill_3:725,team_buff:165
+4680,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1811,force_strike:75,skill_1:2112,s1_hit1:331,skill_3:514
 -,180,rdb
-8391,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1455,force_strike:66,skill_1:3643,skill_2:0,skill_3:862,team_buff:132,s1_hit1:554,s1_hit2:558,s1_hit3:558,s1_hit4:558
-5154,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1200,force_strike:128,skill_1:2686,skill_2:0,skill_3:707,team_buff:0,s1_hit1:431
+8195,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2075,force_strike:91,skill_1:3159,s1_hit1:483,s1_hit2:486,s1_hit3:486,s1_hit4:486,skill_3:758,team_buff:165
+4658,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1496,force_strike:68,skill_1:2208,s1_hit1:346,skill_3:537
 -,180,krdb
-9217,Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1601,force_strike:72,skill_1:4008,skill_2:0,skill_3:949,team_buff:132,s1_hit1:609,s1_hit2:614,s1_hit3:614,s1_hit4:614
-5670,_c_Wedding_Aoi,5*,wind,dagger,3558,[Twinfold_Bonds+Levins_Champion][Vayu][HDT2],!<big hitbox & hit15 & hp70 & 80 sleep res>,,attack:1320,force_strike:141,skill_1:2955,skill_2:0,skill_3:778,team_buff:0,s1_hit1:474
+8998,Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:2511,force_strike:100,skill_1:3475,s1_hit1:531,s1_hit2:535,s1_hit3:535,s1_hit4:535,skill_3:834,team_buff:165
+5124,_c_Wedding_Aoi,5*,wind,dagger,5337,[Twinfold_Bonds+Levins_Champion][AC011_Garland][HDT2],!<big hitbox & maintain shield & hit15 & hp70 & 80 sleep res>,,attack:1811,force_strike:75,skill_1:2429,s1_hit1:381,skill_3:591

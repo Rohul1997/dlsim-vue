@@ -561,7 +561,7 @@ export default class DpsComponent extends Vue {
 
     const roundTo = 10;
     const calculateBarWidth = (f: DpsFactor) =>
-      (f.width = Math.floor(roundTo * ((100 * f.scaledDps) / maxx)) / roundTo);
+      (f.width = Math.floor(roundTo * ((99.9 * f.scaledDps) / maxx)) / roundTo);
     this.filterd.forEach((a) => {
       a.condition = a.condition.replace(/[<>]/g, '');
       a.dps1.factors.forEach(calculateBarWidth);

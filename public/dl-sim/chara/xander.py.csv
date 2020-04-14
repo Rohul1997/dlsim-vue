@@ -1,144 +1,144 @@
 -,60,_
-7580,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1060,force_strike:1162,skill_1:3196,skill_2:1441,skill_3:720,team_buff:0
-6997,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:978,force_strike:1072,skill_1:2950,skill_2:1330,skill_3:665,team_buff:0
+8539,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1185,force_strike:1299,skill_1:3611,s1_boost:0,skill_2:1628,skill_3:814
+6997,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:978,force_strike:1072,skill_1:2950,s1_boost:0,skill_2:1330,skill_3:665
 -,60,k
-8338,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1166,force_strike:1278,skill_1:3515,skill_2:1585,skill_3:792,team_buff:0
-7696,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1076,force_strike:1180,skill_1:3245,skill_2:1463,skill_3:731,team_buff:0
+9393,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1434,force_strike:1429,skill_1:3972,s1_boost:0,skill_2:1791,skill_3:895
+7697,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1184,force_strike:1180,skill_1:3245,s1_boost:0,skill_2:1463,skill_3:731
 -,60,r
-8383,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1060,force_strike:1162,skill_1:3675,skill_2:1657,skill_3:828,team_buff:0
-7739,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:978,force_strike:1072,skill_1:3392,skill_2:1529,skill_3:764,team_buff:0
+9447,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1185,force_strike:1299,skill_1:4153,s1_boost:0,skill_2:1872,skill_3:936
+7739,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:978,force_strike:1072,skill_1:3392,s1_boost:0,skill_2:1529,skill_3:764
 -,60,kr
-9222,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1166,force_strike:1278,skill_1:4043,skill_2:1823,skill_3:911,team_buff:0
-8512,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1076,force_strike:1180,skill_1:3732,skill_2:1682,skill_3:841,team_buff:0
+10392,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1434,force_strike:1429,skill_1:4568,s1_boost:0,skill_2:2060,skill_3:1030
+8513,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1184,force_strike:1180,skill_1:3732,s1_boost:0,skill_2:1682,skill_3:841
 -,60,d
-8103,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1133,force_strike:1242,skill_1:3416,skill_2:1540,skill_3:770,team_buff:0
-6997,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:978,force_strike:1072,skill_1:2950,skill_2:1330,skill_3:665,team_buff:0
+9128,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1267,force_strike:1388,skill_1:3860,s1_boost:0,skill_2:1740,skill_3:870
+7480,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1046,force_strike:1146,skill_1:3153,s1_boost:0,skill_2:1422,skill_3:711
 -,60,kd
-8913,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1246,force_strike:1366,skill_1:3758,skill_2:1694,skill_3:847,team_buff:0
-7696,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1076,force_strike:1180,skill_1:3245,skill_2:1463,skill_3:731,team_buff:0
+10041,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1533,force_strike:1527,skill_1:4247,s1_boost:0,skill_2:1915,skill_3:957
+8228,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1265,force_strike:1261,skill_1:3469,s1_boost:0,skill_2:1564,skill_3:782
 -,60,rd
-8962,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1133,force_strike:1242,skill_1:3929,skill_2:1771,skill_3:885,team_buff:0
-7739,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:978,force_strike:1072,skill_1:3392,skill_2:1529,skill_3:764,team_buff:0
+10099,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1267,force_strike:1388,skill_1:4440,s1_boost:0,skill_2:2002,skill_3:1001
+8273,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1046,force_strike:1146,skill_1:3627,s1_boost:0,skill_2:1635,skill_3:817
 -,60,krd
-9859,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1246,force_strike:1366,skill_1:4322,skill_2:1948,skill_3:974,team_buff:0
-8512,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1076,force_strike:1180,skill_1:3732,skill_2:1682,skill_3:841,team_buff:0
+11109,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1533,force_strike:1527,skill_1:4884,s1_boost:0,skill_2:2202,skill_3:1101
+9101,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1265,force_strike:1261,skill_1:3989,s1_boost:0,skill_2:1799,skill_3:899
 -,60,b
-7814,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1029,force_strike:1146,skill_1:3151,skill_2:1421,skill_3:1065,team_buff:0
-6997,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:978,force_strike:1072,skill_1:2950,skill_2:1330,skill_3:665,team_buff:0
+8784,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1148,force_strike:1278,skill_1:3553,s1_boost:0,skill_2:1602,skill_3:1201
+7198,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:948,force_strike:1055,skill_1:2902,s1_boost:0,skill_2:1308,skill_3:981
 -,60,kb
-8595,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1132,force_strike:1260,skill_1:3466,skill_2:1563,skill_3:1172,team_buff:0
-7696,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1076,force_strike:1180,skill_1:3245,skill_2:1463,skill_3:731,team_buff:0
+9663,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1389,force_strike:1406,skill_1:3908,s1_boost:0,skill_2:1762,skill_3:1321
+7917,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1147,force_strike:1161,skill_1:3193,s1_boost:0,skill_2:1439,skill_3:1079
 -,60,rb
-8660,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1029,force_strike:1146,skill_1:3624,skill_2:1634,skill_3:1225,team_buff:0
-7739,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:978,force_strike:1072,skill_1:3392,skill_2:1529,skill_3:764,team_buff:0
+9738,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1148,force_strike:1278,skill_1:4086,s1_boost:0,skill_2:1842,skill_3:1382
+7977,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:948,force_strike:1055,skill_1:3338,s1_boost:0,skill_2:1505,skill_3:1128
 -,60,krb
-9526,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1132,force_strike:1260,skill_1:3986,skill_2:1797,skill_3:1348,team_buff:0
-8512,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1076,force_strike:1180,skill_1:3732,skill_2:1682,skill_3:841,team_buff:0
+10712,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1389,force_strike:1406,skill_1:4495,s1_boost:0,skill_2:2026,skill_3:1520
+8774,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1147,force_strike:1161,skill_1:3672,s1_boost:0,skill_2:1655,skill_3:1241
 -,60,db
-8353,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1100,force_strike:1225,skill_1:3369,skill_2:1519,skill_3:1139,team_buff:0
-6997,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:978,force_strike:1072,skill_1:2950,skill_2:1330,skill_3:665,team_buff:0
+9391,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1227,force_strike:1366,skill_1:3798,s1_boost:0,skill_2:1712,skill_3:1284
+7694,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1013,force_strike:1128,skill_1:3103,s1_boost:0,skill_2:1399,skill_3:1049
 -,60,kdb
-9189,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1210,force_strike:1347,skill_1:3706,skill_2:1671,skill_3:1253,team_buff:0
-7696,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1076,force_strike:1180,skill_1:3245,skill_2:1463,skill_3:731,team_buff:0
+10330,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1485,force_strike:1503,skill_1:4178,s1_boost:0,skill_2:1884,skill_3:1413
+8464,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1226,force_strike:1241,skill_1:3413,s1_boost:0,skill_2:1539,skill_3:1154
 -,60,rdb
-9257,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1100,force_strike:1225,skill_1:3874,skill_2:1747,skill_3:1310,team_buff:0
-7739,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:978,force_strike:1072,skill_1:3392,skill_2:1529,skill_3:764,team_buff:0
+10410,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1227,force_strike:1366,skill_1:4368,s1_boost:0,skill_2:1969,skill_3:1477
+8527,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1013,force_strike:1128,skill_1:3568,s1_boost:0,skill_2:1609,skill_3:1206
 -,60,krdb
-10183,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1210,force_strike:1347,skill_1:4262,skill_2:1921,skill_3:1441,team_buff:0
-8512,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1076,force_strike:1180,skill_1:3732,skill_2:1682,skill_3:841,team_buff:0
+11451,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1485,force_strike:1503,skill_1:4805,s1_boost:0,skill_2:2166,skill_3:1625
+9380,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1226,force_strike:1241,skill_1:3925,s1_boost:0,skill_2:1770,skill_3:1327
 -,120,_
-7721,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1041,force_strike:1158,skill_1:3186,skill_2:1436,skill_3:897,team_buff:0
-7127,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:961,force_strike:1069,skill_1:2941,skill_2:1326,skill_3:828,team_buff:0
+8711,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1170,force_strike:1302,skill_1:3600,s1_boost:0,skill_2:1623,skill_3:1014
+7127,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:961,force_strike:1069,skill_1:2941,s1_boost:0,skill_2:1326,skill_3:828
 -,120,k
-8493,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1145,force_strike:1274,skill_1:3505,skill_2:1580,skill_3:987,team_buff:0
-7839,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1057,force_strike:1176,skill_1:3235,skill_2:1458,skill_3:911,team_buff:0
+9583,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1415,force_strike:1432,skill_1:3960,s1_boost:0,skill_2:1785,skill_3:1116
+7840,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1162,force_strike:1176,skill_1:3235,s1_boost:0,skill_2:1458,skill_3:911
 -,120,r
-8549,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1041,force_strike:1158,skill_1:3664,skill_2:1652,skill_3:1032,team_buff:0
-7891,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:961,force_strike:1069,skill_1:3382,skill_2:1525,skill_3:953,team_buff:0
+9647,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1170,force_strike:1302,skill_1:4140,s1_boost:0,skill_2:1867,skill_3:1166
+7892,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:961,force_strike:1069,skill_1:3382,s1_boost:0,skill_2:1525,skill_3:953
 -,120,kr
-9404,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1145,force_strike:1274,skill_1:4030,skill_2:1817,skill_3:1135,team_buff:0
-8680,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1057,force_strike:1176,skill_1:3720,skill_2:1677,skill_3:1048,team_buff:0
+10612,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1415,force_strike:1432,skill_1:4554,s1_boost:0,skill_2:2053,skill_3:1283
+8681,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1162,force_strike:1176,skill_1:3720,s1_boost:0,skill_2:1677,skill_3:1048
 -,120,d
-8254,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1113,force_strike:1238,skill_1:3406,skill_2:1535,skill_3:959,team_buff:0
-7127,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:961,force_strike:1069,skill_1:2941,skill_2:1326,skill_3:828,team_buff:0
+9313,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1250,force_strike:1392,skill_1:3849,s1_boost:0,skill_2:1735,skill_3:1084
+7619,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1027,force_strike:1143,skill_1:3144,s1_boost:0,skill_2:1417,skill_3:886
 -,120,kd
-9079,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1224,force_strike:1362,skill_1:3747,skill_2:1689,skill_3:1055,team_buff:0
-7839,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1057,force_strike:1176,skill_1:3235,skill_2:1458,skill_3:911,team_buff:0
+10244,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1513,force_strike:1531,skill_1:4234,s1_boost:0,skill_2:1909,skill_3:1193
+8381,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1243,force_strike:1257,skill_1:3458,s1_boost:0,skill_2:1559,skill_3:974
 -,120,rd
-9139,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1113,force_strike:1238,skill_1:3917,skill_2:1766,skill_3:1103,team_buff:0
-7891,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:961,force_strike:1069,skill_1:3382,skill_2:1525,skill_3:953,team_buff:0
+10313,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1250,force_strike:1392,skill_1:4426,s1_boost:0,skill_2:1996,skill_3:1247
+8436,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1027,force_strike:1143,skill_1:3616,s1_boost:0,skill_2:1630,skill_3:1019
 -,120,krd
-10053,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1224,force_strike:1362,skill_1:4309,skill_2:1943,skill_3:1214,team_buff:0
-8680,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1057,force_strike:1176,skill_1:3720,skill_2:1677,skill_3:1048,team_buff:0
+11345,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1513,force_strike:1531,skill_1:4869,s1_boost:0,skill_2:2195,skill_3:1372
+9280,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1243,force_strike:1257,skill_1:3977,s1_boost:0,skill_2:1793,skill_3:1120
 -,120,b
-7700,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1036,force_strike:1144,skill_1:2997,skill_2:1441,skill_3:1081,team_buff:0
-7127,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:961,force_strike:1069,skill_1:2941,skill_2:1326,skill_3:828,team_buff:0
+8688,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1164,force_strike:1286,skill_1:3386,s1_boost:0,skill_2:1628,skill_3:1221
+7108,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:956,force_strike:1056,skill_1:2766,s1_boost:0,skill_2:1330,skill_3:998
 -,120,kb
-8470,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1139,force_strike:1258,skill_1:3296,skill_2:1585,skill_3:1189,team_buff:0
-7839,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1057,force_strike:1176,skill_1:3235,skill_2:1458,skill_3:911,team_buff:0
+9557,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1409,force_strike:1414,skill_1:3725,s1_boost:0,skill_2:1791,skill_3:1343
+7819,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1157,force_strike:1162,skill_1:3043,s1_boost:0,skill_2:1463,skill_3:1097
 -,120,rb
-8528,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1036,force_strike:1144,skill_1:3446,skill_2:1657,skill_3:1243,team_buff:0
-7891,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:961,force_strike:1069,skill_1:3382,skill_2:1525,skill_3:953,team_buff:0
+9624,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1164,force_strike:1286,skill_1:3894,s1_boost:0,skill_2:1873,skill_3:1404
+7873,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:956,force_strike:1056,skill_1:3181,s1_boost:0,skill_2:1530,skill_3:1147
 -,120,krb
-9381,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1139,force_strike:1258,skill_1:3791,skill_2:1823,skill_3:1367,team_buff:0
-8680,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1057,force_strike:1176,skill_1:3720,skill_2:1677,skill_3:1048,team_buff:0
+10586,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1409,force_strike:1414,skill_1:4284,s1_boost:0,skill_2:2060,skill_3:1545
+8660,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1157,force_strike:1162,skill_1:3499,s1_boost:0,skill_2:1683,skill_3:1262
 -,120,db
-8232,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1107,force_strike:1223,skill_1:3204,skill_2:1541,skill_3:1155,team_buff:0
-7127,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:961,force_strike:1069,skill_1:2941,skill_2:1326,skill_3:828,team_buff:0
+9288,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1244,force_strike:1374,skill_1:3620,s1_boost:0,skill_2:1741,skill_3:1306
+7599,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1022,force_strike:1129,skill_1:2957,s1_boost:0,skill_2:1422,skill_3:1066
 -,120,kdb
-9055,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1218,force_strike:1345,skill_1:3524,skill_2:1695,skill_3:1271,team_buff:0
-7839,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1057,force_strike:1176,skill_1:3235,skill_2:1458,skill_3:911,team_buff:0
+10217,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1506,force_strike:1512,skill_1:3982,s1_boost:0,skill_2:1915,skill_3:1436
+8359,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1237,force_strike:1242,skill_1:3253,s1_boost:0,skill_2:1564,skill_3:1173
 -,120,rdb
-9117,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1107,force_strike:1223,skill_1:3684,skill_2:1772,skill_3:1329,team_buff:0
-7891,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:961,force_strike:1069,skill_1:3382,skill_2:1525,skill_3:953,team_buff:0
+10288,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1244,force_strike:1374,skill_1:4163,s1_boost:0,skill_2:2002,skill_3:1501
+8416,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1022,force_strike:1129,skill_1:3401,s1_boost:0,skill_2:1635,skill_3:1226
 -,120,krdb
-10029,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1218,force_strike:1345,skill_1:4053,skill_2:1949,skill_3:1462,team_buff:0
-8680,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1057,force_strike:1176,skill_1:3720,skill_2:1677,skill_3:1048,team_buff:0
+11317,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1506,force_strike:1512,skill_1:4580,s1_boost:0,skill_2:2202,skill_3:1652
+9258,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1237,force_strike:1242,skill_1:3741,s1_boost:0,skill_2:1799,skill_3:1349
 -,180,_
-7690,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1046,force_strike:1165,skill_1:3070,skill_2:1444,skill_3:963,team_buff:0
-7099,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:966,force_strike:1075,skill_1:2834,skill_2:1333,skill_3:889,team_buff:0
+8681,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1178,force_strike:1311,skill_1:3469,s1_boost:0,skill_2:1632,skill_3:1088
+7099,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:966,force_strike:1075,skill_1:2834,s1_boost:0,skill_2:1333,skill_3:889
 -,180,k
-8459,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1151,force_strike:1281,skill_1:3377,skill_2:1589,skill_3:1059,team_buff:0
-7809,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1063,force_strike:1183,skill_1:3117,skill_2:1467,skill_3:978,team_buff:0
+9550,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1426,force_strike:1443,skill_1:3816,s1_boost:0,skill_2:1795,skill_3:1197
+7809,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1169,force_strike:1183,skill_1:3117,s1_boost:0,skill_2:1467,skill_3:978
 -,180,r
-8512,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1046,force_strike:1165,skill_1:3531,skill_2:1661,skill_3:1107,team_buff:0
-7857,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:966,force_strike:1075,skill_1:3259,skill_2:1533,skill_3:1022,team_buff:0
+9610,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1178,force_strike:1311,skill_1:3990,s1_boost:0,skill_2:1877,skill_3:1251
+7858,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:966,force_strike:1075,skill_1:3259,s1_boost:0,skill_2:1533,skill_3:1022
 -,180,kr
-9363,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1151,force_strike:1281,skill_1:3884,skill_2:1827,skill_3:1218,team_buff:0
-8643,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1063,force_strike:1183,skill_1:3585,skill_2:1687,skill_3:1124,team_buff:0
+10571,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1426,force_strike:1443,skill_1:4389,s1_boost:0,skill_2:2065,skill_3:1376
+8643,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1169,force_strike:1183,skill_1:3585,s1_boost:0,skill_2:1687,skill_3:1124
 -,180,d
-8221,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1119,force_strike:1245,skill_1:3282,skill_2:1544,skill_3:1029,team_buff:0
-7099,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:966,force_strike:1075,skill_1:2834,skill_2:1333,skill_3:889,team_buff:0
+9281,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1260,force_strike:1402,skill_1:3709,s1_boost:0,skill_2:1745,skill_3:1163
+7589,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1033,force_strike:1149,skill_1:3030,s1_boost:0,skill_2:1425,skill_3:950
 -,180,kd
-9043,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1231,force_strike:1370,skill_1:3610,skill_2:1698,skill_3:1132,team_buff:0
-7809,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1063,force_strike:1183,skill_1:3117,skill_2:1467,skill_3:978,team_buff:0
+10209,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1524,force_strike:1542,skill_1:4080,s1_boost:0,skill_2:1919,skill_3:1279
+8348,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1250,force_strike:1264,skill_1:3333,s1_boost:0,skill_2:1568,skill_3:1045
 -,180,rd
-9100,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1119,force_strike:1245,skill_1:3775,skill_2:1776,skill_3:1184,team_buff:0
-7857,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:966,force_strike:1075,skill_1:3259,skill_2:1533,skill_3:1022,team_buff:0
+10274,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1260,force_strike:1402,skill_1:4265,s1_boost:0,skill_2:2007,skill_3:1338
+8400,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1033,force_strike:1149,skill_1:3484,s1_boost:0,skill_2:1639,skill_3:1093
 -,180,krd
-10010,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1231,force_strike:1370,skill_1:4152,skill_2:1953,skill_3:1302,team_buff:0
-8643,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1063,force_strike:1183,skill_1:3585,skill_2:1687,skill_3:1124,team_buff:0
+11301,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1524,force_strike:1542,skill_1:4692,s1_boost:0,skill_2:2207,skill_3:1471
+9240,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1250,force_strike:1264,skill_1:3833,s1_boost:0,skill_2:1803,skill_3:1202
 -,180,b
-7753,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1028,force_strike:1138,skill_1:3064,skill_2:1441,skill_3:1081,team_buff:0
-7099,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:966,force_strike:1075,skill_1:2834,skill_2:1333,skill_3:889,team_buff:0
+8753,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1157,force_strike:1281,skill_1:3462,s1_boost:0,skill_2:1629,skill_3:1221
+7157,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:949,force_strike:1050,skill_1:2828,s1_boost:0,skill_2:1330,skill_3:998
 -,180,kb
-8529,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1131,force_strike:1252,skill_1:3370,skill_2:1585,skill_3:1189,team_buff:0
-7809,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1063,force_strike:1183,skill_1:3117,skill_2:1467,skill_3:978,team_buff:0
+9628,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1400,force_strike:1409,skill_1:3808,s1_boost:0,skill_2:1792,skill_3:1344
+7873,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1148,force_strike:1155,skill_1:3111,s1_boost:0,skill_2:1463,skill_3:1097
 -,180,rb
-8591,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1028,force_strike:1138,skill_1:3523,skill_2:1657,skill_3:1243,team_buff:0
-7857,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:966,force_strike:1075,skill_1:3259,skill_2:1533,skill_3:1022,team_buff:0
+9700,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1157,force_strike:1281,skill_1:3981,s1_boost:0,skill_2:1873,skill_3:1405
+7931,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:949,force_strike:1050,skill_1:3252,s1_boost:0,skill_2:1530,skill_3:1147
 -,180,krb
-9451,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1131,force_strike:1252,skill_1:3876,skill_2:1823,skill_3:1367,team_buff:0
-8643,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1063,force_strike:1183,skill_1:3585,skill_2:1687,skill_3:1124,team_buff:0
+10670,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1400,force_strike:1409,skill_1:4379,s1_boost:0,skill_2:2060,skill_3:1545
+8724,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1148,force_strike:1155,skill_1:3577,s1_boost:0,skill_2:1683,skill_3:1262
 -,180,db
-8289,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1099,force_strike:1217,skill_1:3275,skill_2:1541,skill_3:1155,team_buff:0
-7099,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:966,force_strike:1075,skill_1:2834,skill_2:1333,skill_3:889,team_buff:0
+9357,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1237,force_strike:1370,skill_1:3701,s1_boost:0,skill_2:1741,skill_3:1306
+7651,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1014,force_strike:1123,skill_1:3023,s1_boost:0,skill_2:1422,skill_3:1067
 -,180,kdb
-9117,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1209,force_strike:1338,skill_1:3603,skill_2:1695,skill_3:1271,team_buff:0
-7809,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1063,force_strike:1183,skill_1:3117,skill_2:1467,skill_3:978,team_buff:0
+10293,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1497,force_strike:1507,skill_1:4071,s1_boost:0,skill_2:1915,skill_3:1436
+8417,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1227,force_strike:1235,skill_1:3326,s1_boost:0,skill_2:1564,skill_3:1173
 -,180,rdb
-9184,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1099,force_strike:1217,skill_1:3766,skill_2:1772,skill_3:1329,team_buff:0
-7857,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:966,force_strike:1075,skill_1:3259,skill_2:1533,skill_3:1022,team_buff:0
+10369,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1237,force_strike:1370,skill_1:4256,s1_boost:0,skill_2:2002,skill_3:1502
+8478,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1014,force_strike:1123,skill_1:3477,s1_boost:0,skill_2:1636,skill_3:1227
 -,180,krdb
-10103,Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hp70>,c2+fs,attack:1209,force_strike:1338,skill_1:4143,skill_2:1949,skill_3:1462,team_buff:0
-8643,_c_Xander,5*,water,sword,3843,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hp70>,c2+fs,attack:1063,force_strike:1183,skill_1:3585,skill_2:1687,skill_3:1124,team_buff:0
+11406,Xander,5*,water,sword,4995,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],<hit10 & hp70>,c2+fs,attack:1497,force_strike:1507,skill_1:4682,s1_boost:0,skill_2:2203,skill_3:1652
+9326,_c_Xander,5*,water,sword,4611,[The_Shining_Overlord+Jewels_of_the_Sun][Siren][HDT2],!<hit10 & hp70>,c2+fs,attack:1227,force_strike:1235,skill_1:3824,s1_boost:0,skill_2:1799,skill_3:1349

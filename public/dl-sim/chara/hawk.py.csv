@@ -1,144 +1,144 @@
 -,60,_
-5973,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1576,force_strike:894,skill_1:2513,skill_2:0,skill_3:908,team_buff:0,fs_boost:80
-4147,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1222,force_strike:690,skill_1:1502,skill_2:0,skill_3:671,team_buff:0,fs_boost:60
+19201,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:1993,force_strike:715,fs_poison:289,skill_1:14078,skill_2:2123
+5607,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1254,force_strike:376,fs_poison:0,skill_1:3180,skill_2:795
 -,60,k
-6570,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1734,force_strike:984,skill_1:2765,skill_2:0,skill_3:998,team_buff:0,fs_boost:88
-4562,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1344,force_strike:759,skill_1:1652,skill_2:0,skill_3:738,team_buff:0,fs_boost:66
+21121,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:2411,force_strike:786,fs_poison:318,skill_1:15486,skill_2:2336
+6168,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1518,force_strike:414,fs_poison:0,skill_1:3498,skill_2:874
 -,60,r
-6486,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1576,force_strike:894,skill_1:2890,skill_2:0,skill_3:1044,team_buff:0,fs_boost:80
-4473,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1222,force_strike:690,skill_1:1727,skill_2:0,skill_3:772,team_buff:0,fs_boost:60
+21631,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:1993,force_strike:715,fs_poison:289,skill_1:16190,skill_2:2442
+6203,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1254,force_strike:376,fs_poison:0,skill_1:3657,skill_2:914
 -,60,kr
-7135,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1734,force_strike:984,skill_1:3179,skill_2:0,skill_3:1148,team_buff:0,fs_boost:88
-4920,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1344,force_strike:759,skill_1:1900,skill_2:0,skill_3:849,team_buff:0,fs_boost:66
+23794,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:2411,force_strike:786,fs_poison:318,skill_1:17809,skill_2:2686
+6823,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1518,force_strike:414,fs_poison:0,skill_1:4023,skill_2:1005
 -,60,d
-6349,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1676,force_strike:951,skill_1:2671,skill_2:0,skill_3:965,team_buff:0,fs_boost:85
-4147,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1222,force_strike:690,skill_1:1502,skill_2:0,skill_3:671,team_buff:0,fs_boost:60
+20457,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:2123,force_strike:762,fs_poison:308,skill_1:15000,skill_2:2262
+5994,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1341,force_strike:402,fs_poison:0,skill_1:3399,skill_2:849
 -,60,kd
-6984,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1843,force_strike:1046,skill_1:2939,skill_2:0,skill_3:1061,team_buff:0,fs_boost:93
-4562,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1344,force_strike:759,skill_1:1652,skill_2:0,skill_3:738,team_buff:0,fs_boost:66
+22502,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:2569,force_strike:838,fs_poison:339,skill_1:16500,skill_2:2488
+6593,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1623,force_strike:442,fs_poison:0,skill_1:3739,skill_2:934
 -,60,rd
-6895,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1676,force_strike:951,skill_1:3072,skill_2:0,skill_3:1110,team_buff:0,fs_boost:85
-4473,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1222,force_strike:690,skill_1:1727,skill_2:0,skill_3:772,team_buff:0,fs_boost:60
+23046,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:2123,force_strike:762,fs_poison:308,skill_1:17250,skill_2:2602
+6631,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1341,force_strike:402,fs_poison:0,skill_1:3909,skill_2:977
 -,60,krd
-7584,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1843,force_strike:1046,skill_1:3379,skill_2:0,skill_3:1221,team_buff:0,fs_boost:93
-4920,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1344,force_strike:759,skill_1:1900,skill_2:0,skill_3:849,team_buff:0,fs_boost:66
+25351,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:2569,force_strike:838,fs_poison:339,skill_1:18975,skill_2:2862
+7295,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1623,force_strike:442,fs_poison:0,skill_1:4300,skill_2:1075
 -,60,b
-5973,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1576,force_strike:894,skill_1:2513,skill_2:0,skill_3:908,team_buff:0,fs_boost:80
-4147,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1222,force_strike:690,skill_1:1502,skill_2:0,skill_3:671,team_buff:0,fs_boost:60
+19201,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:1993,force_strike:715,fs_poison:289,skill_1:14078,skill_2:2123
+5607,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1254,force_strike:376,fs_poison:0,skill_1:3180,skill_2:795
 -,60,kb
-6570,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1734,force_strike:984,skill_1:2765,skill_2:0,skill_3:998,team_buff:0,fs_boost:88
-4562,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1344,force_strike:759,skill_1:1652,skill_2:0,skill_3:738,team_buff:0,fs_boost:66
+21121,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:2411,force_strike:786,fs_poison:318,skill_1:15486,skill_2:2336
+6168,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1518,force_strike:414,fs_poison:0,skill_1:3498,skill_2:874
 -,60,rb
-6486,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1576,force_strike:894,skill_1:2890,skill_2:0,skill_3:1044,team_buff:0,fs_boost:80
-4473,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1222,force_strike:690,skill_1:1727,skill_2:0,skill_3:772,team_buff:0,fs_boost:60
+21631,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:1993,force_strike:715,fs_poison:289,skill_1:16190,skill_2:2442
+6203,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1254,force_strike:376,fs_poison:0,skill_1:3657,skill_2:914
 -,60,krb
-7135,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1734,force_strike:984,skill_1:3179,skill_2:0,skill_3:1148,team_buff:0,fs_boost:88
-4920,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1344,force_strike:759,skill_1:1900,skill_2:0,skill_3:849,team_buff:0,fs_boost:66
+23794,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:2411,force_strike:786,fs_poison:318,skill_1:17809,skill_2:2686
+6823,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1518,force_strike:414,fs_poison:0,skill_1:4023,skill_2:1005
 -,60,db
-6349,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1676,force_strike:951,skill_1:2671,skill_2:0,skill_3:965,team_buff:0,fs_boost:85
-4147,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1222,force_strike:690,skill_1:1502,skill_2:0,skill_3:671,team_buff:0,fs_boost:60
+20457,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:2123,force_strike:762,fs_poison:308,skill_1:15000,skill_2:2262
+5994,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1341,force_strike:402,fs_poison:0,skill_1:3399,skill_2:849
 -,60,kdb
-6984,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1843,force_strike:1046,skill_1:2939,skill_2:0,skill_3:1061,team_buff:0,fs_boost:93
-4562,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1344,force_strike:759,skill_1:1652,skill_2:0,skill_3:738,team_buff:0,fs_boost:66
+22502,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:2569,force_strike:838,fs_poison:339,skill_1:16500,skill_2:2488
+6593,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1623,force_strike:442,fs_poison:0,skill_1:3739,skill_2:934
 -,60,rdb
-6895,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1676,force_strike:951,skill_1:3072,skill_2:0,skill_3:1110,team_buff:0,fs_boost:85
-4473,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1222,force_strike:690,skill_1:1727,skill_2:0,skill_3:772,team_buff:0,fs_boost:60
+23046,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:2123,force_strike:762,fs_poison:308,skill_1:17250,skill_2:2602
+6631,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1341,force_strike:402,fs_poison:0,skill_1:3909,skill_2:977
 -,60,krdb
-7584,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1843,force_strike:1046,skill_1:3379,skill_2:0,skill_3:1221,team_buff:0,fs_boost:93
-4920,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1344,force_strike:759,skill_1:1900,skill_2:0,skill_3:849,team_buff:0,fs_boost:66
+25351,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,72% poison uptime; 11% stun uptime,attack:2569,force_strike:838,fs_poison:339,skill_1:18975,skill_2:2862
+7295,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1623,force_strike:442,fs_poison:0,skill_1:4300,skill_2:1075
 -,120,_
-6029,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1599,force_strike:918,skill_1:2490,skill_2:0,skill_3:913,team_buff:0,fs_boost:106
-4278,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1197,force_strike:687,skill_1:1645,skill_2:0,skill_3:669,team_buff:0,fs_boost:78
+18814,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:1998,force_strike:702,fs_poison:366,skill_1:13594,skill_2:2151
+5801,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1190,force_strike:381,fs_poison:0,skill_1:3423,skill_2:805
 -,120,k
-6631,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1759,force_strike:1009,skill_1:2739,skill_2:0,skill_3:1005,team_buff:0,fs_boost:117
-4706,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1316,force_strike:756,skill_1:1810,skill_2:0,skill_3:735,team_buff:0,fs_boost:86
+20695,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:2417,force_strike:772,fs_poison:403,skill_1:14954,skill_2:2366
+6381,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1440,force_strike:419,fs_poison:0,skill_1:3765,skill_2:886
 -,120,r
-6539,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1599,force_strike:918,skill_1:2864,skill_2:0,skill_3:1050,team_buff:0,fs_boost:106
-4625,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1197,force_strike:687,skill_1:1892,skill_2:0,skill_3:769,team_buff:0,fs_boost:78
+21176,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:1998,force_strike:702,fs_poison:366,skill_1:15634,skill_2:2474
+6435,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1190,force_strike:381,fs_poison:0,skill_1:3936,skill_2:926
 -,120,kr
-7193,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1759,force_strike:1009,skill_1:3150,skill_2:0,skill_3:1156,team_buff:0,fs_boost:117
-5088,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1316,force_strike:756,skill_1:2081,skill_2:0,skill_3:846,team_buff:0,fs_boost:86
+23293,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:2417,force_strike:772,fs_poison:403,skill_1:17197,skill_2:2721
+7079,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1440,force_strike:419,fs_poison:0,skill_1:4330,skill_2:1018
 -,120,d
-6408,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1700,force_strike:975,skill_1:2647,skill_2:0,skill_3:971,team_buff:0,fs_boost:113
-4278,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1197,force_strike:687,skill_1:1645,skill_2:0,skill_3:669,team_buff:0,fs_boost:78
+20044,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:2129,force_strike:748,fs_poison:390,skill_1:14484,skill_2:2292
+6202,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1272,force_strike:407,fs_poison:0,skill_1:3659,skill_2:861
 -,120,kd
-7049,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1870,force_strike:1073,skill_1:2912,skill_2:0,skill_3:1068,team_buff:0,fs_boost:124
-4706,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1316,force_strike:756,skill_1:1810,skill_2:0,skill_3:735,team_buff:0,fs_boost:86
+22049,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:2576,force_strike:822,fs_poison:429,skill_1:15932,skill_2:2521
+6822,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1540,force_strike:448,fs_poison:0,skill_1:4025,skill_2:947
 -,120,rd
-6951,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1700,force_strike:975,skill_1:3044,skill_2:0,skill_3:1117,team_buff:0,fs_boost:113
-4625,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1197,force_strike:687,skill_1:1892,skill_2:0,skill_3:769,team_buff:0,fs_boost:78
+22561,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:2129,force_strike:748,fs_poison:390,skill_1:16656,skill_2:2636
+6880,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1272,force_strike:407,fs_poison:0,skill_1:4208,skill_2:990
 -,120,krd
-7646,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1870,force_strike:1073,skill_1:3349,skill_2:0,skill_3:1228,team_buff:0,fs_boost:124
-5088,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1316,force_strike:756,skill_1:2081,skill_2:0,skill_3:846,team_buff:0,fs_boost:86
+24817,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:2576,force_strike:822,fs_poison:429,skill_1:18322,skill_2:2899
+7568,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1540,force_strike:448,fs_poison:0,skill_1:4629,skill_2:1089
 -,120,b
-6029,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1599,force_strike:918,skill_1:2490,skill_2:0,skill_3:913,team_buff:0,fs_boost:106
-4278,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1197,force_strike:687,skill_1:1645,skill_2:0,skill_3:669,team_buff:0,fs_boost:78
+18814,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:1998,force_strike:702,fs_poison:366,skill_1:13594,skill_2:2151
+5801,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1190,force_strike:381,fs_poison:0,skill_1:3423,skill_2:805
 -,120,kb
-6631,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1759,force_strike:1009,skill_1:2739,skill_2:0,skill_3:1005,team_buff:0,fs_boost:117
-4706,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1316,force_strike:756,skill_1:1810,skill_2:0,skill_3:735,team_buff:0,fs_boost:86
+20695,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:2417,force_strike:772,fs_poison:403,skill_1:14954,skill_2:2366
+6381,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1440,force_strike:419,fs_poison:0,skill_1:3765,skill_2:886
 -,120,rb
-6539,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1599,force_strike:918,skill_1:2864,skill_2:0,skill_3:1050,team_buff:0,fs_boost:106
-4625,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1197,force_strike:687,skill_1:1892,skill_2:0,skill_3:769,team_buff:0,fs_boost:78
+21176,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:1998,force_strike:702,fs_poison:366,skill_1:15634,skill_2:2474
+6435,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1190,force_strike:381,fs_poison:0,skill_1:3936,skill_2:926
 -,120,krb
-7193,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1759,force_strike:1009,skill_1:3150,skill_2:0,skill_3:1156,team_buff:0,fs_boost:117
-5088,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1316,force_strike:756,skill_1:2081,skill_2:0,skill_3:846,team_buff:0,fs_boost:86
+23293,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:2417,force_strike:772,fs_poison:403,skill_1:17197,skill_2:2721
+7079,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1440,force_strike:419,fs_poison:0,skill_1:4330,skill_2:1018
 -,120,db
-6408,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1700,force_strike:975,skill_1:2647,skill_2:0,skill_3:971,team_buff:0,fs_boost:113
-4278,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1197,force_strike:687,skill_1:1645,skill_2:0,skill_3:669,team_buff:0,fs_boost:78
+20044,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:2129,force_strike:748,fs_poison:390,skill_1:14484,skill_2:2292
+6202,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1272,force_strike:407,fs_poison:0,skill_1:3659,skill_2:861
 -,120,kdb
-7049,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1870,force_strike:1073,skill_1:2912,skill_2:0,skill_3:1068,team_buff:0,fs_boost:124
-4706,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1316,force_strike:756,skill_1:1810,skill_2:0,skill_3:735,team_buff:0,fs_boost:86
+22049,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:2576,force_strike:822,fs_poison:429,skill_1:15932,skill_2:2521
+6822,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1540,force_strike:448,fs_poison:0,skill_1:4025,skill_2:947
 -,120,rdb
-6951,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1700,force_strike:975,skill_1:3044,skill_2:0,skill_3:1117,team_buff:0,fs_boost:113
-4625,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1197,force_strike:687,skill_1:1892,skill_2:0,skill_3:769,team_buff:0,fs_boost:78
+22561,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:2129,force_strike:748,fs_poison:390,skill_1:16656,skill_2:2636
+6880,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1272,force_strike:407,fs_poison:0,skill_1:4208,skill_2:990
 -,120,krdb
-7646,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1870,force_strike:1073,skill_1:3349,skill_2:0,skill_3:1228,team_buff:0,fs_boost:124
-5088,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1316,force_strike:756,skill_1:2081,skill_2:0,skill_3:846,team_buff:0,fs_boost:86
+24817,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,86% poison uptime,attack:2576,force_strike:822,fs_poison:429,skill_1:18322,skill_2:2899
+7568,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1540,force_strike:448,fs_poison:0,skill_1:4629,skill_2:1089
 -,180,_
-6167,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1610,force_strike:947,skill_1:2393,skill_2:0,skill_3:1097,team_buff:0,fs_boost:118
-4344,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1176,force_strike:691,skill_1:1605,skill_2:0,skill_3:785,team_buff:0,fs_boost:85
+18180,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2058,force_strike:694,fs_poison:384,skill_1:12890,skill_2:2151
+5746,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1201,force_strike:381,fs_poison:0,skill_1:3356,skill_2:805
 -,180,k
-6784,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1771,force_strike:1042,skill_1:2632,skill_2:0,skill_3:1207,team_buff:0,fs_boost:130
-4778,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1293,force_strike:760,skill_1:1766,skill_2:0,skill_3:863,team_buff:0,fs_boost:93
+19998,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2490,force_strike:764,fs_poison:423,skill_1:14179,skill_2:2366
+6320,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1453,force_strike:419,fs_poison:0,skill_1:3692,skill_2:886
 -,180,r
-6691,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1610,force_strike:947,skill_1:2752,skill_2:0,skill_3:1262,team_buff:0,fs_boost:118
-4702,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1176,force_strike:691,skill_1:1846,skill_2:0,skill_3:903,team_buff:0,fs_boost:85
+20436,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2058,force_strike:694,fs_poison:384,skill_1:14823,skill_2:2474
+6370,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1201,force_strike:381,fs_poison:0,skill_1:3860,skill_2:926
 -,180,kr
-7360,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1771,force_strike:1042,skill_1:3027,skill_2:0,skill_3:1388,team_buff:0,fs_boost:130
-5173,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1293,force_strike:760,skill_1:2031,skill_2:0,skill_3:993,team_buff:0,fs_boost:93
+22480,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2490,force_strike:764,fs_poison:423,skill_1:16305,skill_2:2722
+7007,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1453,force_strike:419,fs_poison:0,skill_1:4246,skill_2:1019
 -,180,d
-6555,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1711,force_strike:1007,skill_1:2543,skill_2:0,skill_3:1166,team_buff:0,fs_boost:125
-4344,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1176,force_strike:691,skill_1:1605,skill_2:0,skill_3:785,team_buff:0,fs_boost:85
+19369,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2193,force_strike:740,fs_poison:409,skill_1:13733,skill_2:2292
+6142,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1284,force_strike:407,fs_poison:0,skill_1:3588,skill_2:861
 -,180,kd
-7211,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1883,force_strike:1108,skill_1:2798,skill_2:0,skill_3:1283,team_buff:0,fs_boost:138
-4778,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1293,force_strike:760,skill_1:1766,skill_2:0,skill_3:863,team_buff:0,fs_boost:93
+21306,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2653,force_strike:814,fs_poison:450,skill_1:15106,skill_2:2521
+6756,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1554,force_strike:448,fs_poison:0,skill_1:3947,skill_2:947
 -,180,rd
-7112,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1711,force_strike:1007,skill_1:2925,skill_2:0,skill_3:1341,team_buff:0,fs_boost:125
-4702,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1176,force_strike:691,skill_1:1846,skill_2:0,skill_3:903,team_buff:0,fs_boost:85
+21773,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2193,force_strike:740,fs_poison:409,skill_1:15793,skill_2:2636
+6810,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1284,force_strike:407,fs_poison:0,skill_1:4126,skill_2:990
 -,180,krd
-7823,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1883,force_strike:1108,skill_1:3217,skill_2:0,skill_3:1475,team_buff:0,fs_boost:138
-5173,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1293,force_strike:760,skill_1:2031,skill_2:0,skill_3:993,team_buff:0,fs_boost:93
+23950,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2653,force_strike:814,fs_poison:450,skill_1:17372,skill_2:2900
+7491,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1554,force_strike:448,fs_poison:0,skill_1:4539,skill_2:1089
 -,180,b
-6167,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1610,force_strike:947,skill_1:2393,skill_2:0,skill_3:1097,team_buff:0,fs_boost:118
-4344,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1176,force_strike:691,skill_1:1605,skill_2:0,skill_3:785,team_buff:0,fs_boost:85
+18180,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2058,force_strike:694,fs_poison:384,skill_1:12890,skill_2:2151
+5746,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1201,force_strike:381,fs_poison:0,skill_1:3356,skill_2:805
 -,180,kb
-6784,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1771,force_strike:1042,skill_1:2632,skill_2:0,skill_3:1207,team_buff:0,fs_boost:130
-4778,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1293,force_strike:760,skill_1:1766,skill_2:0,skill_3:863,team_buff:0,fs_boost:93
+19998,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2490,force_strike:764,fs_poison:423,skill_1:14179,skill_2:2366
+6320,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1453,force_strike:419,fs_poison:0,skill_1:3692,skill_2:886
 -,180,rb
-6691,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1610,force_strike:947,skill_1:2752,skill_2:0,skill_3:1262,team_buff:0,fs_boost:118
-4702,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1176,force_strike:691,skill_1:1846,skill_2:0,skill_3:903,team_buff:0,fs_boost:85
+20436,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2058,force_strike:694,fs_poison:384,skill_1:14823,skill_2:2474
+6370,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1201,force_strike:381,fs_poison:0,skill_1:3860,skill_2:926
 -,180,krb
-7360,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1771,force_strike:1042,skill_1:3027,skill_2:0,skill_3:1388,team_buff:0,fs_boost:130
-5173,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1293,force_strike:760,skill_1:2031,skill_2:0,skill_3:993,team_buff:0,fs_boost:93
+22480,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2490,force_strike:764,fs_poison:423,skill_1:16305,skill_2:2722
+7007,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1453,force_strike:419,fs_poison:0,skill_1:4246,skill_2:1019
 -,180,db
-6555,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1711,force_strike:1007,skill_1:2543,skill_2:0,skill_3:1166,team_buff:0,fs_boost:125
-4344,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1176,force_strike:691,skill_1:1605,skill_2:0,skill_3:785,team_buff:0,fs_boost:85
+19369,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2193,force_strike:740,fs_poison:409,skill_1:13733,skill_2:2292
+6142,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1284,force_strike:407,fs_poison:0,skill_1:3588,skill_2:861
 -,180,kdb
-7211,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1883,force_strike:1108,skill_1:2798,skill_2:0,skill_3:1283,team_buff:0,fs_boost:138
-4778,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1293,force_strike:760,skill_1:1766,skill_2:0,skill_3:863,team_buff:0,fs_boost:93
+21306,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2653,force_strike:814,fs_poison:450,skill_1:15106,skill_2:2521
+6756,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1554,force_strike:448,fs_poison:0,skill_1:3947,skill_2:947
 -,180,rdb
-7112,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1711,force_strike:1007,skill_1:2925,skill_2:0,skill_3:1341,team_buff:0,fs_boost:125
-4702,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1176,force_strike:691,skill_1:1846,skill_2:0,skill_3:903,team_buff:0,fs_boost:85
+21773,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2193,force_strike:740,fs_poison:409,skill_1:15793,skill_2:2636
+6810,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1284,force_strike:407,fs_poison:0,skill_1:4126,skill_2:990
 -,180,krdb
-7823,Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1883,force_strike:1108,skill_1:3217,skill_2:0,skill_3:1475,team_buff:0,fs_boost:138
-5173,_c_Hawk,5*,wind,bow,3654,[Forest_Bonds+Dear_Diary][AC011_Garland][HDT2],!<hp100 & maintain shield & hp30 every 90s & 80 stun res>,,attack:1293,force_strike:760,skill_1:2031,skill_2:0,skill_3:993,team_buff:0,fs_boost:93
+23950,Hawk,5*,wind,bow,5150,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],<hp70 & hp100 & 0 poison res & 80 stun res>,91% poison uptime,attack:2653,force_strike:814,fs_poison:450,skill_1:17372,skill_2:2900
+7491,_c_Hawk,5*,wind,bow,4578,[Resounding_Rendition+The_Fires_of_Hate][Vayu][HDT2],!<hp70 & hp100 & 0 poison res & 80 stun res>,,attack:1554,force_strike:448,fs_poison:0,skill_1:4539,skill_2:1089

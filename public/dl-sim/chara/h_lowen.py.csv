@@ -1,32 +1,48 @@
 -,sp,_
-1451,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1436,force_strike:14,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1512,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1496,force_strike:15
+1451,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1436,force_strike:14
 -,sp,k
-1596,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1580,force_strike:16,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1663,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1810,force_strike:17
+1596,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1738,force_strike:16
 -,sp,r
-1451,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1436,force_strike:14,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1512,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1496,force_strike:15
+1451,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1436,force_strike:14
 -,sp,kr
-1596,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1580,force_strike:16,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1663,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1810,force_strike:17
+1596,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1738,force_strike:16
 -,sp,d
-1551,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1535,force_strike:15,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1616,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1599,force_strike:16
+1552,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1535,force_strike:15
 -,sp,kd
-1706,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1689,force_strike:17,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1778,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1935,force_strike:18
+1707,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1858,force_strike:17
 -,sp,rd
-1551,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1535,force_strike:15,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1616,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1599,force_strike:16
+1552,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1535,force_strike:15
 -,sp,krd
-1706,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1689,force_strike:17,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1778,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1935,force_strike:18
+1707,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1858,force_strike:17
 -,sp,b
-1451,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1436,force_strike:14,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1512,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1496,force_strike:15
+1451,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1436,force_strike:14
 -,sp,kb
-1596,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1580,force_strike:16,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1663,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1810,force_strike:17
+1596,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1738,force_strike:16
 -,sp,rb
-1451,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1436,force_strike:14,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1512,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1496,force_strike:15
+1451,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1436,force_strike:14
 -,sp,krb
-1596,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1580,force_strike:16,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1663,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1810,force_strike:17
+1596,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1738,force_strike:16
 -,sp,db
-1551,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1535,force_strike:15,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1616,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1599,force_strike:16
+1552,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1535,force_strike:15
 -,sp,kdb
-1706,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1689,force_strike:17,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1778,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1935,force_strike:18
+1707,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1858,force_strike:17
 -,sp,rdb
-1551,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1535,force_strike:15,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1616,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1599,force_strike:16
+1552,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1535,force_strike:15
 -,sp,krdb
-1706,Halloween_Lowen,4*,flame,staff,3630,[The_Bridal_Dragon+From_Whence_He_Comes][PopStar_Siren][Agito],<>,hlowen dps <= burn DoT,attack:1689,force_strike:17,skill_1:0,skill_2:0,skill_3:0,team_buff:0
+1778,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1935,force_strike:18
+1707,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1858,force_strike:17
