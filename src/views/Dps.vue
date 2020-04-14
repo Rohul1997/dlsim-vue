@@ -82,11 +82,11 @@
           <div class="dib dps">
             <div class="dfac h-40">DPS Distribution</div>
           </div>
-          <div class="dib comment fr">
-            <div class="dfac h-40">Description</div>
-          </div>
-          <div class="dib condition fr">
+          <div class="dib condition">
             <div class="dfac h-40">Condition</div>
+          </div>
+          <div class="dib comment">
+            <div class="dfac h-40">Description</div>
           </div>
         </li>
         <li v-for="(ad, idx) in filterd" :key="ad.name + idx">
@@ -177,6 +177,13 @@
             </div>
           </div>
           <div class="dib dps">
+            <a
+              class="custom-sim-link"
+              :href="'https://wildshinobu.pythonanywhere.com/ui/dl_simc.html?adv_name=' + ad.name"
+              target="blank"
+            >
+              <span>Customize</span>
+            </a>
             <div class="dps-holder">
               <div class="factors mb-6">
                 <popper trigger="hover" :options="{placement: 'top'}">
@@ -224,14 +231,14 @@
               </div>
             </div>
           </div>
-          <div class="dib comment fr">
-            <div class="dfac h-60">
-              <div>{{ad.comment}}</div>
-            </div>
-          </div>
           <div class="dib condition fr">
             <div class="dfac h-60">
               <div>{{ad.condition}}</div>
+            </div>
+          </div>
+          <div class="dib comment fr">
+            <div class="dfac h-60">
+              <div>{{ad.comment}}</div>
             </div>
           </div>
         </li>
@@ -808,6 +815,9 @@ export default class DpsComponent extends Vue {
 
 .holder li {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  width: 1032px;
 }
 
 .holder .title {
@@ -823,14 +833,16 @@ export default class DpsComponent extends Vue {
   font-weight: 500;
 }
 .title a,
-.avatar-box {
+.avatar-box,
+.custom-sim-link {
   text-decoration: none;
   color: rgba(64, 158, 255, 1);
   position: relative;
   font-weight: bold;
 }
 .title a:hover,
-.avatar-box:hover {
+.avatar-box:hover,
+.custom-sim-link:hover {
   text-decoration: underline;
 }
 /* .title a[target="blank"]:before {
@@ -865,9 +877,12 @@ export default class DpsComponent extends Vue {
   border-top: 3px solid white; */
 }
 
+.custom-sim-link {
+  font-size: 12px;
+}
+
 .holder .name {
   padding: 0px;
-  width: 210px;
 }
 
 .holder .name a {
@@ -895,26 +910,27 @@ export default class DpsComponent extends Vue {
 
 .holder .dps {
   padding: 0px 10px;
-  min-width: 400px;
-  width: calc(100% - 632px);
+  height: 60px;
+  position: relative;
 }
 
-.holder .dps .dps-holder {
-  padding: 15px 60px 15px 0px;
-}
-
-.holder .comment {
-  font-size: 12px;
+.holder .dps .avatar-box {
   color: #000;
-  width: 170px;
-  padding: 0px 30px 0px 10px;
+  font-size: 12px;
+  display: inline;
 }
 
+.holder .comment,
 .holder .condition {
-  color: #000;
   font-size: 12px;
-  width: 170px;
-  padding: 0px 10px;
+  color: #000;
+  overflow: hidden;
+}
+.holder .comment {
+  padding-left: 10px;
+}
+.holder .condition {
+  padding-left: 40px;
 }
 
 div.adt-body {
@@ -991,8 +1007,8 @@ div.comment {
 }
 
 div.full {
-  margin-right: -40px;
   float: right;
+  margin-right: -40px;
   height: 12px;
   font-size: 12px;
   line-height: 12px;
@@ -1314,7 +1330,7 @@ span.f-title {
     padding-left: 10px;
     padding-right: 1px;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
   }
 
   .mobile-holder .avatar-box span {
