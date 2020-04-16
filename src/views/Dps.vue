@@ -75,7 +75,7 @@
         </li>
       </ul>
       <ul class="holder" v-if="!mobileView">
-        <li class="title">
+        <li class="title h-40">
           <div class="dib name">
             <div class="dfac h-40" style="padding-left: 33px;">Adventurer</div>
           </div>
