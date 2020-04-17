@@ -335,26 +335,13 @@
             @change="changeTeamDPS()"
           ></el-input-number>
         </div>
-        <!-- <div class="title">
-          Co-abilities
-          <br />(Please use Custom Sim for Chain Co-Ab)
-        </div>
+        <div class="title">Affliction</div>
         <div class="filter">
-          <el-checkbox-group class="cb-filter" v-model="exs" size="small" @change="reload()">
-            <el-checkbox label="k">
-              <img class="icon-weapon" src="/dl-sim/pic/icons/blade.png" alt="K" />
-            </el-checkbox>
-            <el-checkbox label="r">
-              <img class="icon-weapon" src="/dl-sim/pic/icons/wand.png" alt="K" />
-            </el-checkbox>
-            <el-checkbox label="d">
-              <img class="icon-weapon" src="/dl-sim/pic/icons/dagger.png" alt="K" />
-            </el-checkbox>
-            <el-checkbox label="b">
-              <img class="icon-weapon" src="/dl-sim/pic/icons/bow.png" alt="K" />
-            </el-checkbox>
-          </el-checkbox-group>
-        </div>-->
+          <el-radio-group class="rg-filter" v-model="aff" size="mini" @change="reload()">
+            <el-radio-button label="_">None</el-radio-button>
+            <el-radio-button label="affliction">100%</el-radio-button>
+          </el-radio-group>
+        </div>
         <div class="splitter"></div>
         <div class="title">
           Rarity
@@ -489,10 +476,10 @@ export default class DpsComponent extends Vue {
   public lastCommits: GithubCommit[] = [];
 
   public get csvUrl(): string {
-    return `/dl-sim/${this.category.toLowerCase()}.csv`;
+    return `/dl-sim/page/${this.category}_${this.aff}.csv`;
   }
   public category: 'sp' | '60' | '120' | '180' = '180';
-  public exs: string[] = [];
+  public aff: string = '_';
   public simDefaultTeamDPS: number = 20000;
   public displayDefaultTeamDPS: number = 30000;
   public teamDPS: number = this.displayDefaultTeamDPS;
