@@ -21,8 +21,8 @@ const GenericCoabs: Record<string, Record<string, string>> = {
     Dagger: {
         flame: 'Ezelith',
         water: 'Dragonyule_Cleo',
-        wind: 'Noelle',
-        light: 'Xiao_Lei',
+        wind: 'Francesca',
+        light: 'Mitsuhide',
         shadow: 'Alex',
     },
     Bow: {
