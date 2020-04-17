@@ -1,6 +1,46 @@
 import { Dps } from './dps';
 import { DpsFactor } from './dps-factor';
 
+
+// Select icon first by unique but non-sim value, then by how much I like em
+const GenericCoabs: Record<string, Record<string, string>> = {
+    Blade: {
+        flame: 'Nobunaga',
+        water: 'Celliera',
+        wind: 'Melody',
+        light: 'Yachiyo',
+        shadow: 'Durant',
+    },
+    Wand: {
+        flame: 'Student_Maribelle',
+        water: 'Lily',
+        wind: 'Noelle',
+        light: 'Xiao_Lei',
+        shadow: 'Althemia',
+    },
+    Dagger: {
+        flame: 'Ezelith',
+        water: 'Dragonyule_Cleo',
+        wind: 'Noelle',
+        light: 'Xiao_Lei',
+        shadow: 'Alex',
+    },
+    Bow: {
+        flame: 'Chelsea',
+        water: 'Laranoa',
+        wind: 'Joachim',
+        light: 'Elias',
+        shadow: 'Nefaria',
+    },
+    Axe2: {
+        flame: 'Valentines_Melody',
+        water: 'Valentines_Melody',
+        wind: 'Valentines_Melody',
+        light: 'Valentines_Melody',
+        shadow: 'Valentines_Melody',
+    },
+};
+
 export class Adventurer {
 
     public static ParseCSVLine(line: string): Adventurer | undefined {
@@ -22,13 +62,24 @@ export class Adventurer {
             adt.element = n[3] || '';
             adt.weaponType = n[4] || '';
             adt.fifth = n[5];
-            const wym = n[6].split('][')[0].replace('[', '').split('+');
+            const slots = n[6].split('][');
+            const wym = slots[0].replace('[', '').split('+');
             adt.wyrmprint0 = wym[0] || '';
             adt.wyrmprint1 = wym[1] || '';
-            adt.dragon = n[6].split('][')[1].replace(']', '');
+            adt.dragon = slots[1].replace(']', '');
             adt.dragon = adt.dragon.replace(/;.*$/, '');
-            adt.weapon = n[6].split('][')[2].replace(']', '');
+            adt.weapon = slots[2].replace(']', '');
             adt.weapon = adt.weapon.replace(/;.*$/, '');
+            const coabs = slots[3].replace(']', '').split('|');
+            for (let i = 0; i < 3; i++) {
+                if (coabs[i]) {
+                    if (GenericCoabs[coabs[i]]) {
+                        adt.coabs.push({ icon: GenericCoabs[coabs[i]][adt.element], name: coabs[i] });
+                    } else {
+                        adt.coabs.push({ icon: coabs[i], name: coabs[i] });
+                    }
+                }
+            }
             adt.condition = n[7];
             adt.comment = n[8] || '';
             for (let i = 9; i < n.length; i++) {
@@ -74,6 +125,7 @@ export class Adventurer {
     public wyrmprint1: string = '';
     public dragon: string = '';
     public weapon: string = '';
+    public coabs: object[] = [];
     public condition: string = '';
     public comment: string = '';
     public dps1: Dps = new Dps();
@@ -81,7 +133,7 @@ export class Adventurer {
 
     public findDps2(rawAdventurers: Adventurer[], index: number) {
         if (index + 1 >= rawAdventurers.length || rawAdventurers[index + 1].name !== `_c_${this.name}`) {
-            return ;
+            return;
         }
         this.dps2.full = rawAdventurers[index + 1].dps1.full;
         this.dps2.factors = rawAdventurers[index + 1].dps1.factors;

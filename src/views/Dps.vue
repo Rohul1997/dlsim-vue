@@ -43,6 +43,11 @@
               <div class="dib drogon">
                 <img class="wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint1 + '.png'" />
               </div>
+              <div class="dib chains">
+                <div v-for="coab in ad.coabs" v-bind:key="coab.name" class="dib">
+                  <img class="wyrmprint" :src="`/dl-sim/pic/character/${coab.icon}.png`" />
+                </div>
+              </div>
             </div>
             <div class="dib dps ml-4">
               <div class="factors dps1 mb-1">
@@ -143,35 +148,40 @@
                   <img class="d-f wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint1 + '.png'" />
                 </a>
               </popper>
-              <!-- chain coab test -->
-              <!-- <popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.wyrmprint1.replace(/_/g, ' ')}}</div>
+              <!-- chain coabs -->
+              <popper
+                v-for="coab in ad.coabs"
+                v-bind:key="coab.name"
+                trigger="hover"
+                :options="{placement: 'top'}"
+              >
+                <div class="popper">{{coab.name.replace(/_/g, ' ')}}</div>
                 <a
                   slot="reference"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint1"
+                  :href="`https://dragalialost.gamepedia.com/${coab.icon}`"
                   target="blank"
                 >
-                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/character/Ieyasu.png'" />
+                  <img class="d-f wyrmprint" :src="`/dl-sim/pic/character/${coab.icon}.png`" />
+                </a>
+              </popper>
+              <!--<popper trigger="hover" :options="{placement: 'top'}">
+                <div class="popper">{{ad.coab1.replace(/_/g, ' ')}}</div>
+                <a
+                  slot="reference"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.coab1"
+                  target="blank"
+                >
+                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/character/' + ad.coab1 + '.png'" />
                 </a>
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.wyrmprint1.replace(/_/g, ' ')}}</div>
+                <div class="popper">{{ad.coab2.replace(/_/g, ' ')}}</div>
                 <a
                   slot="reference"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint1"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.coab2"
                   target="blank"
                 >
-                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/character/Nefaria.png'" />
-                </a>
-              </popper>
-              <popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.wyrmprint1.replace(/_/g, ' ')}}</div>
-                <a
-                  slot="reference"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint1"
-                  target="blank"
-                >
-                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/character/Delphi.png'" />
+                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/character/' + ad.coab2 + '.png'" />
                 </a>
               </popper>-->
             </div>
@@ -325,7 +335,7 @@
             @change="changeTeamDPS()"
           ></el-input-number>
         </div>
-        <div class="title">
+        <!-- <div class="title">
           Co-abilities
           <br />(Please use Custom Sim for Chain Co-Ab)
         </div>
@@ -344,7 +354,7 @@
               <img class="icon-weapon" src="/dl-sim/pic/icons/bow.png" alt="K" />
             </el-checkbox>
           </el-checkbox-group>
-        </div>
+        </div>-->
         <div class="splitter"></div>
         <div class="title">
           Rarity
@@ -479,18 +489,13 @@ export default class DpsComponent extends Vue {
   public lastCommits: GithubCommit[] = [];
 
   public get csvUrl(): string {
-    const condition = 'krdb'
-      .split('')
-      .filter((c) => this.exs.includes(c))
-      .join('');
-    return `/dl-sim/${this.category.toLowerCase()}/data_${
-      condition ? condition : '_'
-    }.csv`;
+    return `/dl-sim/${this.category.toLowerCase()}.csv`;
   }
   public category: 'sp' | '60' | '120' | '180' = '180';
   public exs: string[] = [];
-  public defaultTeamDPS: number = 20000;
-  public teamDPS: number = this.defaultTeamDPS;
+  public simDefaultTeamDPS: number = 20000;
+  public displayDefaultTeamDPS: number = 30000;
+  public teamDPS: number = this.displayDefaultTeamDPS;
   public rarities: string[] = []; // ['5', '4', '3'];
   public elements: string[] = []; // ['flame', 'water', 'wind', 'light', 'shadow'];
   public weapons: string[] = []; // ['sword', 'blade', 'dagger', 'axe', 'lance', 'bow', 'wand', 'staff'];
@@ -543,7 +548,7 @@ export default class DpsComponent extends Vue {
     }
 
     if (this.category !== 'sp') {
-      const scaledTeamDPSRatio: number = this.teamDPS / this.defaultTeamDPS;
+      const scaledTeamDPSRatio: number = this.teamDPS / this.simDefaultTeamDPS;
       this.adventurers.forEach((a) => {
         a.dps1.factors
           .filter((f) => f.category === NAME_MAP.team)
@@ -890,12 +895,12 @@ export default class DpsComponent extends Vue {
 }
 
 .holder .name .avatar img {
-  widows: 60px;
-  height: 60px;
-  /* width: 65px;
+  /* widows: 60px;
+  height: 60px; */
+  width: 65px;
   height: 65px;
   position: relative;
-  top: -2.5px; */
+  top: -2.5px;
 }
 
 .holder .name a.avatar {
@@ -943,20 +948,20 @@ div.comment {
 }
 
 .avatar-slot-grid {
-  /* display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr; */
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 30px 30px 30px 30px;
+  grid-template-rows: 30px 30px;
+  /* display: flex;
+  align-items: center; */
 }
 
-/* .avatar-slot-grid span {
+.avatar-slot-grid span {
   height: 30px;
 }
 
 .avatar-slot-grid span:first-child {
   grid-row: 1 / 3;
-} */
+}
 
 .dps-progress {
   height: 100%;
@@ -1303,7 +1308,16 @@ span.f-title {
     vertical-align: top;
   }
 
-  .mobile-holder .content .drogon {
+  .mobile-holder .content .drogon,
+  .mobile-holder .content .chains > div {
+    height: 30px;
+    width: 30px;
+  }
+
+  .mobile-holder .content .chains {
+    border-left: 1px solid #ccc;
+    padding-left: 4px;
+    margin-left: 4px;
     height: 30px;
   }
 
@@ -1344,6 +1358,9 @@ span.f-title {
   .mobile-holder img.wyrmprint {
     width: 30px;
     height: 30px;
+  }
+
+  .mobile-holder .drogon:first-child {
     padding-left: 2px;
   }
 
