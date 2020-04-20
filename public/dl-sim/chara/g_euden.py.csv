@@ -1,0 +1,18 @@
+-,60,_
+19654,Gala_Euden,5*,light,sword,6415,[The_Shining_Overlord+Primal_Crisis][Daikokuten][HDT2][Blade|Dagger|Cleo],<0 paralysis res & hit15 & s1 buff for 10s & draconic charge>,c2+fs,attack:707,force_strike:537,skill_1:491,skill_3:471,team_buff:2043,dx:13731,ds:1670
+8898,_c_Gala_Euden,5*,light,sword,6415,[The_Shining_Overlord+Primal_Crisis][Daikokuten][HDT2][Blade|Dagger|Cleo],!<0 paralysis res & hit15 & s1 buff for 10s & draconic charge>,c2+fs,attack:1111,force_strike:824,skill_1:691,skill_3:643,team_buff:664,dx:4478,ds:483
+-,60,affliction
+21527,Gala_Euden,5*,light,sword,7055,[The_Shining_Overlord+Spirit_of_the_Season][Daikokuten][HDT2][Blade|Dagger|Cleo],<0 paralysis res & hit15 & hp100 & s1 buff for 10s & draconic charge>,c2+fs,attack:828,force_strike:620,skill_1:541,skill_3:520,team_buff:2043,dx:15131,ds:1841
+10571,_c_Gala_Euden,5*,light,sword,6432,[The_Shining_Overlord+Spirit_of_the_Season][Daikokuten][HDT2][Blade|Dagger|Cleo],!<0 paralysis res & hit15 & hp100 & s1 buff for 10s & draconic charge>,c2+fs,attack:1337,force_strike:992,skill_1:831,skill_3:774,team_buff:664,dx:5388,ds:582
+-,120,_
+19869,Gala_Euden,5*,light,sword,6415,[The_Shining_Overlord+Primal_Crisis][Daikokuten][HDT2][Blade|Dagger|Cleo],<0 paralysis res & hit15 & s1 buff for 10s & draconic charge>,c2+fs; 11% paralysis uptime,attack:1402,force_strike:1040,skill_1:851,skill_2:771,s2_paralysis:119,skill_3:859,team_buff:2728,dx:10726,ds:1367
+9527,_c_Gala_Euden,5*,light,sword,6415,[The_Shining_Overlord+Primal_Crisis][Daikokuten][HDT2][Blade|Dagger|Cleo],!<0 paralysis res & hit15 & s1 buff for 10s & draconic charge>,c2+fs,attack:1137,force_strike:842,skill_1:703,skill_2:484,s2_paralysis:0,skill_3:645,team_buff:706,dx:4485,ds:522
+-,120,affliction
+21656,Gala_Euden,5*,light,sword,7055,[The_Shining_Overlord+Spirit_of_the_Season][Daikokuten][HDT2][Blade|Dagger|Cleo],<0 paralysis res & hit15 & hp100 & s1 buff for 10s & draconic charge>,c2+fs,attack:1570,force_strike:1161,skill_1:938,skill_2:850,s2_paralysis:131,skill_3:947,team_buff:2728,dx:11820,ds:1507
+11320,_c_Gala_Euden,5*,light,sword,6432,[The_Shining_Overlord+Spirit_of_the_Season][Daikokuten][HDT2][Blade|Dagger|Cleo],!<0 paralysis res & hit15 & hp100 & s1 buff for 10s & draconic charge>,c2+fs,attack:1368,force_strike:1013,skill_1:846,skill_2:582,s2_paralysis:0,skill_3:776,team_buff:706,dx:5397,ds:628
+-,180,_
+18692,Gala_Euden,5*,light,sword,6415,[The_Shining_Overlord+Primal_Crisis][Daikokuten][HDT2][Blade|Dagger|Cleo],<0 paralysis res & hit15 & s1 buff for 10s & draconic charge>,c2+fs; 14% paralysis uptime,attack:1935,force_strike:1432,skill_1:1089,skill_2:1115,s2_paralysis:170,skill_3:1171,team_buff:3182,dx:7681,ds:912
+8883,_c_Gala_Euden,5*,light,sword,6415,[The_Shining_Overlord+Primal_Crisis][Daikokuten][HDT2][Blade|Dagger|Cleo],!<0 paralysis res & hit15 & s1 buff for 10s & draconic charge>,c2+fs,attack:1322,force_strike:980,skill_1:779,skill_2:605,s2_paralysis:0,skill_3:906,team_buff:719,dx:3221,ds:348
+-,180,affliction
+20299,Gala_Euden,5*,light,sword,7055,[The_Shining_Overlord+Spirit_of_the_Season][Daikokuten][HDT2][Blade|Dagger|Cleo],<0 paralysis res & hit15 & hp100 & s1 buff for 10s & draconic charge>,c2+fs,attack:2149,force_strike:1588,skill_1:1200,skill_2:1229,s2_paralysis:188,skill_3:1291,team_buff:3182,dx:8464,ds:1005
+10542,_c_Gala_Euden,5*,light,sword,6432,[The_Shining_Overlord+Spirit_of_the_Season][Daikokuten][HDT2][Blade|Dagger|Cleo],!<0 paralysis res & hit15 & hp100 & s1 buff for 10s & draconic charge>,c2+fs,attack:1591,force_strike:1179,skill_1:937,skill_2:728,s2_paralysis:0,skill_3:1090,team_buff:719,dx:3875,ds:418

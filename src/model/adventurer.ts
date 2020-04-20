@@ -9,7 +9,7 @@ const GenericCoabs: Record<string, Record<string, string>> = {
         water: 'Celliera',
         wind: 'Melody',
         light: 'Yachiyo',
-        shadow: 'Durant',
+        shadow: 'Natalie',
     },
     Wand: {
         flame: 'Student_Maribelle',
@@ -41,6 +41,14 @@ const GenericCoabs: Record<string, Record<string, string>> = {
     },
 };
 
+const AfflctionTypes: Record<string, string> = {
+    flame: 'burn',
+    water: 'frostbite',
+    wind: 'poison',
+    light: 'paralysis',
+    shadow: 'poison',
+};
+
 export class Adventurer {
 
     public static ParseCSVLine(line: string): Adventurer | undefined {
@@ -60,6 +68,7 @@ export class Adventurer {
             adt.name = n[1] || '';
             adt.rarity = n[2].replace('*', '');
             adt.element = n[3] || '';
+            adt.affliction = AfflctionTypes[adt.element] || '';
             adt.weaponType = n[4] || '';
             adt.fifth = n[5];
             const slots = n[6].split('][');
@@ -119,6 +128,7 @@ export class Adventurer {
     public name: string = '';
     public rarity: string = '';
     public element: string = '';
+    public affliction: string = '';
     public weaponType: string = '';
     public fifth: string = '';
     public wyrmprint0: string = '';

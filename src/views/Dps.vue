@@ -45,8 +45,15 @@
               </div>
               <div class="dib chains">
                 <div v-for="coab in ad.coabs" v-bind:key="coab.name" class="dib">
-                  <img class="wyrmprint" :src="`/dl-sim/pic/character/${coab.icon}.png`" />
+                  <img
+                    class="wyrmprint"
+                    v-bind:class="{ generic: coab.name !== coab.icon }"
+                    :src="`/dl-sim/pic/character/${coab.icon}.png`"
+                  />
                 </div>
+              </div>
+              <div class="dib drogon">
+                <img class="affliction" :src="`/dl-sim/pic/icons/${ad.affliction}.png`" />
               </div>
             </div>
             <div class="dib dps ml-4">
@@ -95,7 +102,7 @@
           </div>
         </li>
         <li v-for="(ad, idx) in filterd" :key="ad.name + idx">
-          <div class="dib name h-60">
+          <div class="dib name h-60 mb-5">
             <div class="avatar-slot-grid">
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.name.replace(/_/g, ' ')}}</div>
@@ -161,29 +168,23 @@
                   :href="`https://dragalialost.gamepedia.com/${coab.icon}`"
                   target="blank"
                 >
-                  <img class="d-f wyrmprint" :src="`/dl-sim/pic/character/${coab.icon}.png`" />
+                  <img
+                    class="d-f wyrmprint"
+                    v-bind:class="{ generic: coab.name !== coab.icon }"
+                    :src="`/dl-sim/pic/character/${coab.icon}.png`"
+                  />
                 </a>
               </popper>
-              <!--<popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.coab1.replace(/_/g, ' ')}}</div>
+              <popper v-if="aff == 'affliction'" trigger="hover" :options="{placement: 'top'}">
+                <div class="popper">100% {{ad.affliction}} uptime</div>
                 <a
                   slot="reference"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.coab1"
+                  :href="`https://dragalialost.gamepedia.com/${ad.affliction}`"
                   target="blank"
                 >
-                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/character/' + ad.coab1 + '.png'" />
+                  <img class="d-f affliction" :src="`/dl-sim/pic/icons/${ad.affliction}.png`" />
                 </a>
               </popper>
-              <popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.coab2.replace(/_/g, ' ')}}</div>
-                <a
-                  slot="reference"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.coab2"
-                  target="blank"
-                >
-                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/character/' + ad.coab2 + '.png'" />
-                </a>
-              </popper>-->
             </div>
           </div>
           <div class="dib dps">
@@ -242,12 +243,12 @@
             </div>
           </div>
           <div class="dib condition fr">
-            <div class="dfac h-60">
+            <div class="dfac h-60 mb-5">
               <div>{{ad.condition}}</div>
             </div>
           </div>
           <div class="dib comment fr">
-            <div class="dfac h-60">
+            <div class="dfac h-60 mb-5">
               <div>{{ad.comment}}</div>
             </div>
           </div>
@@ -898,6 +899,19 @@ export default class DpsComponent extends Vue {
 .holder .name img.wyrmprint {
   width: 30px;
   height: 30px;
+}
+
+.holder .name img.affliction,
+.mobile-holder img.affliction {
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+}
+
+.holder .name img.generic,
+.mobile-holder img.generic {
+  filter: grayscale(100%);
+  /* opacity: 0.5; */
 }
 
 .holder .dps {
