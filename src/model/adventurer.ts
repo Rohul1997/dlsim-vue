@@ -41,13 +41,20 @@ const GenericCoabs: Record<string, Record<string, string>> = {
     },
 };
 
-const AfflctionTypes: Record<string, string> = {
+const AfflictionTypes: Record<string, string> = {
     flame: 'burn',
     water: 'frostbite',
     wind: 'poison',
     light: 'paralysis',
     shadow: 'poison',
 };
+
+interface CoabObject {
+    icon: string;
+    name: string;
+}
+
+const uptimePattern = /;? ?(\d+)\% [a-z]+ uptime/;
 
 export class Adventurer {
 
@@ -68,7 +75,7 @@ export class Adventurer {
             adt.name = n[1] || '';
             adt.rarity = n[2].replace('*', '');
             adt.element = n[3] || '';
-            adt.affliction = AfflctionTypes[adt.element] || '';
+            adt.affliction = AfflictionTypes[adt.element] || '';
             adt.weaponType = n[4] || '';
             adt.fifth = n[5];
             const slots = n[6].split('][');
@@ -89,8 +96,13 @@ export class Adventurer {
                     }
                 }
             }
+            adt.coabs.sort((a, b) => a.icon === a.name ? -1 : 0);
             adt.condition = n[7];
             adt.comment = n[8] || '';
+            const uptime = adt.comment.match(uptimePattern);
+            if (uptime) {
+                adt.uptime = parseInt(uptime[1], 10);
+            }
             for (let i = 9; i < n.length; i++) {
                 const df = n[i].split(':');
                 adt.dps1.factors.push(new DpsFactor(df[0], parseInt(df[1], 10) || 0));
@@ -129,13 +141,14 @@ export class Adventurer {
     public rarity: string = '';
     public element: string = '';
     public affliction: string = '';
+    public uptime: number = 0;
     public weaponType: string = '';
     public fifth: string = '';
     public wyrmprint0: string = '';
     public wyrmprint1: string = '';
     public dragon: string = '';
     public weapon: string = '';
-    public coabs: object[] = [];
+    public coabs: CoabObject[] = [];
     public condition: string = '';
     public comment: string = '';
     public dps1: Dps = new Dps();

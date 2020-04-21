@@ -52,7 +52,7 @@
                   />
                 </div>
               </div>
-              <div class="dib drogon">
+              <div class="dib drogon" v-if="aff == 'affliction' || ad.uptime > 30">
                 <img class="affliction" :src="`/dl-sim/pic/icons/${ad.affliction}.png`" />
               </div>
             </div>
@@ -175,8 +175,14 @@
                   />
                 </a>
               </popper>
-              <popper v-if="aff == 'affliction'" trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">100% {{ad.affliction}} uptime</div>
+              <popper
+                v-if="aff == 'affliction' || ad.uptime > 30"
+                trigger="hover"
+                :options="{placement: 'top'}"
+              >
+                <div
+                  class="popper"
+                >{{ad.uptime > 0 && aff != 'affliction' ? ad.uptime : 100}}% {{ad.affliction}} uptime</div>
                 <a
                   slot="reference"
                   :href="`https://dragalialost.gamepedia.com/${ad.affliction}`"
@@ -1317,8 +1323,8 @@ span.f-title {
 
   .mobile-holder .content .chains {
     border-left: 1px solid #ccc;
-    padding-left: 4px;
-    margin-left: 4px;
+    padding-left: 3px;
+    margin-left: 3px;
     height: 30px;
   }
 
