@@ -1,18 +1,18 @@
 -,60,_
-10109,Berserker,4*,shadow,sword,9588,[The_Shining_Overlord+Dear_Diary][Fatalis][Agito][Ieyasu|Wand|Dagger],<last offense & hp30 every 180s>,,attack:3620,force_strike:1549,skill_1:4939
-8720,_c_Berserker,4*,shadow,sword,7375,[The_Shining_Overlord+Dear_Diary][Fatalis][Agito][Ieyasu|Wand|Dagger],!<last offense & hp30 every 180s>,,attack:3089,force_strike:1335,skill_1:4295
+12053,Berserker,4*,shadow,sword,6900,[The_Shining_Overlord+Beautiful_Nothingness][Shinobi][Agito][Ieyasu|Wand|Dagger],<last offense & hp70>,,attack:1558,force_strike:636,skill_1:3469,team_energy:829,dx:3779,ds:1779
+10741,_c_Berserker,4*,shadow,sword,4899,[The_Shining_Overlord+Beautiful_Nothingness][Shinobi][Agito][Ieyasu|Wand|Dagger],!<last offense & hp70>,,attack:1286,force_strike:532,skill_1:2961,team_energy:829,dx:3488,ds:1642
 -,60,affliction
-11499,Berserker,4*,shadow,sword,9549,[The_Shining_Overlord+The_Plaguebringer][Fatalis][Agito][Ieyasu|Wand|Dagger],<last offense>,,attack:4122,force_strike:1762,skill_1:5614
-10856,_c_Berserker,4*,shadow,sword,7345,[The_Shining_Overlord+The_Plaguebringer][Fatalis][Agito][Ieyasu|Wand|Dagger],!<last offense>,,attack:3845,force_strike:1662,skill_1:5347
+14425,Berserker,4*,shadow,sword,7191,[The_Shining_Overlord+The_Fires_of_Hate][Shinobi][Agito][Ieyasu|Wand|Dagger],<last offense & hp100>,,attack:1887,force_strike:770,skill_1:4203,team_energy:829,dx:4578,ds:2155
+12391,_c_Berserker,4*,shadow,sword,4917,[The_Shining_Overlord+The_Fires_of_Hate][Shinobi][Agito][Ieyasu|Wand|Dagger],!<last offense & hp100>,,attack:1500,force_strike:620,skill_1:3454,team_energy:829,dx:4069,ds:1916
 -,120,_
-10158,Berserker,4*,shadow,sword,9588,[The_Shining_Overlord+Dear_Diary][Fatalis][Agito][Ieyasu|Wand|Dagger],<last offense & hp30 every 180s>,,attack:3552,force_strike:1589,skill_1:5016
-9001,_c_Berserker,4*,shadow,sword,7375,[The_Shining_Overlord+Dear_Diary][Fatalis][Agito][Ieyasu|Wand|Dagger],!<last offense & hp30 every 180s>,,attack:3128,force_strike:1408,skill_1:4463
+10907,Berserker,4*,shadow,sword,6900,[The_Shining_Overlord+Beautiful_Nothingness][Shinobi][Agito][Ieyasu|Wand|Dagger],<last offense & hp70>,,attack:1982,force_strike:876,skill_1:4572,team_energy:415,dx:2167,ds:892
+9875,_c_Berserker,4*,shadow,sword,4899,[The_Shining_Overlord+Beautiful_Nothingness][Shinobi][Agito][Ieyasu|Wand|Dagger],!<last offense & hp70>,,attack:1754,force_strike:781,skill_1:4099,team_energy:415,dx:2000,ds:823
 -,120,affliction
-11526,Berserker,4*,shadow,sword,9549,[The_Shining_Overlord+The_Plaguebringer][Fatalis][Agito][Ieyasu|Wand|Dagger],<last offense>,,attack:4033,force_strike:1803,skill_1:5689
-11205,_c_Berserker,4*,shadow,sword,7345,[The_Shining_Overlord+The_Plaguebringer][Fatalis][Agito][Ieyasu|Wand|Dagger],!<last offense>,,attack:3895,force_strike:1753,skill_1:5556
+13125,Berserker,4*,shadow,sword,7191,[The_Shining_Overlord+The_Fires_of_Hate][Shinobi][Agito][Ieyasu|Wand|Dagger],<last offense & hp100>,,attack:2402,force_strike:1061,skill_1:5538,team_energy:415,dx:2625,ds:1081
+11450,_c_Berserker,4*,shadow,sword,4917,[The_Shining_Overlord+The_Fires_of_Hate][Shinobi][Agito][Ieyasu|Wand|Dagger],!<last offense & hp100>,,attack:2046,force_strike:911,skill_1:4782,team_energy:415,dx:2333,ds:961
 -,180,_
-10093,Berserker,4*,shadow,sword,9588,[The_Shining_Overlord+Dear_Diary][Fatalis][Agito][Ieyasu|Wand|Dagger],<last offense & hp30 every 180s>,,attack:3550,force_strike:1598,skill_1:4943
-9018,_c_Berserker,4*,shadow,sword,7375,[The_Shining_Overlord+Dear_Diary][Fatalis][Agito][Ieyasu|Wand|Dagger],!<last offense & hp30 every 180s>,,attack:3160,force_strike:1429,skill_1:4428
+10466,Berserker,4*,shadow,sword,6900,[The_Shining_Overlord+Beautiful_Nothingness][Shinobi][Agito][Ieyasu|Wand|Dagger],<last offense & hp70>,,attack:2156,force_strike:951,skill_1:5049,team_energy:276,dx:1439,ds:592
+9533,_c_Berserker,4*,shadow,sword,4899,[The_Shining_Overlord+Beautiful_Nothingness][Shinobi][Agito][Ieyasu|Wand|Dagger],!<last offense & hp70>,,attack:1939,force_strike:859,skill_1:4580,team_energy:276,dx:1328,ds:547
 -,180,affliction
-11443,Berserker,4*,shadow,sword,9549,[The_Shining_Overlord+The_Plaguebringer][Fatalis][Agito][Ieyasu|Wand|Dagger],<last offense>,,attack:4026,force_strike:1812,skill_1:5603
-11228,_c_Berserker,4*,shadow,sword,7345,[The_Shining_Overlord+The_Plaguebringer][Fatalis][Agito][Ieyasu|Wand|Dagger],!<last offense>,,attack:3934,force_strike:1779,skill_1:5513
+12620,Berserker,4*,shadow,sword,7191,[The_Shining_Overlord+The_Fires_of_Hate][Shinobi][Agito][Ieyasu|Wand|Dagger],<last offense & hp100>,,attack:2612,force_strike:1152,skill_1:6116,team_energy:276,dx:1744,ds:718
+11074,_c_Berserker,4*,shadow,sword,4917,[The_Shining_Overlord+The_Fires_of_Hate][Shinobi][Agito][Ieyasu|Wand|Dagger],!<last offense & hp100>,,attack:2263,force_strike:1003,skill_1:5343,team_energy:276,dx:1550,ds:638

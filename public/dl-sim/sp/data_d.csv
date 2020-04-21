@@ -1,0 +1,39 @@
+15908,Xander,5*,water,sword,7359,[Wily_Warriors_Metal_and_Quick+Resounding_Rendition][Siren][HDT2],<hit10 & hp70>,10 stacks striker's strength,attack:2022,force_strike:2000,skill_1:5215,s1_boost:2607,skill_2:2351,skill_3:1710
+13478,_c_Xander,5*,water,sword,7359,[Wily_Warriors_Metal_and_Quick+Resounding_Rendition][Siren][HDT2],!<hit10 & hp70>,10 stacks striker's strength,attack:1716,force_strike:1697,skill_1:4416,s1_boost:2208,skill_2:1991,skill_3:1448
+17340,Veronica,5*,shadow,wand,15905,[Candy_Couriers+Primal_Crisis][Shinobi][Agito],<hit15 & hp=1>,,attack:2832,force_strike:374,skill_1:13880,team_buff:252
+7852,_c_Veronica,5*,shadow,wand,15905,[Candy_Couriers+Primal_Crisis][Shinobi][Agito],!<hit15 & hp=1>,,attack:2290,force_strike:301,skill_1:5007,team_buff:252
+23595,Valentines_Addis,5*,shadow,bow,5206,[The_Plaguebringer+Primal_Crisis][Shinobi][Agito],<hit15 & 0 poison res & hp=1>,no s2; 83% poison uptime,attack:4284,skill_1:16121,s1_poison:3188
+6408,_c_Valentines_Addis,5*,shadow,bow,5206,[The_Plaguebringer+Primal_Crisis][Shinobi][Agito],!<hit15 & 0 poison res & hp=1>,no s2,attack:2438,skill_1:3969,s1_poison:0
+13871,Gala_Sarisse,5*,flame,bow,5930,[Forest_Bonds+Dear_Diary][Dreadking_Rathalos][Agito],<hp30 every 180s & always connect hits>,roll fs,attack:0,force_strike:4919,skill_1:4740,s1_missile*6:91,s1_missile*7:3252,team_buff:865
+8700,_c_Gala_Sarisse,5*,flame,bow,5930,[Forest_Bonds+Dear_Diary][Dreadking_Rathalos][Agito],!<hp30 every 180s & always connect hits>,roll fs,attack:0,force_strike:4060,skill_1:3308,s1_missile*0:0,s1_missile*1:170,s1_missile*2:294,team_buff:865
+15462,Chelsea,5*,flame,bow,6183,[The_Lurker_in_the_Woods+Dear_Diary][Dreadking_Rathalos][Agito],<>,roll fs; only use s1 3 times to proc RO at 51s 63s 81s,attack:0,force_strike:14686,skill_1:774
+24299,Ieyasu,5*,shadow,blade,6159,[Heralds_of_Hinomoto+The_Fires_of_Hate][Shinobi][Agito],<hp70 & hp100>,100% poison uptime,attack:3882,skill_1:10390,s1_bleed:10025,simulated_poison:0
+19488,_c_Ieyasu,5*,shadow,blade,5475,[Heralds_of_Hinomoto+The_Fires_of_Hate][Shinobi][Agito],!<hp70 & hp100>,100% poison uptime,attack:3114,skill_1:8343,s1_bleed:8030,simulated_poison:0
+17524,Kirsty,5*,wind,lance,6240,[Resounding_Rendition+The_Fires_of_Hate][AC011_Garland][HDT2],<maintain shield & hp60 & hp70 & hp100 & maintain Dauntless Strength>,100% poison uptime,attack:6446,skill_1:7057,skill_3:2020,simulated_poison:0,team_buff:1999
+9488,_c_Kirsty,5*,wind,lance,5673,[Resounding_Rendition+The_Fires_of_Hate][AC011_Garland][HDT2],!<maintain shield & hp60 & hp70 & hp100 & maintain Dauntless Strength>,100% poison uptime,attack:3135,skill_1:3434,skill_3:918,simulated_poison:0,team_buff:1999
+25502,Curran,5*,shadow,axe,8903,[Kung_Fu_Masters+The_Fires_of_Hate][Shinobi][Agito],<last offense & hp100>,100% poison uptime,attack:4994,skill_1:12976,skill_2:6406,simulated_poison:0,team_buff:1124
+22274,_c_Curran,5*,shadow,axe,4946,[Kung_Fu_Masters+The_Fires_of_Hate][Shinobi][Agito],!<last offense & hp100>,100% poison uptime,attack:4240,skill_1:11214,skill_2:5694,simulated_poison:0,team_buff:1124
+22116,Erik,3*,shadow,axe,5935,[Kung_Fu_Masters+The_Fires_of_Hate][Shinobi][Agito],<hp100>,100% poison uptime,attack:4082,force_strike:605,skill_1:11512,skill_2:5916,simulated_poison:0
+19659,_c_Erik,3*,shadow,axe,5276,[Kung_Fu_Masters+The_Fires_of_Hate][Shinobi][Agito],!<hp100>,100% poison uptime,attack:3628,force_strike:538,skill_1:10233,skill_2:5258,simulated_poison:0
+23905,Lathna,5*,shadow,lance,5452,[Resounding_Rendition+The_Fires_of_Hate][Shinobi][Agito],<hp70 & hp100>,100% poison uptime,attack:2389,skill_1:10209,skill_2:5310,simulated_poison:0,dx:4180,ds_poison:518,ds:1296
+20205,_c_Lathna,5*,shadow,lance,4846,[Resounding_Rendition+The_Fires_of_Hate][Shinobi][Agito],!<hp70 & hp100>,100% poison uptime,attack:2020,skill_1:8628,skill_2:4488,simulated_poison:0,dx:3533,ds_poison:438,ds:1096
+12571,Audric,4*,shadow,sword,4901,[The_Shining_Overlord+Beautiful_Nothingness][Shinobi][Agito],<hp70>,,attack:1598,force_strike:709,skill_1:3352,skill_2:1678,team_energy:553,dx:3445,ds:1233
+11647,_c_Audric,4*,shadow,sword,4524,[The_Shining_Overlord+Beautiful_Nothingness][Shinobi][Agito],!<hp70>,,attack:1475,force_strike:654,skill_1:3094,skill_2:1548,team_energy:553,dx:3180,ds:1138
+12875,Gala_Mym,5*,flame,lance,4764,[Resounding_Rendition+An_Ancient_Oath][Konohana_Sakuya][Agito],<hp70>,,attack:1966,force_strike:297,skill_1:4125,skill_2:1800,s2_boost:739,dx:2478,ds:1467
+12243,_c_Gala_Mym,5*,flame,lance,4764,[Resounding_Rendition+An_Ancient_Oath][Konohana_Sakuya][Agito],!<hp70>,,attack:1869,force_strike:283,skill_1:3922,skill_2:1712,s2_boost:702,dx:2356,ds:1395
+14806,Xainfried,5*,water,lance,4803,[Resounding_Rendition+His_Clever_Brother][Siren][HDT2],<hp70 & 0 frostbite res>,90% frostbite uptime,attack:2112,force_strike:305,skill_1:6535,s1_frostbite:1339,skill_2:921,team_buff:2218,dx:682,ds:691
+10146,_c_Xainfried,5*,water,lance,4803,[Resounding_Rendition+His_Clever_Brother][Siren][HDT2],!<hp70 & 0 frostbite res>,,attack:1712,force_strike:248,skill_1:4123,s1_frostbite:0,skill_2:738,team_buff:2218,dx:548,ds:555
+17014,Euden,4*,flame,sword,6057,[The_Shining_Overlord+Elegant_Escort][Apollo][Agito],<0 burn res>,DKR > Apollo if more than 1 burn user; 82% burn uptime,attack:3181,force_strike:1192,skill_1:3941,s1_burn:827,skill_2:1632,team_buff:656,dx:4286,ds_burn:218,ds:1076
+11661,_c_Euden,4*,flame,sword,6057,[The_Shining_Overlord+Elegant_Escort][Apollo][Agito],!<0 burn res>,DKR > Apollo if more than 1 burn user,attack:2269,force_strike:854,skill_1:2872,s1_burn:0,skill_2:1125,team_buff:656,dx:3123,ds:758
+16747,Euden,4*,flame,sword,6258,[The_Shining_Overlord+Elegant_Escort][Dreadking_Rathalos][Agito],<0 burn res>,c3fs c2fs c2fs s1; DKR > Apollo if more than 1 burn user; 74% burn uptime,attack:2310,force_strike:1891,skill_1:3889,s1_burn:757,skill_2:1620,team_buff:469,dx:4752,ds_burn:278,ds:776
+13214,_c_Euden,4*,flame,sword,6258,[The_Shining_Overlord+Elegant_Escort][Dreadking_Rathalos][Agito],!<0 burn res>,c3fs c2fs c2fs s1; DKR > Apollo if more than 1 burn user,attack:1918,force_strike:1581,skill_1:3358,s1_burn:0,skill_2:1308,team_buff:469,dx:3950,ds:627
+36895,Gala_Cleo,5*,shadow,wand,5211,[Candy_Couriers+Jewels_of_the_Sun][Shinobi][Agito],<hp70 & always in a1>,4 GCleo,attack:7739,force_strike:0,skill_1:25881,skill_2:3274
+17330,_c_Gala_Cleo,5*,shadow,wand,4810,[Candy_Couriers+Jewels_of_the_Sun][Shinobi][Agito],!<hp70 & always in a1>,4 GCleo,attack:3660,force_strike:0,skill_1:12114,skill_2:1555
+14861,Gala_Luca,5*,light,blade,6484,[The_Wyrmclan_Duo+Primal_Crisis][Daikokuten][HDT2],<hit15 & hp70>,7 buff icons from team (buff value not considered); use VC/FitF if HP<70,attack:5106,skill_1:7658,skill_3:2096
+10022,_c_Gala_Luca,5*,light,blade,6484,[The_Wyrmclan_Duo+Primal_Crisis][Daikokuten][HDT2],!<hit15 & hp70>,7 buff icons from team (buff value not considered); use VC/FitF if HP<70,attack:3204,skill_1:5541,skill_3:1276
+1616,Halloween_Lowen,4*,flame,staff,3811,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],<hp60>,hlowen dps <= burn DoT,attack:1599,force_strike:16
+1552,_c_Halloween_Lowen,4*,flame,staff,3630,[From_Whence_He_Comes+The_Bridal_Dragon][PopStar_Siren][Agito],!<hp60>,hlowen dps <= burn DoT,attack:1535,force_strike:15
+19543,Natalie,5*,shadow,blade,6119,[Heralds_of_Hinomoto+Primal_Crisis][Shinobi][Agito],<hit15 & hp=1>,,attack:4396,skill_1:15146
+9863,_c_Natalie,5*,shadow,blade,6119,[Heralds_of_Hinomoto+Primal_Crisis][Shinobi][Agito],!<hit15 & hp=1>,,attack:3638,skill_1:6224
+36236,Bellina,5*,shadow,dagger,7574,[Twinfold_Bonds+Howling_to_the_Heavens][Fatalis][Agito],<hit15 & hp=1>,,attack:19182,force_strike:113,skill_1:16037,skill_2:874,dx:27
+17725,_c_Bellina,5*,shadow,dagger,7574,[Twinfold_Bonds+Howling_to_the_Heavens][Fatalis][Agito],!<hit15 & hp=1>,,attack:8294,force_strike:98,skill_1:9062,skill_2:247,dx:23

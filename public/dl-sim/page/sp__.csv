@@ -15,3 +15,5 @@
 10793,_c_Natalie,5*,shadow,blade,6119,[Heralds_of_Hinomoto+Primal_Crisis][Shinobi][Agito][Wand|Curran|Berserker],!<hp<40 & hit15 & hp=1>,,attack:3285,skill_1:6365,team_energy:277,dx:244,ds:618
 51582,Bellina,5*,shadow,dagger,10781,[Twinfold_Bonds+Howling_to_the_Heavens][Fatalis][Agito][Ieyasu|Curran|Berserker],<hp<40 & hit15 & hp=1>,,attack:27306,force_strike:161,skill_1:22829,skill_2:1245,dx:39
 19560,_c_Bellina,5*,shadow,dagger,8357,[Twinfold_Bonds+Howling_to_the_Heavens][Fatalis][Agito][Ieyasu|Curran|Berserker],!<hp<40 & hit15 & hp=1>,,attack:9152,force_strike:108,skill_1:10000,skill_2:272,dx:25
+37842,Fjorm,5*,water,lance,10726,[Unexpected_Requests+The_Bridal_Dragon][Leviathan][HDT2][Blade|Dagger|Axe2],<80 bog res & last offense>,4x Fjorm in 20.55s; 39% bog uptime; 81% frostbite uptime,attack:0,skill_1:3288,s1_frostbite:683,skill_2:5139,s2_reflect:1476,dx:22207,ds:5045
+23448,_c_Fjorm,5*,water,lance,7150,[Unexpected_Requests+The_Bridal_Dragon][Leviathan][HDT2][Blade|Dagger|Axe2],!<80 bog res & last offense>,4x Fjorm in 20.55s; 81% frostbite uptime,attack:0,skill_1:2113,s1_frostbite:439,skill_2:3303,s2_reflect:1476,dx:12838,ds:3276

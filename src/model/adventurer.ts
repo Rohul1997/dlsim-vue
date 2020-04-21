@@ -54,7 +54,7 @@ interface CoabObject {
     name: string;
 }
 
-const uptimePattern = /;? ?(\d+)\% [a-z]+ uptime/;
+const uptimePattern = /;? ?(\d+)\% (burn|frostbite|poison|paralysis) uptime/;
 
 export class Adventurer {
 
@@ -100,7 +100,7 @@ export class Adventurer {
             adt.condition = n[7];
             adt.comment = n[8] || '';
             const uptime = adt.comment.match(uptimePattern);
-            if (uptime) {
+            if (uptime && uptime[2] === adt.affliction) {
                 adt.uptime = parseInt(uptime[1], 10);
             }
             for (let i = 9; i < n.length; i++) {
