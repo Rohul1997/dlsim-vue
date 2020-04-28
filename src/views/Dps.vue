@@ -807,6 +807,7 @@ export default class DpsComponent extends Vue {
 
 .holder {
   min-width: 1032px;
+  width: 100%;
   padding: 0px;
   margin: 0px;
   padding-bottom: 20px;
@@ -815,8 +816,7 @@ export default class DpsComponent extends Vue {
 .holder li {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr 1fr;
-  width: 1032px;
+  grid-template-columns: 220px 1fr 200px 200px;
 }
 
 .holder .title {
