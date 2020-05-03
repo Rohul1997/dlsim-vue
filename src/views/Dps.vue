@@ -20,9 +20,15 @@
             <a
               class="avatar-box"
               :href="'https://wildshinobu.pythonanywhere.com/ui/dl_simc.html?adv_name=' + ad.name"
-              target="blank"
+              target="websim"
             >
-              <img class="avatar" :src="'/dl-sim/pic/character/' + ad.name + '.png'" />
+              <a
+                slot="reference"
+                :href="'https://dragalialost.gamepedia.com/' + ad.nameReplace()"
+                target="wiki"
+              >
+                <img class="avatar" :src="'/dl-sim/pic/character/' + ad.name + '.png'" />
+              </a>
               <span>Custom</span>
             </a>
           </div>
@@ -35,25 +41,58 @@
                 />
               </div>
               <div class="dib drogon">
-                <img class="wyrmprint" :src="'/dl-sim/pic/dragon/' + ad.dragon + '.png'" />
+                <a
+                  slot="reference"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.dragon"
+                  target="wiki"
+                >
+                  <img class="wyrmprint" :src="'/dl-sim/pic/dragon/' + ad.dragon + '.png'" />
+                </a>
               </div>
               <div class="dib drogon">
-                <img class="wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint0 + '.png'" />
+                <a
+                  slot="reference"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint0"
+                  target="wiki"
+                >
+                  <img class="wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint0 + '.png'" />
+                </a>
               </div>
               <div class="dib drogon">
-                <img class="wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint1 + '.png'" />
+                <a
+                  slot="reference"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint1"
+                  target="wiki"
+                >
+                  <img class="wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint1 + '.png'" />
+                </a>
               </div>
               <div class="dib chains">
                 <div v-for="coab in ad.coabs" v-bind:key="coab.name" class="dib">
-                  <img
-                    class="wyrmprint"
-                    v-bind:class="{ generic: coab.name !== coab.icon }"
-                    :src="`/dl-sim/pic/character/${coab.icon}.png`"
-                  />
+                  <a
+                    slot="reference"
+                    :href="`https://dragalialost.gamepedia.com/${coab.link}`"
+                    target="wiki"
+                  >
+                    <img
+                      class="wyrmprint"
+                      v-bind:class="{ generic: coab.name !== coab.icon }"
+                      :src="`/dl-sim/pic/character/${coab.icon}.png`"
+                    />
+                  </a>
                 </div>
               </div>
               <div class="dib drogon" v-if="aff == 'affliction' || ad.uptime > 30">
-                <img class="affliction" :src="`/dl-sim/pic/icons/${ad.affliction}.png`" />
+                <div
+                  class="popper"
+                >{{ad.uptime > 0 && aff != 'affliction' ? ad.uptime : 100}}% {{ad.affliction}} uptime</div>
+                <a
+                  slot="reference"
+                  :href="`https://dragalialost.gamepedia.com/${ad.affliction}`"
+                  target="wiki"
+                >
+                  <img class="affliction" :src="`/dl-sim/pic/icons/${ad.affliction}.png`" />
+                </a>
               </div>
             </div>
             <div class="dib dps ml-4">
@@ -105,11 +144,12 @@
           <div class="dib name h-60 mb-5">
             <div class="avatar-slot-grid">
               <popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.name.replace(/_/g, ' ')}}</div>
+                <div class="popper">{{ad.nameReplace().replace(/_/g, ' ')}}</div>
                 <a
                   slot="reference"
                   class="d-f avatar"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.name"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.nameReplace()"
+                  target="wiki"
                 >
                   <img :src="'/dl-sim/pic/character/' + ad.name + '.png'" />
                 </a>
@@ -120,7 +160,7 @@
                   slot="reference"
                   class="d-f wyrmprint"
                   :src="'/dl-sim/pic/weapon/' + ad.weapon + '_' + ad.element + '_' + ad.weaponType + '.png'"
-                  target="blank"
+                  target="wiki"
                 />
               </popper>
               <popper trigger="hover" :options="{placement: 'top'}">
@@ -129,7 +169,7 @@
                 <a
                   slot="reference"
                   :href="'https://dragalialost.gamepedia.com/' + ad.dragon"
-                  target="blank"
+                  target="wiki"
                 >
                   <img class="d-f wyrmprint" :src="'/dl-sim/pic/dragon/' + ad.dragon + '.png'" />
                 </a>
@@ -140,7 +180,7 @@
                 <a
                   slot="reference"
                   :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint0"
-                  target="blank"
+                  target="wiki"
                 >
                   <img class="d-f wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint0 + '.png'" />
                 </a>
@@ -150,7 +190,7 @@
                 <a
                   slot="reference"
                   :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint1"
-                  target="blank"
+                  target="wiki"
                 >
                   <img class="d-f wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint1 + '.png'" />
                 </a>
@@ -165,8 +205,8 @@
                 <div class="popper">{{coab.name.replace(/_/g, ' ')}}</div>
                 <a
                   slot="reference"
-                  :href="`https://dragalialost.gamepedia.com/${coab.icon}`"
-                  target="blank"
+                  :href="`https://dragalialost.gamepedia.com/${coab.link}`"
+                  target="wiki"
                 >
                   <img
                     class="d-f wyrmprint"
@@ -186,7 +226,7 @@
                 <a
                   slot="reference"
                   :href="`https://dragalialost.gamepedia.com/${ad.affliction}`"
-                  target="blank"
+                  target="wiki"
                 >
                   <img class="d-f affliction" :src="`/dl-sim/pic/icons/${ad.affliction}.png`" />
                 </a>
@@ -197,7 +237,7 @@
             <a
               class="custom-sim-link"
               :href="'https://wildshinobu.pythonanywhere.com/ui/dl_simc.html?adv_name=' + ad.name"
-              target="blank"
+              target="websim"
             >
               <span>Customize</span>
             </a>
@@ -274,7 +314,10 @@
         </div>
         <div class="closer fr" @click="asideHidden = true" v-if="mobileView">&times;</div>
         <div class="title custom-build">
-          <a href="https://wildshinobu.pythonanywhere.com/ui/dl_simc.html" target="blank">Custom Sim</a>
+          <a
+            href="https://wildshinobu.pythonanywhere.com/ui/dl_simc.html"
+            target="websim"
+          >Custom Sim</a>
         </div>
         <div class="splitter"></div>
         <div class="title">Legend</div>
@@ -437,7 +480,7 @@
               <a
                 class="toggle"
                 href="https://github.com/Mushymato/Mushymato.github.io/commits/master"
-                target="blank"
+                target="github"
               >See more</a>
             </span>
           </div>
@@ -844,16 +887,7 @@ export default class DpsComponent extends Vue {
 .custom-sim-link:hover {
   text-decoration: underline;
 }
-/* .title a[target="blank"]:before {
-  position: absolute;
-  top: 4px;
-  right: -15px;
-  content: " ";
-  border: 1px solid black;
-  width: 8px;
-  height: 8px;
-} */
-.title a[target="blank"]:after {
+.title a[target]:after {
   /* position: absolute;
   top: 2px;
   right: -15px; */

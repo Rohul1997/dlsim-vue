@@ -10,6 +10,7 @@ const GenericCoabs: Record<string, Record<string, string>> = {
         wind: 'Melody',
         light: 'Yachiyo',
         shadow: 'Natalie',
+        link: 'Strength_%2B10%25_(Co-ability)',
     },
     Wand: {
         flame: 'Student_Maribelle',
@@ -17,6 +18,7 @@ const GenericCoabs: Record<string, Record<string, string>> = {
         wind: 'Noelle',
         light: 'Xiao_Lei',
         shadow: 'Althemia',
+        link: 'Skill_Damage_%2B15%25_(Co-ability)',
     },
     Dagger: {
         flame: 'Ezelith',
@@ -24,6 +26,7 @@ const GenericCoabs: Record<string, Record<string, string>> = {
         wind: 'Francesca',
         light: 'Mitsuhide',
         shadow: 'Alex',
+        link: 'Critical_Rate_%2B10%25_(Co-ability)',
     },
     Bow: {
         flame: 'Chelsea',
@@ -31,6 +34,7 @@ const GenericCoabs: Record<string, Record<string, string>> = {
         wind: 'Joachim',
         light: 'Elias',
         shadow: 'Nefaria',
+        link: 'Skill_Haste_%2B15%25_(Co-ability)',
     },
     Axe2: {
         flame: 'Valentines_Melody',
@@ -38,6 +42,7 @@ const GenericCoabs: Record<string, Record<string, string>> = {
         wind: 'Valentines_Melody',
         light: 'Valentines_Melody',
         shadow: 'Valentines_Melody',
+        link: 'Critical_Damage_%2B30%25_(Co-ability)',
     },
 };
 
@@ -52,6 +57,7 @@ const AfflictionTypes: Record<string, string> = {
 interface CoabObject {
     icon: string;
     name: string;
+    link: string;
 }
 
 const uptimePattern = /;? ?(\d+)\% (burn|frostbite|poison|paralysis) uptime/;
@@ -90,9 +96,13 @@ export class Adventurer {
             for (let i = 0; i < 3; i++) {
                 if (coabs[i]) {
                     if (GenericCoabs[coabs[i]]) {
-                        adt.coabs.push({ icon: GenericCoabs[coabs[i]][adt.element], name: coabs[i] });
+                        adt.coabs.push({
+                            icon: GenericCoabs[coabs[i]][adt.element],
+                            name: coabs[i],
+                            link: GenericCoabs[coabs[i]].link,
+                        });
                     } else {
-                        adt.coabs.push({ icon: coabs[i], name: coabs[i] });
+                        adt.coabs.push({ icon: coabs[i], name: coabs[i], link: coabs[i] });
                     }
                 }
             }
@@ -153,6 +163,11 @@ export class Adventurer {
     public comment: string = '';
     public dps1: Dps = new Dps();
     public dps2: Dps = new Dps();
+
+    public nameReplace(): string {
+        return this.name.replace('Valentines', 'Valentine\'s');
+    }
+
 
     public findDps2(rawAdventurers: Adventurer[], index: number) {
         if (index + 1 >= rawAdventurers.length || rawAdventurers[index + 1].name !== `_c_${this.name}`) {
