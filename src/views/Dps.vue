@@ -83,9 +83,6 @@
                 </div>
               </div>
               <div class="dib drogon" v-if="aff == 'affliction' || ad.uptime > 30">
-                <div
-                  class="popper"
-                >{{ad.uptime > 0 && aff != 'affliction' ? ad.uptime : 100}}% {{ad.affliction}} uptime</div>
                 <a
                   slot="reference"
                   :href="`https://dragalialost.gamepedia.com/${ad.affliction}`"
