@@ -1,0 +1,18 @@
+-,60,_
+16815,Tiki,5*,water,dagger,6029,[Twinfold_Bonds+The_Chocolatiers][Dragonyule_Jeanne][HDT2][Blade|Xander|Dagger],<hit10 & hit15>,dragon damage does not work on divine dragon; 95% frostbite uptime,attack:8461,skill_1:3542,s1_frostbite:971,skill_2:3779,dx:60
+14001,_c_Tiki,5*,water,dagger,6029,[Twinfold_Bonds+The_Chocolatiers][Dragonyule_Jeanne][HDT2][Blade|Xander|Dagger],!<hit10 & hit15>,dragon damage does not work on divine dragon; 95% frostbite uptime,attack:6985,skill_1:2948,s1_frostbite:817,skill_2:3188,dx:60
+-,60,affliction
+16971,Tiki,5*,water,dagger,6029,[Twinfold_Bonds+The_Chocolatiers][Dragonyule_Jeanne][HDT2][Blade|Xander|Dagger],<hit10 & hit15>,dragon damage does not work on divine dragon,attack:8461,skill_1:3642,s1_frostbite:1007,skill_2:3779,dx:78
+14157,_c_Tiki,5*,water,dagger,6029,[Twinfold_Bonds+The_Chocolatiers][Dragonyule_Jeanne][HDT2][Blade|Xander|Dagger],!<hit10 & hit15>,dragon damage does not work on divine dragon,attack:6986,skill_1:3048,s1_frostbite:854,skill_2:3188,dx:78
+-,120,_
+18386,Tiki,5*,water,dagger,6030,[Twinfold_Bonds+The_Prince_of_Dragonyule][Dragonyule_Jeanne][HDT2][Blade|Xander|Dagger],<hit10 & hit15>,dragon damage does not work on divine dragon; 85% frostbite uptime,attack:9294,skill_1:3990,s1_frostbite:1062,skill_2:3993,dx:43
+13628,_c_Tiki,5*,water,dagger,6030,[Twinfold_Bonds+The_Prince_of_Dragonyule][Dragonyule_Jeanne][HDT2][Blade|Xander|Dagger],!<hit10 & hit15>,dragon damage does not work on divine dragon; 85% frostbite uptime,attack:6887,skill_1:2966,s1_frostbite:786,skill_2:2955,dx:32
+-,120,affliction
+18682,Tiki,5*,water,dagger,6030,[Twinfold_Bonds+The_Prince_of_Dragonyule][Dragonyule_Jeanne][HDT2][Blade|Xander|Dagger],<hit10 & hit15>,dragon damage does not work on divine dragon,attack:9362,skill_1:4170,s1_frostbite:1090,skill_2:4002,dx:56
+13855,_c_Tiki,5*,water,dagger,6030,[Twinfold_Bonds+The_Prince_of_Dragonyule][Dragonyule_Jeanne][HDT2][Blade|Xander|Dagger],!<hit10 & hit15>,dragon damage does not work on divine dragon,attack:6940,skill_1:3103,s1_frostbite:806,skill_2:2961,dx:41
+-,180,_
+18987,Tiki,5*,water,dagger,6030,[Twinfold_Bonds+The_Prince_of_Dragonyule][Dragonyule_Jeanne][HDT2][Blade|Xander|Dagger],<hit10 & hit15>,dragon damage does not work on divine dragon; 86% frostbite uptime,attack:9667,skill_1:3892,s1_frostbite:1018,skill_2:4147,skill_3:231,dx:29
+14065,_c_Tiki,5*,water,dagger,6030,[Twinfold_Bonds+The_Prince_of_Dragonyule][Dragonyule_Jeanne][HDT2][Blade|Xander|Dagger],!<hit10 & hit15>,dragon damage does not work on divine dragon; 86% frostbite uptime,attack:7160,skill_1:2889,s1_frostbite:753,skill_2:3068,skill_3:171,dx:21
+-,180,affliction
+19420,Tiki,5*,water,dagger,6030,[Twinfold_Bonds+The_Prince_of_Dragonyule][Dragonyule_Jeanne][HDT2][Blade|Xander|Dagger],<hit10 & hit15>,dragon damage does not work on divine dragon,attack:9822,skill_1:4053,s1_frostbite:1044,skill_2:4217,skill_3:243,dx:37
+14390,_c_Tiki,5*,water,dagger,6030,[Twinfold_Bonds+The_Prince_of_Dragonyule][Dragonyule_Jeanne][HDT2][Blade|Xander|Dagger],!<hit10 & hit15>,dragon damage does not work on divine dragon,attack:7277,skill_1:3011,s1_frostbite:772,skill_2:3120,skill_3:180,dx:28
