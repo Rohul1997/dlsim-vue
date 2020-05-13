@@ -385,8 +385,8 @@
         <div class="title">Affliction</div>
         <div class="filter">
           <el-radio-group class="rg-filter" v-model="aff" size="mini" @change="reload()">
-            <el-radio-button label="_">None</el-radio-button>
             <el-radio-button label="affliction">100%</el-radio-button>
+            <el-radio-button label="_">None</el-radio-button>
           </el-radio-group>
         </div>
         <div class="splitter"></div>
@@ -526,7 +526,7 @@ export default class DpsComponent extends Vue {
     return `/dl-sim/page/${this.category}_${this.aff}.csv`;
   }
   public category: 'sp' | '60' | '120' | '180' = '180';
-  public aff: string = '_';
+  public aff: string = 'affliction';
   public simDefaultTeamDPS: number = 20000;
   public displayDefaultTeamDPS: number = 30000;
   public teamDPS: number = this.displayDefaultTeamDPS;
