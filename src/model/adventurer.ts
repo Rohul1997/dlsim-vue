@@ -112,7 +112,7 @@ export class Adventurer {
             if (uptime && uptime[2] === adt.affliction) {
                 adt.uptime = parseInt(uptime[1], 10);
             }
-            for (let i = 15; i < n.length; i++) {
+            for (let i = 17; i < n.length; i++) {
                 const df = n[i].split(':');
                 adt.dps1.factors.push(new DpsFactor(df[0], parseInt(df[1], 10) || 0));
             }
