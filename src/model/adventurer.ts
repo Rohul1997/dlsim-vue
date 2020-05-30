@@ -84,15 +84,13 @@ export class Adventurer {
             adt.affliction = AfflictionTypes[adt.element] || '';
             adt.weaponType = n[4] || '';
             adt.fifth = n[5];
-            const slots = n[6].split('][');
-            const wym = slots[0].replace('[', '').split('+');
-            adt.wyrmprint0 = wym[0] || '';
-            adt.wyrmprint1 = wym[1] || '';
-            adt.dragon = slots[1].replace(']', '');
+            adt.wyrmprint0 = n[6] || '';
+            adt.wyrmprint1 = n[7] || '';
+            adt.dragon = n[8] || '';
             adt.dragon = adt.dragon.replace(/;.*$/, '');
-            adt.weapon = slots[2].replace(']', '');
+            adt.weapon = n[9] || '';
             adt.weapon = adt.weapon.replace(/;.*$/, '');
-            const coabs = slots[3].replace(']', '').split('|');
+            const coabs = n.slice(10, 13);
             for (let i = 0; i < 3; i++) {
                 if (coabs[i]) {
                     if (GenericCoabs[coabs[i]]) {
@@ -106,14 +104,15 @@ export class Adventurer {
                     }
                 }
             }
-            adt.coabs.sort((a, b) => a.icon === a.name ? -1 : 0);
-            adt.condition = n[7];
-            adt.comment = n[8] || '';
+            adt.coabs.sort((a, b) => a.icon === a.name ? -1 : (a.name < b.name ? -1 : 0));
+            // skill share s3 = n[13] s4 = n[14]
+            adt.condition = n[15] || '';
+            adt.comment = n[16] || '';
             const uptime = adt.comment.match(uptimePattern);
             if (uptime && uptime[2] === adt.affliction) {
                 adt.uptime = parseInt(uptime[1], 10);
             }
-            for (let i = 9; i < n.length; i++) {
+            for (let i = 15; i < n.length; i++) {
                 const df = n[i].split(':');
                 adt.dps1.factors.push(new DpsFactor(df[0], parseInt(df[1], 10) || 0));
             }
