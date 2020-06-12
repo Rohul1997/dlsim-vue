@@ -104,7 +104,7 @@ export class Adventurer {
                     }
                 }
             }
-            adt.coabs.sort((a, b) => a.icon === a.name ? -1 : (a.name < b.name ? -1 : 0));
+            adt.coabs.sort((a, b) => a.icon === a.name ? -1 : (a.name > b.name ? 0 : 1));
             // skill share s3 = n[13] s4 = n[14]
             adt.condition = n[15] || '';
             adt.comment = n[16] || '';
