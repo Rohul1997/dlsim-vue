@@ -374,7 +374,6 @@
         </div>
         <div class="filter">
           <el-input-number
-            :disabled="category == 'sp'"
             v-model="teamDPS"
             :min="0"
             :step="500"
@@ -581,17 +580,15 @@ export default class DpsComponent extends Vue {
       this.cachedCsvUrl = this.adventurers.length > 0 ? this.csvUrl : '';
     }
 
-    if (this.category !== 'sp') {
-      const scaledTeamDPSRatio: number = this.teamDPS / this.simDefaultTeamDPS;
-      this.adventurers.forEach((a) => {
-        a.dps1.factors
-          .filter((f) => f.category === NAME_MAP.team)
-          .forEach((f) => f.scaleOriginalDPS(scaledTeamDPSRatio));
-        a.dps2.factors
-          .filter((f) => f.category === NAME_MAP.team)
-          .forEach((f) => f.scaleOriginalDPS(scaledTeamDPSRatio));
-      });
-    }
+    const scaledTeamDPSRatio: number = this.teamDPS / this.simDefaultTeamDPS;
+    this.adventurers.forEach((a) => {
+      a.dps1.factors
+        .filter((f) => f.category === NAME_MAP.team)
+        .forEach((f) => f.scaleOriginalDPS(scaledTeamDPSRatio));
+      a.dps2.factors
+        .filter((f) => f.category === NAME_MAP.team)
+        .forEach((f) => f.scaleOriginalDPS(scaledTeamDPSRatio));
+    });
 
     this.filterd = Adventurer.sort(
       this.adventurers.filter((a) => this.matched(a)),
