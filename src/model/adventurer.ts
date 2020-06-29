@@ -105,7 +105,8 @@ export class Adventurer {
                 }
             }
             adt.coabs.sort((a, b) => a.icon === a.name ? -1 : (a.name > b.name ? 0 : 1));
-            // skill share s3 = n[13] s4 = n[14]
+            adt.share1 = n[13] || '';
+            adt.share2 = n[14] || '';
             adt.condition = n[15] || '';
             adt.comment = n[16] || '';
             const uptime = adt.comment.match(uptimePattern);
@@ -158,6 +159,8 @@ export class Adventurer {
     public dragon: string = '';
     public weapon: string = '';
     public coabs: CoabObject[] = [];
+    public share1: string = '';
+    public share2: string = '';
     public condition: string = '';
     public comment: string = '';
     public dps1: Dps = new Dps();

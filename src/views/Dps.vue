@@ -82,7 +82,35 @@
                   </a>
                 </div>
               </div>
-              <div class="dib drogon" v-if="aff == 'affliction' || ad.uptime > 30">
+              <div class="dib chains">
+                <div class="dib">
+                  <a
+                    v-if="ad.share1 !== 'Weapon'"
+                    slot="reference"
+                    :href="'https://dragalialost.gamepedia.com/' + ad.share1"
+                    target="wiki"
+                  >
+                    <img class="wyrmprint" :src="'/dl-sim/pic/character/' + ad.share1 + '.png'" />
+                  </a>
+                  <img
+                    v-else
+                    slot="reference"
+                    class="wyrmprint"
+                    :src="`/dl-sim/pic/icons/weaponskill.png`"
+                    target="wiki"
+                  />
+                </div>
+                <div class="dib">
+                  <a
+                    slot="reference"
+                    :href="'https://dragalialost.gamepedia.com/' + ad.share2"
+                    target="wiki"
+                  >
+                    <img class="wyrmprint" :src="'/dl-sim/pic/character/' + ad.share2 + '.png'" />
+                  </a>
+                </div>
+              </div>
+              <div class="dib chains" v-if="aff == 'affliction' || ad.uptime > 30">
                 <a
                   slot="reference"
                   :href="`https://dragalialost.gamepedia.com/${ad.affliction}`"
@@ -138,7 +166,7 @@
           </div>
         </li>
         <li v-for="(ad, idx) in filterd" :key="ad.name + idx">
-          <div class="dib name h-60 mb-5">
+          <div class="dib name h-90 mb-5">
             <div class="avatar-slot-grid">
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.nameReplace().replace(/_/g, ' ')}}</div>
@@ -228,6 +256,37 @@
                   <img class="d-f affliction" :src="`/dl-sim/pic/icons/${ad.affliction}.png`" />
                 </a>
               </popper>
+              <div class="skillshare">
+                <img class="d-f" :src="`/dl-sim/pic/icons/skillshare.png`" />
+              </div>
+              <popper trigger="hover" :options="{placement: 'top'}">
+                <div class="popper">{{ad.share1.replace(/_/g, ' ') + ' S3'}}</div>
+                <a
+                  v-if="ad.share1 !== 'Weapon'"
+                  slot="reference"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.share1"
+                  target="wiki"
+                >
+                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/character/' + ad.share1 + '.png'" />
+                </a>
+                <img
+                  v-else
+                  slot="reference"
+                  class="d-f wyrmprint"
+                  :src="`/dl-sim/pic/icons/weaponskill.png`"
+                  target="wiki"
+                />
+              </popper>
+              <popper trigger="hover" :options="{placement: 'top'}">
+                <div class="popper">{{ad.share2.replace(/_/g, ' ') + ' S4'}}</div>
+                <a
+                  slot="reference"
+                  :href="'https://dragalialost.gamepedia.com/' + ad.share2"
+                  target="wiki"
+                >
+                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/character/' + ad.share2 + '.png'" />
+                </a>
+              </popper>
             </div>
           </div>
           <div class="dib dps">
@@ -286,12 +345,12 @@
             </div>
           </div>
           <div class="dib condition fr">
-            <div class="dfac h-60 mb-5">
+            <div class="dfac h-90 mb-5">
               <div>{{ad.condition}}</div>
             </div>
           </div>
           <div class="dib comment fr">
-            <div class="dfac h-60 mb-5">
+            <div class="dfac h-90 mb-5">
               <div>{{ad.comment}}</div>
             </div>
           </div>
@@ -541,6 +600,7 @@ export default class DpsComponent extends Vue {
     'S1',
     'S2',
     'S3',
+    'S4',
   ];
   public dragonDpsCategories: string[] = ['DAtk', 'DSkill', 'DOther'];
   public dpsCategories: string[] = [
@@ -548,6 +608,7 @@ export default class DpsComponent extends Vue {
     'S1',
     'S2',
     'S3',
+    'S4',
     'FS',
     'Team',
     'Other',
@@ -815,8 +876,8 @@ export default class DpsComponent extends Vue {
 .mb-10 {
   margin-bottom: 10px;
 }
-.h-60 {
-  height: 60px;
+.h-90 {
+  height: 90px;
 }
 .h-50 {
   height: 50px;
@@ -843,7 +904,7 @@ export default class DpsComponent extends Vue {
 }
 
 .holder {
-  min-width: 1032px;
+  min-width: 1000px;
   width: 100%;
   padding: 0px;
   margin: 0px;
@@ -942,6 +1003,17 @@ export default class DpsComponent extends Vue {
   margin: 3px;
 }
 
+.holder .name .skillshare {
+  text-align: right;
+  padding-right: 1px;
+}
+.holder .name .skillshare > img,
+.mobile-holder img.skillshare {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
 .holder .name img.generic,
 .mobile-holder img.generic {
   filter: grayscale(100%);
@@ -985,7 +1057,7 @@ div.comment {
 .avatar-slot-grid {
   display: grid;
   grid-template-columns: 2fr 30px 30px 30px 30px;
-  grid-template-rows: 30px 30px;
+  grid-template-rows: 30px 30px 30px;
   /* display: flex;
   align-items: center; */
 }
@@ -1066,6 +1138,9 @@ div.full {
   background-color: #ffaf00 !important;
 }
 .c-s3 {
+  background-color: #ffc340 !important;
+}
+.c-s4 {
   background-color: #ffd700 !important;
 }
 .c-team {

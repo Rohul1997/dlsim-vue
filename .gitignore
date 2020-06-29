@@ -2,6 +2,7 @@
 node_modules
 /dist
 /b1ueb1ues.github.io
+/public
 
 # local env files
 .env.local
