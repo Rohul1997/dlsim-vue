@@ -44,6 +44,14 @@ const GenericCoabs: Record<string, Record<string, string>> = {
         shadow: 'Valentines_Melody',
         link: 'Critical_Damage_%2B30%25_(Co-ability)',
     },
+    Dagger2: {
+        flame: 'Gala_Laxi',
+        water: 'Gala_Laxi',
+        wind: 'Gala_Laxi',
+        light: 'Gala_Laxi',
+        shadow: 'Gala_Laxi',
+        link: 'Standard_Attack_Damage_%2B20%25',
+    },
 };
 
 const AfflictionTypes: Record<string, string> = {
