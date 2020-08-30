@@ -278,7 +278,7 @@
                   target="wiki"
                 />
               </popper>
-              <popper trigger="hover" :options="{placement: 'top'}">
+              <popper trigger="hover" :options="{placement: 'top'}" v-if="ad.share2">
                 <div class="popper">{{ad.share2.replace(/_/g, ' ') + ' S4'}}</div>
                 <a
                   slot="reference"
@@ -433,13 +433,7 @@
           </el-tooltip>
         </div>
         <div class="filter">
-          <el-input-number
-            v-model="teamDPS"
-            :min="0"
-            :step="500"
-            size="mini"
-            @change="changeTeamDPS()"
-          ></el-input-number>
+          <el-input-number v-model="teamDPS" :min="0" :step="500" size="mini" @change="reload()"></el-input-number>
         </div>
         <div class="title">Affliction</div>
         <div class="filter">
@@ -592,6 +586,7 @@ export default class DpsComponent extends Vue {
   public rarities: string[] = []; // ['5', '4', '3'];
   public elements: string[] = []; // ['flame', 'water', 'wind', 'light', 'shadow'];
   public weapons: string[] = []; // ['sword', 'blade', 'dagger', 'axe', 'lance', 'bow', 'wand', 'staff'];
+  [index: string]: any;
 
   public allDpsCategories: string[] = [
     'Atk',
@@ -666,14 +661,14 @@ export default class DpsComponent extends Vue {
       a.dps2.factors.forEach(calculateBarWidth);
     });
 
+    localStorage.setItem('teamdps', this.teamDPS.toString());
+    localStorage.setItem('rarities', this.rarities.join());
+    localStorage.setItem('elements', this.elements.join());
+    localStorage.setItem('weapons', this.weapons.join());
+
     await this.$nextTick();
     await this.sleeep(200);
     this.loading = false;
-  }
-
-  public changeTeamDPS() {
-    localStorage.setItem('teamdps', this.teamDPS.toString());
-    this.reload();
   }
 
   public mounted() {
@@ -682,6 +677,12 @@ export default class DpsComponent extends Vue {
 
     if (localStorage.getItem('teamdps')) {
       this.teamDPS = parseInt(localStorage.getItem('teamdps')!, 10);
+    }
+    for (const key of ['rarities', 'elements', 'weapons']) {
+      const value = localStorage.getItem(key);
+      if (value) {
+        this[key] = value.split(',');
+      }
     }
 
     this.mobileView = window.innerWidth <= 700;
