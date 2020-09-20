@@ -15,132 +15,59 @@
       element-loading-text="loading..."
     >
       <ul class="mobile-holder" v-if="mobileView">
-        <li v-for="(ad, idx) in filterd" :key="ad.name + idx" class="mb-10">
+        <li v-for="(ad, idx) in filtered" :key="ad.chara.name + idx" class="mb-10">
           <div class="dib">
             <a
               class="avatar-box"
-              :href="'https://wildshinobu.pythonanywhere.com/ui/dl_simc.html?adv_name=' + ad.name"
+              :href="'https://wildshinobu.pythonanywhere.com/ui/dl_simc.html?adv_name=' + ad.chara.qual"
               target="websim"
             >
-              <a
-                slot="reference"
-                :href="'https://dragalialost.gamepedia.com/' + ad.nameReplace()"
-                target="wiki"
-              >
-                <img class="avatar" :src="'/dl-sim/pic/character/' + ad.name + '.png'" />
+              <a slot="reference" :href="ad.chara.wiki" target="wiki">
+                <img class="avatar" :src="ad.chara.src" />
               </a>
               <span>Custom</span>
             </a>
           </div>
           <div class="dib content">
             <div class="mt-2">
-              <div class="dib drogon">
-                <img
-                  class="wyrmprint"
-                  :src="'/dl-sim/pic/weapon/' + ad.weapon + '_' + ad.element + '_' + ad.weaponType +  '.png'"
-                />
-              </div>
-              <div class="dib drogon">
-                <a
-                  slot="reference"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.dragon"
-                  target="wiki"
-                >
-                  <img class="wyrmprint" :src="'/dl-sim/pic/dragon/' + ad.dragon + '.png'" />
-                </a>
-              </div>
-              <div class="dib drogon">
-                <a
-                  slot="reference"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint0"
-                  target="wiki"
-                >
-                  <img class="wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint0 + '.png'" />
-                </a>
-              </div>
-              <div class="dib drogon">
-                <a
-                  slot="reference"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint1"
-                  target="wiki"
-                >
-                  <img class="wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint1 + '.png'" />
+              <div class="dib drogon" v-for="sl in ad.slots" :key="'sl' + sl.name">
+                <a slot="reference" :href="sl.wiki">
+                  <img class="wyrmprint" :src="sl.src" />
                 </a>
               </div>
               <div class="dib chains">
-                <div v-for="coab in ad.coabs" v-bind:key="coab.name" class="dib">
-                  <a
-                    slot="reference"
-                    :href="`https://dragalialost.gamepedia.com/${coab.link}`"
-                    target="wiki"
-                  >
-                    <img
-                      class="wyrmprint"
-                      v-bind:class="{ generic: coab.name !== coab.icon }"
-                      :src="`/dl-sim/pic/character/${coab.icon}.png`"
-                    />
+                <div v-for="coab in ad.coabs" :key="'ca' + coab.name" class="dib">
+                  <a slot="reference" :href="coab.wiki" target="wiki">
+                    <img class="wyrmprint" v-bind:class="{ generic: coab.generic }" :src="coab.src" />
                   </a>
                 </div>
               </div>
               <div class="dib chains">
-                <div class="dib">
-                  <a
-                    v-if="ad.share1 !== 'Weapon'"
-                    slot="reference"
-                    :href="'https://dragalialost.gamepedia.com/' + ad.share1"
-                    target="wiki"
-                  >
-                    <img class="wyrmprint" :src="'/dl-sim/pic/character/' + ad.share1 + '.png'" />
-                  </a>
-                  <img
-                    v-else
-                    slot="reference"
-                    class="wyrmprint"
-                    :src="`/dl-sim/pic/icons/weaponskill.png`"
-                    target="wiki"
-                  />
-                </div>
-                <div class="dib">
-                  <a
-                    slot="reference"
-                    :href="'https://dragalialost.gamepedia.com/' + ad.share2"
-                    target="wiki"
-                  >
-                    <img class="wyrmprint" :src="'/dl-sim/pic/character/' + ad.share2 + '.png'" />
+                <div class="dib" v-for="sha in ad.share" :key="'sh' + sha.name">
+                  <a slot="reference" :href="sha.wiki" target="wiki">
+                    <img class="wyrmprint" :src="sha.src" />
                   </a>
                 </div>
-              </div>
-              <div class="dib chains" v-if="aff == 'affliction' || ad.uptime > 30">
-                <a
-                  slot="reference"
-                  :href="`https://dragalialost.gamepedia.com/${ad.affliction}`"
-                  target="wiki"
-                >
-                  <img class="affliction" :src="`/dl-sim/pic/icons/${ad.affliction}.png`" />
-                </a>
               </div>
             </div>
             <div class="dib dps ml-4">
-              <div class="factors dps1 mb-1">
+              <div class="factors dps mb-1">
                 <div
-                  v-for="f of ad.dps1.filterd"
-                  :key="f.factor"
-                  class="dps1 factor"
-                  :class="'c-' + f.category.toLowerCase()"
+                  v-for="f of ad.dps.filtered"
+                  :key="'fa' + f.name"
+                  class="dps factor"
+                  :class="'c-' + f.kind"
                   :style="{width: f.width + '%'}"
                 ></div>
                 <div class="full">
-                  <b>{{ad.dps1.all}}</b>
+                  <b>{{ad.dps.total}}</b>
                 </div>
               </div>
-              <div class="factors dps2 mb-2 op-3">
-                <div
-                  v-for="f of ad.dps2.filterd"
-                  :key="f.factor"
-                  class="dps2 factor"
-                  :class="'c-' + f.category.toLowerCase()"
-                  :style="{width: f.width + '%'}"
-                ></div>
+              <div>
+                <span v-for="s of ad.stats" :key="'st' + s.name" class="stats">
+                  <img class="stats-icon" :src="s.src" />
+                  <span class="stats-txt">{{s.name}}</span>
+                </span>
               </div>
             </div>
             <div class="mobile-comment">
@@ -165,127 +92,55 @@
             <div class="dfac h-40">Description</div>
           </div>
         </li>
-        <li v-for="(ad, idx) in filterd" :key="ad.name + idx">
+        <li v-for="(ad, idx) in filtered" :key="ad.chara.name + idx">
           <div class="dib name h-90 mb-5">
             <div class="avatar-slot-grid">
               <popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.nameReplace().replace(/_/g, ' ')}}</div>
-                <a
-                  slot="reference"
-                  class="d-f avatar"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.nameReplace()"
-                  target="wiki"
-                >
-                  <img :src="'/dl-sim/pic/character/' + ad.name + '.png'" />
+                <div class="popper">{{ad.chara.name}}</div>
+                <a slot="reference" class="d-f avatar" :href="ad.chara.wiki" target="wiki">
+                  <img :src="ad.chara.src" />
                 </a>
               </popper>
-              <popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.weapon}}</div>
-                <img
-                  slot="reference"
-                  class="d-f wyrmprint"
-                  :src="'/dl-sim/pic/weapon/' + ad.weapon + '_' + ad.element + '_' + ad.weaponType + '.png'"
-                  target="wiki"
-                />
-              </popper>
-              <popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.dragon.replace(/_/g, ' ')}}</div>
-                <!-- Potentially have a modal with information at some point instead of redirect to wiki-->
-                <a
-                  slot="reference"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.dragon"
-                  target="wiki"
-                >
-                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/dragon/' + ad.dragon + '.png'" />
-                </a>
-              </popper>
-              <popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.wyrmprint0.replace(/_/g, ' ')}}</div>
-                <!-- Potentially have a modal with information at some point instead of redirect to wiki-->
-                <a
-                  slot="reference"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint0"
-                  target="wiki"
-                >
-                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint0 + '.png'" />
-                </a>
-              </popper>
-              <popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.wyrmprint1.replace(/_/g, ' ')}}</div>
-                <a
-                  slot="reference"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.wyrmprint1"
-                  target="wiki"
-                >
-                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/amulet/' + ad.wyrmprint1 + '.png'" />
-                </a>
-              </popper>
-              <!-- chain coabs -->
               <popper
-                v-for="coab in ad.coabs"
-                v-bind:key="coab.name"
+                v-for="sl in ad.slots"
+                :key="'sl' + sl.name"
                 trigger="hover"
                 :options="{placement: 'top'}"
               >
-                <div class="popper">{{coab.name.replace(/_/g, ' ')}}</div>
-                <a
-                  slot="reference"
-                  :href="`https://dragalialost.gamepedia.com/${coab.link}`"
-                  target="wiki"
-                >
+                <div class="popper">{{sl.name}}</div>
+                <a slot="reference" :href="sl.wiki" target="wiki">
+                  <img class="d-f wyrmprint" :src="sl.src" />
+                </a>
+              </popper>
+              <popper
+                v-for="coab in ad.coabs"
+                :key="'ca' + coab.name"
+                trigger="hover"
+                :options="{placement: 'top'}"
+              >
+                <div class="popper">{{coab.name}}</div>
+                <a slot="reference" :href="coab.wiki" target="wiki">
                   <img
                     class="d-f wyrmprint"
-                    v-bind:class="{ generic: coab.name !== coab.icon }"
-                    :src="`/dl-sim/pic/character/${coab.icon}.png`"
+                    v-bind:class="{ generic: coab.generic }"
+                    :src="coab.src"
                   />
                 </a>
               </popper>
-              <popper
-                v-if="aff == 'affliction' || ad.uptime > 30"
-                trigger="hover"
-                :options="{placement: 'top'}"
-              >
-                <div
-                  class="popper"
-                >{{ad.uptime > 0 && aff != 'affliction' ? ad.uptime : 100}}% {{ad.affliction}} uptime</div>
-                <a
-                  slot="reference"
-                  :href="`https://dragalialost.gamepedia.com/${ad.affliction}`"
-                  target="wiki"
-                >
-                  <img class="d-f affliction" :src="`/dl-sim/pic/icons/${ad.affliction}.png`" />
-                </a>
-              </popper>
-              <div v-else></div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
               <div class="skillshare">
                 <img class="d-f" :src="`/dl-sim/pic/icons/skillshare.png`" />
               </div>
-              <popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.share1.replace(/_/g, ' ') + ' S3'}}</div>
-                <a
-                  v-if="ad.share1 !== 'Weapon'"
-                  slot="reference"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.share1"
-                  target="wiki"
-                >
-                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/character/' + ad.share1 + '.png'" />
-                </a>
-                <img
-                  v-else
-                  slot="reference"
-                  class="d-f wyrmprint"
-                  :src="`/dl-sim/pic/icons/weaponskill.png`"
-                  target="wiki"
-                />
-              </popper>
-              <popper trigger="hover" :options="{placement: 'top'}" v-if="ad.share2">
-                <div class="popper">{{ad.share2.replace(/_/g, ' ') + ' S4'}}</div>
-                <a
-                  slot="reference"
-                  :href="'https://dragalialost.gamepedia.com/' + ad.share2"
-                  target="wiki"
-                >
-                  <img class="d-f wyrmprint" :src="'/dl-sim/pic/character/' + ad.share2 + '.png'" />
+              <popper
+                v-for="sha in ad.share"
+                :key="'sh' + sha.name"
+                trigger="hover"
+                :options="{placement: 'top'}"
+              >
+                <div class="popper">{{sha.name}}</div>
+                <a slot="reference" :href="sha.wiki" target="wiki">
+                  <img class="d-f wyrmprint" :src="sha.src" />
                 </a>
               </popper>
             </div>
@@ -293,54 +148,46 @@
           <div class="dib dps">
             <a
               class="custom-sim-link"
-              :href="'https://wildshinobu.pythonanywhere.com/ui/dl_simc.html?adv_name=' + ad.name"
+              :href="'https://wildshinobu.pythonanywhere.com/ui/dl_simc.html?adv_name=' + ad.qual"
               target="websim"
             >
               <span>Customize</span>
             </a>
             <div class="dps-holder">
-              <div class="factors mb-6">
+              <div class="factors mb-1">
                 <popper trigger="hover" :options="{placement: 'top'}">
                   <div class="popper dps-details">
-                    <span v-for="(f, fi) in ad.dps1.filterd" :key="f.factor">
-                      <span class="f-title">{{(fi > 0 ? ', ' : '') + f.factorString()}}:</span>
-                      {{f.scaledDps}}
+                    <span v-for="(f, fi) in ad.dps.filtered" :key="'fa' + f.name">
+                      <span class="f-title">{{(fi > 0 ? ', ' : '') + f.name}}:</span>
+                      {{f.scaled}}
                     </span>
                   </div>
                   <div slot="reference" class="dps-progress">
                     <div
-                      v-for="f of ad.dps1.filterd"
+                      v-for="f of ad.dps.filtered"
                       :key="f.factor"
                       class="factor"
-                      :class="'c-' + f.category.toLowerCase()"
+                      :class="'c-' + f.kind"
                       :style="{width: f.width + '%'}"
                     ></div>
                     <div class="full">
-                      <b>{{ad.dps1.all}}</b>
+                      <b>{{ad.dps.total}}</b>
                     </div>
                   </div>
                 </popper>
               </div>
-              <div class="factors">
-                <popper trigger="hover" :options="{placement: 'top'}">
-                  <div class="popper dps-details">
-                    <span v-for="(f, fi) in ad.dps2.filterd" :key="f.factor">
-                      <span class="f-title">{{(fi > 0 ? ', ' : '') + f.factorString()}}:</span>
-                      {{f.scaledDps}}
-                    </span>
-                  </div>
-                  <div slot="reference" class="dps-progress">
-                    <div
-                      v-for="f of ad.dps2.filterd"
-                      :key="f.factor"
-                      class="factor op-3"
-                      :class="'c-' + f.category.toLowerCase()"
-                      :style="{width: f.width + '%'}"
-                    ></div>
-                    <div class="full non-condition-dps">
-                      <b>{{ad.dps2.all || ''}}</b>
-                    </div>
-                  </div>
+              <div>
+                <popper
+                  v-for="s of ad.stats"
+                  :key="'st' + s.icon"
+                  trigger="hover"
+                  :options="{placement: 'top'}"
+                >
+                  <div class="popper">{{s.icon+': '+s.name}}</div>
+                  <span slot="reference" class="stats">
+                    <img class="stats-icon" :src="s.src" />
+                    <span class="stats-txt">{{s.name}}</span>
+                  </span>
                 </popper>
               </div>
             </div>
@@ -381,33 +228,16 @@
         <div class="legend" style="line-height: 25px;">
           <div
             class="dib"
-            v-for="(c) in allDpsCategories"
+            v-for="(c) in allCategories"
             :key="c"
             @click="toggleFactor(c)"
             :class="{'c-gray': !dpsCategories.includes(c)}"
           >
             <span class="dib">
-              <div class="indic" :class="'c-' + c.toLowerCase()"></div>
+              <div class="indic" :class="'c-' + c"></div>
             </span>
             <span class="dib">
               <div class="label">{{ c }}</div>
-            </span>
-          </div>
-        </div>
-        <div class="title">Dragon</div>
-        <div class="legend" style="line-height: 25px;">
-          <div
-            class="dib"
-            v-for="(c) in dragonDpsCategories"
-            :key="c"
-            @click="toggleFactor(c)"
-            :class="{'c-gray': !dpsCategories.includes(c)}"
-          >
-            <span class="dib">
-              <div class="indic" :class="'c-' + c.toLowerCase()"></div>
-            </span>
-            <span class="dib">
-              <div class="label">{{ c.substr(1) }}</div>
             </span>
           </div>
         </div>
@@ -433,7 +263,7 @@
           </el-tooltip>
         </div>
         <div class="filter">
-          <el-input-number v-model="teamDPS" :min="0" :step="500" size="mini" @change="reload()"></el-input-number>
+          <el-input-number v-model="teamDPS" :min="0" :step="5000" size="mini" @change="reload()"></el-input-number>
         </div>
         <div class="title">Affliction</div>
         <div class="filter">
@@ -560,9 +390,8 @@
 import { Component, Vue } from 'vue-property-decorator';
 import { Http } from '@/service/http';
 import { Adventurer } from '../model/adventurer';
-import { Dps } from '../model/dps';
+import { CATEGORIES } from '../model/dps';
 import { ElPopover } from 'element-ui/types/popover';
-import { NAME_MAP, DpsFactor } from '../model/dps-factor';
 // @ts-ignore
 import Popper from 'vue-popperjs';
 import { GithubCommit } from '@/model/github-commit';
@@ -580,46 +409,22 @@ export default class DpsComponent extends Vue {
   }
   public category: 'sp' | '60' | '120' | '180' = '180';
   public aff: string = 'affliction';
-  public simDefaultTeamDPS: number = 20000;
-  public displayDefaultTeamDPS: number = 30000;
-  public teamDPS: number = this.displayDefaultTeamDPS;
+  public teamDPS: number = 30000;
   public rarities: string[] = []; // ['5', '4', '3'];
   public elements: string[] = []; // ['flame', 'water', 'wind', 'light', 'shadow'];
   public weapons: string[] = []; // ['sword', 'blade', 'dagger', 'axe', 'lance', 'bow', 'wand', 'staff'];
   [index: string]: any;
 
-  public allDpsCategories: string[] = [
-    'Atk',
-    'FS',
-    'Team',
-    'Other',
-    'S1',
-    'S2',
-    'S3',
-    'S4',
-  ];
-  public dragonDpsCategories: string[] = ['DAtk', 'DSkill', 'DOther'];
-  public dpsCategories: string[] = [
-    'Atk',
-    'S1',
-    'S2',
-    'S3',
-    'S4',
-    'FS',
-    'Team',
-    'Other',
-    'DAtk',
-    'DSkill',
-    'DOther',
-  ];
+  public allCategories = CATEGORIES;
+  public dpsCategories: string[] = CATEGORIES.slice();
 
   private mobileView: boolean = false;
   private asideHidden: boolean = true;
+  private loading: boolean = true;
 
   private cachedCsvUrl: string = '';
   private adventurers: Adventurer[] = [];
-  private filterd: Adventurer[] = [];
-  private loading: boolean = true;
+  private filtered: Adventurer[] = [];
   private rendered: Adventurer[] = [];
 
   public async reload() {
@@ -637,28 +442,15 @@ export default class DpsComponent extends Vue {
       this.cachedCsvUrl = this.adventurers.length > 0 ? this.csvUrl : '';
     }
 
-    const scaledTeamDPSRatio: number = this.teamDPS / this.simDefaultTeamDPS;
     this.adventurers.forEach((a) => {
-      a.dps1.factors
-        .filter((f) => f.category === NAME_MAP.team)
-        .forEach((f) => f.scaleOriginalDPS(scaledTeamDPSRatio));
-      a.dps2.factors
-        .filter((f) => f.category === NAME_MAP.team)
-        .forEach((f) => f.scaleOriginalDPS(scaledTeamDPSRatio));
+      a.dps.team.value = this.teamDPS;
     });
 
-    this.filterd = Adventurer.sort(
-      this.adventurers.filter((a) => this.matched(a)),
-    );
-    const maxx = this.filterd.length > 0 ? this.filterd[0].dps1.all : 0;
+    this.filtered = Adventurer.sort(this.adventurers.filter(this.matched));
+    const maxd = this.filtered.length > 0 ? this.filtered[0].dps.total : 0;
 
-    const roundTo = 10;
-    const calculateBarWidth = (f: DpsFactor) =>
-      (f.width = Math.floor(roundTo * ((99 * f.scaledDps) / maxx)) / roundTo);
-    this.filterd.forEach((a) => {
-      a.condition = a.condition.replace(/[<>]/g, '');
-      a.dps1.factors.forEach(calculateBarWidth);
-      a.dps2.factors.forEach(calculateBarWidth);
+    this.adventurers.forEach((a) => {
+      a.dps.updateWidths(maxd);
     });
 
     localStorage.setItem('teamdps', this.teamDPS.toString());
@@ -751,10 +543,14 @@ export default class DpsComponent extends Vue {
     } else {
       this.dpsCategories.splice(k, 1);
     }
-    this.filterd.forEach((a) => {
-      a.filterDpsFactors(this.dpsCategories);
+    this.filtered.forEach((a) => {
+      a.dps.filterFactors(this.dpsCategories);
     });
-    Adventurer.sort(this.filterd);
+    Adventurer.sort(this.filtered);
+    const maxd = this.filtered.length > 0 ? this.filtered[0].dps.total : 0;
+    this.adventurers.forEach((a) => {
+      a.dps.updateWidths(maxd);
+    });
     await this.$nextTick();
     await this.sleeep(200);
     this.loading = false;
@@ -784,16 +580,10 @@ export default class DpsComponent extends Vue {
     ) {
       return false;
     }
-    if (
-      this.elements.length > 0 &&
-      !this.elements.includes(adventurer.element)
-    ) {
+    if (this.elements.length > 0 && !this.elements.includes(adventurer.ele)) {
       return false;
     }
-    if (
-      this.weapons.length > 0 &&
-      !this.weapons.includes(adventurer.weaponType)
-    ) {
+    if (this.weapons.length > 0 && !this.weapons.includes(adventurer.wt)) {
       return false;
     }
     return true;
@@ -998,11 +788,18 @@ export default class DpsComponent extends Vue {
   height: 30px;
 }
 
-.holder .name img.affliction,
-.mobile-holder img.affliction {
-  width: 24px;
-  height: 24px;
-  margin: 3px;
+.stats {
+  height: 1em;
+  margin-right: 8px;
+}
+.stats > img.stats-icon {
+  position: relative;
+  top: 3px;
+  width: 1em;
+  height: 1em;
+}
+.stats > span.stats-txt {
+  font-size: 12px;
 }
 
 .holder .name .skillshare {
@@ -1127,7 +924,7 @@ div.full {
   font-size: 12px;
   line-height: 12px;
 }
-.c-atk {
+.c-attack {
   background-color: #6495ed !important;
 }
 .c-fs {
@@ -1148,14 +945,11 @@ div.full {
 .c-team {
   background-color: #dc143c !important;
 }
-.c-datk {
+.c-dx {
   background-color: #8a2be2 !important;
 }
-.c-dskill {
+.c-ds {
   background-color: #9370db !important;
-}
-.c-dother {
-  background-color: #008080 !important;
 }
 .c-other {
   background-color: #008080 !important;

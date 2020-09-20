@@ -1,14 +1,57 @@
-import { DpsFactor } from './dps-factor';
+export const CATEGORIES = [
+    'attack', 'fs', 'other', 'team',
+    's1', 's2', 's3', 's4',
+    'dx', 'ds',
+];
+
+export class DpsFactor {
+    public name: string;
+    public kind: string;
+    public value: number;
+    public scale: number;
+    public width: number = 0;
+
+    constructor(name: string, value: number, scale?: number) {
+        this.name = name;
+        this.kind = name.split('_')[0];
+        if (this.kind.substr(0, 2) == 'fs') { this.kind = 'fs'; } else if (!CATEGORIES.includes(this.kind)) { this.kind = 'other'; }
+        this.value = value;
+        this.scale = scale || 0;
+    }
+
+    public get scaled() {
+        if (this.name === 'team') {
+            return Math.round(this.value * this.scale / 100);
+        } else {
+            return Math.round(this.value);
+        }
+    }
+}
 
 export class Dps {
-
-    public full: number = 0;
-
     public factors: DpsFactor[] = [];
-
-    public filterd: DpsFactor[] = [];
-
-    public get all() {
-        return this.filterd.reduce((sum, f) => sum += f.scaledDps, 0);
+    public filtered: DpsFactor[] = [];
+    public filter: string[] = CATEGORIES.slice();
+    public team: DpsFactor;
+    constructor(n: string[], team: number) {
+        for (const d of n) {
+            const p = d.split(':');
+            this.factors.push(new DpsFactor(p[0], parseInt(p[1])));
+        }
+        this.team = new DpsFactor('team', 0, team);
+        this.factors.push(this.team);
+        this.filterFactors();
+    }
+    public get total() {
+        return this.filtered.reduce((sum, f) => sum += f.scaled, 0) + ('team' in this.filter ? this.team.scaled : 0);
+    }
+    public filterFactors(filter?: string[]) {
+        this.filter = filter || this.filter;
+        this.filtered = this.factors.filter((f) => f.name && this.filter.includes(f.kind));
+    }
+    public updateWidths(maxd: number) {
+        for (const f of this.filtered) {
+            f.width = Math.floor(100 * (f.scaled / maxd));
+        }
     }
 }
