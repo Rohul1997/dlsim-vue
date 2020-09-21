@@ -11,6 +11,8 @@ const CoabLinks: Record<string, string> = {
     Axe2: 'Critical_Damage_%2B30%25_(Co-ability)',
     Dagger2: 'Standard_Attack_Damage_%2B20%25',
 };
+const HasTier2 = ['flame', 'shadow'];
+
 class IconObj {
     public icon: string;
     public name: string;
@@ -78,6 +80,7 @@ export class Adventurer {
         this.ele = n[3];
         this.wt = n[4];
         // this.att = n[5];
+        if (HasTier2.includes(this.ele)) { n[12] += ' (Tier II)'; }
         this.slots = [
             new IconObj(n[12], n[13], 'weapon'), // weapon
             new IconObj(n[10], n[11], 'dragon'), // dragon

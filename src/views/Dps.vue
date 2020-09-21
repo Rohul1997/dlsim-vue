@@ -72,7 +72,7 @@
             </div>
             <div class="mobile-comment">
               <div v-if="ad.condition != ' '">&lt;{{ ad.condition }}&gt;</div>
-              {{ad.comment}}
+              <span v-html="ad.comment"></span>
             </div>
           </div>
         </li>
@@ -193,7 +193,7 @@
               </div>
               <div class="comment">
                 <span v-if="ad.condition != ' '">&lt;{{ ad.condition }}&gt;</span>
-                {{ad.comment}}
+                <span v-html="ad.comment"></span>
               </div>
             </div>
           </div>
@@ -439,6 +439,7 @@ export default class DpsComponent extends Vue {
 
     this.adventurers.forEach((a) => {
       a.dps.team.value = this.teamDPS;
+      a.dps.filterFactors(this.dpsCategories);
     });
 
     this.filtered = Adventurer.sort(this.adventurers.filter(this.matched));
