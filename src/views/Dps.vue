@@ -64,7 +64,7 @@
                 </div>
               </div>
               <div>
-                <span v-for="s of ad.stats" :key="'st' + s.name" class="stats">
+                <span v-for="s of ad.stats" :key="'st' + s.icon" class="stats">
                   <img class="stats-icon" :src="s.src" />
                   <span class="stats-txt">{{s.name}}</span>
                 </span>
@@ -85,15 +85,9 @@
           <div class="dib dps">
             <div class="dfac h-40">DPS Distribution</div>
           </div>
-          <div class="dib condition">
-            <div class="dfac h-40">Condition</div>
-          </div>
-          <div class="dib comment">
-            <div class="dfac h-40">Description</div>
-          </div>
         </li>
         <li v-for="(ad, idx) in filtered" :key="ad.chara.name + idx">
-          <div class="dib name h-90 mb-5">
+          <div class="dib name h-70 mb-5">
             <div class="avatar-slot-grid">
               <popper trigger="hover" :options="{placement: 'top'}">
                 <div class="popper">{{ad.chara.name}}</div>
@@ -102,50 +96,57 @@
                 </a>
               </popper>
               <popper
-                v-for="sl in ad.slots"
-                :key="'sl' + sl.name"
+                v-for="i in [0, 1]"
+                :key="'sl' + ad.slots[i].name"
                 trigger="hover"
                 :options="{placement: 'top'}"
               >
-                <div class="popper">{{sl.name}}</div>
-                <a slot="reference" :href="sl.wiki" target="wiki">
-                  <img class="d-f wyrmprint" :src="sl.src" />
-                </a>
-              </popper>
-              <popper
-                v-for="coab in ad.coabs"
-                :key="'ca' + coab.name"
-                trigger="hover"
-                :options="{placement: 'top'}"
-              >
-                <div class="popper">{{coab.name}}</div>
-                <a slot="reference" :href="coab.wiki" target="wiki">
-                  <img
-                    class="d-f wyrmprint"
-                    v-bind:class="{ generic: coab.generic }"
-                    :src="coab.src"
-                  />
+                <div class="popper">{{ad.slots[i].name}}</div>
+                <a slot="reference" :href="ad.slots[i].wiki" target="wiki">
+                  <img class="d-f wyrmprint" :src="ad.slots[i].src" />
                 </a>
               </popper>
               <div>&nbsp;</div>
+              <popper
+                v-for="ca in ad.coabs"
+                :key="'ca' + ca.name"
+                trigger="hover"
+                :options="{placement: 'top'}"
+              >
+                <div class="popper">{{ca.name}}</div>
+                <a slot="reference" :href="ca.wiki" target="wiki">
+                  <img class="d-f wyrmprint" v-bind:class="{ generic: ca.generic }" :src="ca.src" />
+                </a>
+              </popper>
+              <popper
+                v-for="i in [2, 3]"
+                :key="'sl' + ad.slots[i].name"
+                trigger="hover"
+                :options="{placement: 'top'}"
+              >
+                <div class="popper">{{ad.slots[i].name}}</div>
+                <a slot="reference" :href="ad.slots[i].wiki" target="wiki">
+                  <img class="d-f wyrmprint" :src="ad.slots[i].src" />
+                </a>
+              </popper>
               <div>&nbsp;</div>
               <div class="skillshare">
                 <img class="d-f" :src="`/dl-sim/pic/icons/skillshare.png`" />
               </div>
               <popper
-                v-for="sha in ad.share"
-                :key="'sh' + sha.name"
+                v-for="(sh, i) in ad.share"
+                :key="'sh' + ad.share[i].name"
                 trigger="hover"
                 :options="{placement: 'top'}"
               >
-                <div class="popper">{{sha.name}}</div>
-                <a slot="reference" :href="sha.wiki" target="wiki">
-                  <img class="d-f wyrmprint" :src="sha.src" />
+                <div class="popper">S{{i+3}} {{ad.share[i].name}}</div>
+                <a slot="reference" :href="ad.share[i].wiki" target="wiki">
+                  <img class="d-f wyrmprint" :src="ad.share[i].src" />
                 </a>
               </popper>
             </div>
           </div>
-          <div class="dib dps">
+          <div class="dib dps shift">
             <a
               class="custom-sim-link"
               :href="'https://wildshinobu.pythonanywhere.com/ui/dl_simc.html?adv_name=' + ad.qual"
@@ -164,7 +165,7 @@
                   </div>
                   <div slot="reference" class="dps-progress">
                     <div
-                      v-for="f of ad.dps.filtered"
+                      v-for="f of ad.dps.filtered.filter((f) => f.width > 0)"
                       :key="f.factor"
                       class="factor"
                       :class="'c-' + f.kind"
@@ -176,7 +177,7 @@
                   </div>
                 </popper>
               </div>
-              <div>
+              <div class="mb-1">
                 <popper
                   v-for="s of ad.stats"
                   :key="'st' + s.icon"
@@ -190,16 +191,10 @@
                   </span>
                 </popper>
               </div>
-            </div>
-          </div>
-          <div class="dib condition fr">
-            <div class="dfac h-90 mb-5">
-              <div>{{ad.condition}}</div>
-            </div>
-          </div>
-          <div class="dib comment fr">
-            <div class="dfac h-90 mb-5">
-              <div>{{ad.comment}}</div>
+              <div class="comment">
+                <span v-if="ad.condition != ' '">&lt;{{ ad.condition }}&gt;</span>
+                {{ad.comment}}
+              </div>
             </div>
           </div>
         </li>
@@ -387,14 +382,14 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import { Http } from '@/service/http';
-import { Adventurer } from '../model/adventurer';
-import { CATEGORIES } from '../model/dps';
-import { ElPopover } from 'element-ui/types/popover';
+import { Component, Vue } from "vue-property-decorator";
+import { Http } from "@/service/http";
+import { Adventurer } from "../model/adventurer";
+import { CATEGORIES } from "../model/dps";
+import { ElPopover } from "element-ui/types/popover";
 // @ts-ignore
-import Popper from 'vue-popperjs';
-import { GithubCommit } from '@/model/github-commit';
+import Popper from "vue-popperjs";
+import { GithubCommit } from "@/model/github-commit";
 
 @Component({
   components: {
@@ -407,8 +402,8 @@ export default class DpsComponent extends Vue {
   public get csvUrl(): string {
     return `/dl-sim/page/${this.category}_${this.aff}.csv`;
   }
-  public category: 'sp' | '60' | '120' | '180' = '180';
-  public aff: string = 'affliction';
+  public category: "sp" | "60" | "120" | "180" = "180";
+  public aff: string = "affliction";
   public teamDPS: number = 30000;
   public rarities: string[] = []; // ['5', '4', '3'];
   public elements: string[] = []; // ['flame', 'water', 'wind', 'light', 'shadow'];
@@ -422,7 +417,7 @@ export default class DpsComponent extends Vue {
   private asideHidden: boolean = true;
   private loading: boolean = true;
 
-  private cachedCsvUrl: string = '';
+  private cachedCsvUrl: string = "";
   private adventurers: Adventurer[] = [];
   private filtered: Adventurer[] = [];
   private rendered: Adventurer[] = [];
@@ -439,7 +434,7 @@ export default class DpsComponent extends Vue {
       }
 
       this.adventurers = Adventurer.ParseCSV(csv);
-      this.cachedCsvUrl = this.adventurers.length > 0 ? this.csvUrl : '';
+      this.cachedCsvUrl = this.adventurers.length > 0 ? this.csvUrl : "";
     }
 
     this.adventurers.forEach((a) => {
@@ -453,10 +448,10 @@ export default class DpsComponent extends Vue {
       a.dps.updateWidths(maxd);
     });
 
-    localStorage.setItem('teamdps', this.teamDPS.toString());
-    localStorage.setItem('rarities', this.rarities.join());
-    localStorage.setItem('elements', this.elements.join());
-    localStorage.setItem('weapons', this.weapons.join());
+    localStorage.setItem("teamdps", this.teamDPS.toString());
+    localStorage.setItem("rarities", this.rarities.join());
+    localStorage.setItem("elements", this.elements.join());
+    localStorage.setItem("weapons", this.weapons.join());
 
     await this.$nextTick();
     await this.sleeep(200);
@@ -467,13 +462,13 @@ export default class DpsComponent extends Vue {
     (window as any).$dps = this;
     (window as any).$http = Http;
 
-    if (localStorage.getItem('teamdps')) {
-      this.teamDPS = parseInt(localStorage.getItem('teamdps')!, 10);
+    if (localStorage.getItem("teamdps")) {
+      this.teamDPS = parseInt(localStorage.getItem("teamdps")!, 10);
     }
-    for (const key of ['rarities', 'elements', 'weapons']) {
+    for (const key of ["rarities", "elements", "weapons"]) {
       const value = localStorage.getItem(key);
       if (value) {
-        this[key] = value.split(',');
+        this[key] = value.split(",");
       }
     }
 
@@ -488,17 +483,17 @@ export default class DpsComponent extends Vue {
         return GithubCommit.fromApiCommit(c);
       });
     };
-    const $changelog = document.createElement('script');
+    const $changelog = document.createElement("script");
     $changelog.setAttribute(
-      'src',
-      'https://api.github.com/repos/mushymato/mushymato.github.io/commits?page=1&callback=changelog',
+      "src",
+      "https://api.github.com/repos/mushymato/mushymato.github.io/commits?page=1&callback=changelog"
     );
     document.head.appendChild($changelog);
   }
 
   private toggleRarity() {
     if (this.rarities.length === 0) {
-      this.rarities = ['5', '4', '3'];
+      this.rarities = ["5", "4", "3"];
     } else {
       this.rarities = [];
     }
@@ -507,7 +502,7 @@ export default class DpsComponent extends Vue {
 
   private toggleElement() {
     if (this.elements.length === 0) {
-      this.elements = ['flame', 'water', 'wind', 'light', 'shadow'];
+      this.elements = ["flame", "water", "wind", "light", "shadow"];
     } else {
       this.elements = [];
     }
@@ -517,14 +512,14 @@ export default class DpsComponent extends Vue {
   private toggleWeapon() {
     if (this.weapons.length === 0) {
       this.weapons = [
-        'sword',
-        'blade',
-        'dagger',
-        'axe',
-        'lance',
-        'bow',
-        'wand',
-        'staff',
+        "sword",
+        "blade",
+        "dagger",
+        "axe",
+        "lance",
+        "bow",
+        "wand",
+        "staff",
       ];
     } else {
       this.weapons = [];
@@ -566,10 +561,10 @@ export default class DpsComponent extends Vue {
 
   private async loadCsv(): Promise<string> {
     try {
-      const csv: string = await Http.Get(this.csvUrl, 'text');
+      const csv: string = await Http.Get(this.csvUrl, "text");
       return csv;
     } catch (e) {
-      return '';
+      return "";
     }
   }
 
@@ -668,8 +663,8 @@ export default class DpsComponent extends Vue {
 .mb-10 {
   margin-bottom: 10px;
 }
-.h-90 {
-  height: 90px;
+.h-70 {
+  height: 70px;
 }
 .h-50 {
   height: 50px;
@@ -706,7 +701,7 @@ export default class DpsComponent extends Vue {
 .holder li {
   list-style: none;
   display: grid;
-  grid-template-columns: 220px 1fr 200px 200px;
+  grid-template-columns: 280px 1fr 90px;
 }
 
 .holder .title {
@@ -780,7 +775,7 @@ export default class DpsComponent extends Vue {
 
 .holder .name a.avatar {
   /* margin-right: 5px; */
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .holder .name img.wyrmprint {
@@ -825,13 +820,22 @@ export default class DpsComponent extends Vue {
   position: relative;
 }
 
+.shift {
+  top: -10px;
+}
+
 .holder .dps .avatar-box {
   color: #000;
   font-size: 12px;
   display: inline;
 }
 
-.holder .comment,
+.holder li .comment {
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
+}
+/* .holder .comment,
 .holder .condition {
   font-size: 12px;
   color: #000;
@@ -842,21 +846,21 @@ export default class DpsComponent extends Vue {
 }
 .holder .condition {
   padding-left: 40px;
+} 
+div.comment {
+  margin-bottom: 2px;
 }
+*/
 
 div.adt-body {
   margin-left: 6px;
   text-align: left;
 }
 
-div.comment {
-  margin-bottom: 2px;
-}
-
 .avatar-slot-grid {
   display: grid;
-  grid-template-columns: 2fr 30px 30px 30px 30px;
-  grid-template-rows: 30px 30px 30px;
+  grid-template-columns: 1fr 30px 30px 8px 30px 30px 30px;
+  grid-template-rows: 30px 30px;
   /* display: flex;
   align-items: center; */
 }
@@ -1228,7 +1232,7 @@ span.f-title {
   }
 
   .mobile-holder .dps {
-    width: calc(100% - 45px);
+    width: calc(100% - 25px);
   }
 
   .mobile-holder .dps .dps1 {

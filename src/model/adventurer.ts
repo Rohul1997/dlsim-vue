@@ -3,13 +3,13 @@ import { Dps } from './dps';
 const unidecode = require('unidecode');
 
 const NO = '<NO>';
-const CoabLinks: Record<string, string[]> = {
-    Blade: ['110010_01_r05', 'Strength_%2B10%25_(Co-ability)'],
-    Wand: ['110032_02_r05', 'Skill_Damage_%2B15%25_(Co-ability)'],
-    Dagger: ['110319_01_r04', 'Critical_Rate_%2B10%25_(Co-ability)'],
-    Bow: ['110053_01_r05', 'Skill_Haste_%2B15%25_(Co-ability)'],
-    Axe2: ['110027_02_r05', 'Critical_Damage_%2B30%25_(Co-ability)'],
-    Dagger2: ['100032_04_r05', 'Standard_Attack_Damage_%2B20%25'],
+const CoabLinks: Record<string, string> = {
+    Blade: 'Strength_%2B10%25_(Co-ability)',
+    Wand: 'Skill_Damage_%2B15%25_(Co-ability)',
+    Dagger: 'Critical_Rate_%2B10%25_(Co-ability)',
+    Bow: 'Skill_Haste_%2B15%25_(Co-ability)',
+    Axe2: 'Critical_Damage_%2B30%25_(Co-ability)',
+    Dagger2: 'Standard_Attack_Damage_%2B20%25',
 };
 class IconObj {
     public icon: string;
@@ -74,7 +74,7 @@ export class Adventurer {
 
     constructor(n: string[]) {
         this.chara = new IconObj(n[1], n[2]);
-        this.rarity = n[2][-1];
+        this.rarity = n[2].slice(-1);
         this.ele = n[3];
         this.wt = n[4];
         // this.att = n[5];
@@ -95,10 +95,7 @@ export class Adventurer {
             if (c_icon) {
                 uniqueC.push(new IconObj(c_name, c_icon));
             } else {
-                const cl = CoabLinks[c_name];
-                const genC = new IconObj(c_name, cl[0], 'character', cl[1]);
-                genC.generic = true;
-                genericC.push(genC);
+                genericC.push(new IconObj(c_name, c_name, 'coabs', CoabLinks[c_name]));
             }
         }
         this.coabs = uniqueC.concat(genericC);
@@ -121,7 +118,7 @@ export class Adventurer {
             const p = s.split(':');
             if (p[0] === 'team') {
                 team = parseFloat(p[1]);
-                this.stats.push(new IconObj(Math.round(team * 10) / 10 + '%', p[0], 'icons', NO));
+                this.stats.push(new IconObj((Math.round(team * 10) / 10).toFixed(1) + '%', p[0], 'icons', NO));
             } else {
                 this.stats.push(new IconObj(p[1], p[0], 'icons', NO));
             }

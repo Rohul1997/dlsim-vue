@@ -39,7 +39,9 @@ export class Dps {
             this.factors.push(new DpsFactor(p[0], parseInt(p[1])));
         }
         this.team = new DpsFactor('team', 0, team);
-        this.factors.push(this.team);
+        if (team > 0) {
+            this.factors.push(this.team);
+        }
         this.filterFactors();
     }
     public get total() {
@@ -50,8 +52,12 @@ export class Dps {
         this.filtered = this.factors.filter((f) => f.name && this.filter.includes(f.kind));
     }
     public updateWidths(maxd: number) {
+        // let sum = 0;
         for (const f of this.filtered) {
-            f.width = Math.floor(100 * (f.scaled / maxd));
+            f.width = Math.floor(1000 * (f.scaled / maxd)) / 10;
         }
+        // if (sum > 100) {
+        //     this.filtered[-1].width -= (sum - 100)
+        // }
     }
 }
