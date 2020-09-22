@@ -38,6 +38,7 @@ class IconObj {
     }
 
     public get qual() {
+        console.log(unidecode(this.name).replace(/[^0-9a-zA-Z ]/, '').replace(' ', '_'));
         return unidecode(this.name).replace(/[^0-9a-zA-Z ]/, '').replace(' ', '_');
     }
 }
@@ -63,6 +64,7 @@ export class Adventurer {
     }
 
     public chara: IconObj;
+    public id: string;
     public rarity: string;
     public ele: string;
     public wt: string;
@@ -76,6 +78,7 @@ export class Adventurer {
 
     constructor(n: string[]) {
         this.chara = new IconObj(n[1], n[2]);
+        this.id = this.chara.name;
         this.rarity = n[2].slice(-1);
         this.ele = n[3];
         this.wt = n[4];

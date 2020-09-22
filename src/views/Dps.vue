@@ -15,67 +15,13 @@
       element-loading-text="loading..."
     >
       <ul class="mobile-holder" v-if="mobileView">
-        <li v-for="(ad, idx) in filtered" :key="ad.chara.name + idx" class="mb-10">
-          <div class="dib">
-            <a
-              class="avatar-box"
-              :href="'https://wildshinobu.pythonanywhere.com/ui/dl_simc.html?adv_name=' + ad.chara.qual"
-              target="websim"
-            >
-              <a slot="reference" :href="ad.chara.wiki" target="wiki">
-                <img class="avatar" :src="ad.chara.src" />
-              </a>
-              <span>Custom</span>
-            </a>
-          </div>
-          <div class="dib content">
-            <div class="mt-2">
-              <div class="dib drogon" v-for="sl in ad.slots" :key="'sl' + sl.name">
-                <a slot="reference" :href="sl.wiki">
-                  <img class="wyrmprint" :src="sl.src" />
-                </a>
-              </div>
-              <div class="dib chains">
-                <div v-for="coab in ad.coabs" :key="'ca' + coab.name" class="dib">
-                  <a slot="reference" :href="coab.wiki" target="wiki">
-                    <img class="wyrmprint" v-bind:class="{ generic: coab.generic }" :src="coab.src" />
-                  </a>
-                </div>
-              </div>
-              <div class="dib chains">
-                <div class="dib" v-for="sha in ad.share" :key="'sh' + sha.name">
-                  <a slot="reference" :href="sha.wiki" target="wiki">
-                    <img class="wyrmprint" :src="sha.src" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="dib dps ml-4">
-              <div class="factors dps mb-1">
-                <div
-                  v-for="f of ad.dps.filtered"
-                  :key="'fa' + f.name"
-                  class="dps factor"
-                  :class="'c-' + f.kind"
-                  :style="{width: f.width + '%'}"
-                ></div>
-                <div class="full">
-                  <b>{{ad.dps.total}}</b>
-                </div>
-              </div>
-              <div>
-                <span v-for="s of ad.stats" :key="'st' + s.icon" class="stats">
-                  <img class="stats-icon" :src="s.src" />
-                  <span class="stats-txt">{{s.name}}</span>
-                </span>
-              </div>
-            </div>
-            <div class="mobile-comment">
-              <div v-if="ad.condition != ' '">&lt;{{ ad.condition }}&gt;</div>
-              <span v-html="ad.comment"></span>
-            </div>
-          </div>
-        </li>
+        <virtual-list
+          v-if="mobileView"
+          class="virtual-list"
+          :data-key="'id'"
+          :data-sources="filtered"
+          :data-component="dpsMobile"
+        />
       </ul>
       <ul class="holder" v-if="!mobileView">
         <li class="title h-40">
@@ -86,118 +32,13 @@
             <div class="dfac h-40">DPS Distribution</div>
           </div>
         </li>
-        <li v-for="(ad, idx) in filtered" :key="ad.chara.name + idx">
-          <div class="dib name h-70 mb-5">
-            <div class="avatar-slot-grid">
-              <popper trigger="hover" :options="{placement: 'top'}">
-                <div class="popper">{{ad.chara.name}}</div>
-                <a slot="reference" class="d-f avatar" :href="ad.chara.wiki" target="wiki">
-                  <img :src="ad.chara.src" />
-                </a>
-              </popper>
-              <popper
-                v-for="i in [0, 1]"
-                :key="'sl' + ad.slots[i].name"
-                trigger="hover"
-                :options="{placement: 'top'}"
-              >
-                <div class="popper">{{ad.slots[i].name}}</div>
-                <a slot="reference" :href="ad.slots[i].wiki" target="wiki">
-                  <img class="d-f wyrmprint" :src="ad.slots[i].src" />
-                </a>
-              </popper>
-              <div>&nbsp;</div>
-              <popper
-                v-for="ca in ad.coabs"
-                :key="'ca' + ca.name"
-                trigger="hover"
-                :options="{placement: 'top'}"
-              >
-                <div class="popper">{{ca.name}}</div>
-                <a slot="reference" :href="ca.wiki" target="wiki">
-                  <img class="d-f wyrmprint" v-bind:class="{ generic: ca.generic }" :src="ca.src" />
-                </a>
-              </popper>
-              <popper
-                v-for="i in [2, 3]"
-                :key="'sl' + ad.slots[i].name"
-                trigger="hover"
-                :options="{placement: 'top'}"
-              >
-                <div class="popper">{{ad.slots[i].name}}</div>
-                <a slot="reference" :href="ad.slots[i].wiki" target="wiki">
-                  <img class="d-f wyrmprint" :src="ad.slots[i].src" />
-                </a>
-              </popper>
-              <div>&nbsp;</div>
-              <div class="skillshare">
-                <img class="d-f" :src="`/dl-sim/pic/icons/skillshare.png`" />
-              </div>
-              <popper
-                v-for="(sh, i) in ad.share"
-                :key="'sh' + ad.share[i].name"
-                trigger="hover"
-                :options="{placement: 'top'}"
-              >
-                <div class="popper">S{{i+3}} {{ad.share[i].name}}</div>
-                <a slot="reference" :href="ad.share[i].wiki" target="wiki">
-                  <img class="d-f wyrmprint" :src="ad.share[i].src" />
-                </a>
-              </popper>
-            </div>
-          </div>
-          <div class="dib dps shift">
-            <a
-              class="custom-sim-link"
-              :href="'https://wildshinobu.pythonanywhere.com/ui/dl_simc.html?adv_name=' + ad.qual"
-              target="websim"
-            >
-              <span>Customize</span>
-            </a>
-            <div class="dps-holder">
-              <div class="factors mb-1">
-                <popper trigger="hover" :options="{placement: 'top'}">
-                  <div class="popper dps-details">
-                    <span v-for="(f, fi) in ad.dps.filtered" :key="'fa' + f.name">
-                      <span class="f-title">{{(fi > 0 ? ', ' : '') + f.name}}:</span>
-                      {{f.scaled}}
-                    </span>
-                  </div>
-                  <div slot="reference" class="dps-progress">
-                    <div
-                      v-for="f of ad.dps.filtered.filter((f) => f.width > 0)"
-                      :key="f.factor"
-                      class="factor"
-                      :class="'c-' + f.kind"
-                      :style="{width: f.width + '%'}"
-                    ></div>
-                    <div class="full">
-                      <b>{{ad.dps.total}}</b>
-                    </div>
-                  </div>
-                </popper>
-              </div>
-              <div class="mb-1">
-                <popper
-                  v-for="s of ad.stats"
-                  :key="'st' + s.icon"
-                  trigger="hover"
-                  :options="{placement: 'top'}"
-                >
-                  <div class="popper">{{s.icon+': '+s.name}}</div>
-                  <span slot="reference" class="stats">
-                    <img class="stats-icon" :src="s.src" />
-                    <span class="stats-txt">{{s.name}}</span>
-                  </span>
-                </popper>
-              </div>
-              <div class="comment">
-                <span v-if="ad.condition != ' '">&lt;{{ ad.condition }}&gt;</span>
-                <span v-html="ad.comment"></span>
-              </div>
-            </div>
-          </div>
-        </li>
+        <virtual-list
+          class="virtual-list"
+          v-if="!mobileView"
+          :data-key="'id'"
+          :data-sources="filtered"
+          :data-component="dpsEntry"
+        />
       </ul>
     </div>
     <div
@@ -219,7 +60,12 @@
           >Custom Sim</a>
         </div>
         <div class="splitter"></div>
-        <div class="title">Legend</div>
+        <div class="title">
+          Legend
+          <span v-if="dpsCategories.length < allCategories.length">
+            <a class="toggle" @click="toggleFactor()">Reset</a>
+          </span>
+        </div>
         <div class="legend" style="line-height: 25px;">
           <div
             class="dib"
@@ -386,17 +232,25 @@ import { Component, Vue } from "vue-property-decorator";
 import { Http } from "@/service/http";
 import { Adventurer } from "../model/adventurer";
 import { CATEGORIES } from "../model/dps";
+import DpsEntry from "./DpsEntry.vue";
+import DpsMobile from "./DpsMobile.vue";
 import { ElPopover } from "element-ui/types/popover";
 // @ts-ignore
 import Popper from "vue-popperjs";
 import { GithubCommit } from "@/model/github-commit";
+// @ts-ignore
+import VirtualList from "vue-virtual-scroll-list";
 
 @Component({
   components: {
     Popper,
+    "virtual-list": VirtualList,
   },
 })
 export default class DpsComponent extends Vue {
+  public dpsEntry = DpsEntry;
+  public dpsMobile = DpsMobile;
+
   public lastCommits: GithubCommit[] = [];
 
   public get csvUrl(): string {
@@ -473,10 +327,10 @@ export default class DpsComponent extends Vue {
       }
     }
 
-    this.mobileView = window.innerWidth <= 700;
     window.onresize = () => {
-      this.mobileView = window.innerWidth <= 700;
+      this.mobileView = window.outerWidth <= 700;
     };
+    this.mobileView = window.outerWidth <= 700;
     this.reload();
 
     (window as any).changelog = (cmits: any) => {
@@ -528,17 +382,23 @@ export default class DpsComponent extends Vue {
     this.reload();
   }
 
-  private async toggleFactor(category: string) {
+  private async toggleFactor(category?: string) {
     this.loading = true;
     await this.sleeep(200);
     await this.$nextTick();
 
-    const k = this.dpsCategories.indexOf(category);
-    if (k < 0) {
+    if (!category) {
+      this.dpsCategories = this.allCategories.slice();
+    } else if (this.dpsCategories.length == this.allCategories.length) {
+      this.dpsCategories = [category];
+    } else if (!this.dpsCategories.includes(category)) {
       this.dpsCategories.push(category);
+    } else if (this.dpsCategories.length > 1) {
+      this.dpsCategories.splice(this.dpsCategories.indexOf(category), 1);
     } else {
-      this.dpsCategories.splice(k, 1);
+      this.dpsCategories = this.allCategories.slice();
     }
+
     this.filtered.forEach((a) => {
       a.dps.filterFactors(this.dpsCategories);
     });
@@ -626,7 +486,7 @@ export default class DpsComponent extends Vue {
 }
 </style>
 
-<style scoped lang="css">
+<style lang="css">
 .dfac {
   display: flex !important;
   align-items: center;
@@ -688,7 +548,11 @@ export default class DpsComponent extends Vue {
 .main-scrollbar {
   height: 100vh;
   margin-right: 321px;
-  overflow: auto;
+}
+
+.virtual-list {
+  height: calc(100vh - 60px);
+  overflow-y: auto;
 }
 
 .holder {
@@ -793,6 +657,7 @@ export default class DpsComponent extends Vue {
   top: 3px;
   width: 1em;
   height: 1em;
+  margin-right: 1px;
 }
 .stats > span.stats-txt {
   font-size: 12px;
