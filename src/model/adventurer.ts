@@ -38,7 +38,6 @@ class IconObj {
     }
 
     public get qual() {
-        console.log(unidecode(this.name).replace(/[^0-9a-zA-Z ]/, '').replace(' ', '_'));
         return unidecode(this.name).replace(/[^0-9a-zA-Z ]/, '').replace(' ', '_');
     }
 }
