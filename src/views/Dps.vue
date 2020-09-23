@@ -8,12 +8,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="main-scrollbar"
-      v-loading="loading"
-      element-loading-spinner="el-icon-loading"
-      element-loading-text="loading..."
-    >
+    <div class="main-scrollbar">
       <ul class="mobile-holder" v-if="mobileView">
         <virtual-list
           v-if="mobileView"
@@ -21,6 +16,9 @@
           :data-key="'id'"
           :data-sources="filtered"
           :data-component="dpsMobile"
+          v-loading="loading"
+          element-loading-spinner="el-icon-loading"
+          element-loading-text="loading..."
         />
       </ul>
       <ul class="holder" v-if="!mobileView">
@@ -38,6 +36,9 @@
           :data-key="'id'"
           :data-sources="filtered"
           :data-component="dpsEntry"
+          v-loading="loading"
+          element-loading-spinner="el-icon-loading"
+          element-loading-text="loading..."
         />
       </ul>
     </div>
@@ -328,9 +329,9 @@ export default class DpsComponent extends Vue {
     }
 
     window.onresize = () => {
-      this.mobileView = window.outerWidth <= 700;
+      this.mobileView = window.outerWidth <= 800;
     };
-    this.mobileView = window.outerWidth <= 700;
+    this.mobileView = window.outerWidth <= 800;
     this.reload();
 
     (window as any).changelog = (cmits: any) => {
@@ -547,12 +548,13 @@ export default class DpsComponent extends Vue {
 
 .main-scrollbar {
   height: 100vh;
-  margin-right: 321px;
 }
 
 .virtual-list {
   height: calc(100vh - 60px);
+  margin-right: 321px;
   overflow-y: auto;
+  padding-top: 5px;
 }
 
 .holder {
@@ -1040,8 +1042,11 @@ span.f-title {
   }
 
   .main-scrollbar {
-    margin-right: 0px;
     height: calc(100vh - 60px);
+  }
+
+  .virtual-list {
+    margin-right: 0px;
   }
 
   .aside .aside-container {
