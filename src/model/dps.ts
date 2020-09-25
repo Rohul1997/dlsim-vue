@@ -45,7 +45,7 @@ export class Dps {
         this.filterFactors();
     }
     public get total() {
-        return this.filtered.reduce((sum, f) => sum += f.scaled, 0) + ('team' in this.filter ? this.team.scaled : 0);
+        return this.filtered.reduce((sum, f) => sum += f.scaled, 0);
     }
     public filterFactors(filter?: string[]) {
         this.filter = filter || this.filter;

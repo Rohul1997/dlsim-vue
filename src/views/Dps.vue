@@ -24,7 +24,7 @@
       <ul class="holder" v-if="!mobileView">
         <li class="title h-40">
           <div class="dib name">
-            <div class="dfac h-40" style="padding-left: 33px;">Adventurer</div>
+            <div class="dfac h-40" style="padding-left: 33px">Adventurer</div>
           </div>
           <div class="dib dps">
             <div class="dfac h-40">DPS Distribution</div>
@@ -44,21 +44,24 @@
     </div>
     <div
       class="aside-invisible-closer"
-      :class="{show: mobileView && !asideHidden}"
+      :class="{ show: mobileView && !asideHidden }"
       @click="asideHidden = true"
       v-if="mobileView"
     ></div>
-    <div class="aside the-filter" :class="{show: mobileView && !asideHidden}">
+    <div class="aside the-filter" :class="{ show: mobileView && !asideHidden }">
       <div class="aside-container">
         <div class="the-brand">
           <img class="brand" src="/dl-sim/logo-new.png" />
         </div>
-        <div class="closer fr" @click="asideHidden = true" v-if="mobileView">&times;</div>
+        <div class="closer fr" @click="asideHidden = true" v-if="mobileView">
+          &times;
+        </div>
         <div class="title custom-build">
           <a
             href="https://wildshinobu.pythonanywhere.com/ui/dl_simc.html"
             target="websim"
-          >Custom Sim</a>
+            >Custom Sim</a
+          >
         </div>
         <div class="splitter"></div>
         <div class="title">
@@ -67,13 +70,13 @@
             <a class="toggle" @click="toggleFactor()">Reset</a>
           </span>
         </div>
-        <div class="legend" style="line-height: 25px;">
+        <div class="legend" style="line-height: 25px">
           <div
             class="dib"
-            v-for="(c) in allCategories"
+            v-for="c in allCategories"
             :key="c"
             @click="toggleFactor(c)"
-            :class="{'c-gray': !dpsCategories.includes(c)}"
+            :class="{ 'c-gray': !dpsCategories.includes(c) }"
           >
             <span class="dib">
               <div class="indic" :class="'c-' + c"></div>
@@ -86,7 +89,12 @@
         <div class="splitter"></div>
         <div class="title">Mode</div>
         <div class="filter">
-          <el-radio-group class="rg-filter" v-model="category" size="mini" @change="reload()">
+          <el-radio-group
+            class="rg-filter"
+            v-model="category"
+            size="mini"
+            @change="reload()"
+          >
             <el-radio-button label="180">180s</el-radio-button>
             <el-radio-button label="120">120s</el-radio-button>
             <el-radio-button label="60">60s</el-radio-button>
@@ -105,11 +113,22 @@
           </el-tooltip>
         </div>
         <div class="filter">
-          <el-input-number v-model="teamDPS" :min="0" :step="5000" size="mini" @change="reload()"></el-input-number>
+          <el-input-number
+            v-model="teamDPS"
+            :min="0"
+            :step="5000"
+            size="mini"
+            @change="reload()"
+          ></el-input-number>
         </div>
         <div class="title">Affliction</div>
         <div class="filter">
-          <el-radio-group class="rg-filter" v-model="aff" size="mini" @change="reload()">
+          <el-radio-group
+            class="rg-filter"
+            v-model="aff"
+            size="mini"
+            @change="reload()"
+          >
             <el-radio-button label="affliction">100%</el-radio-button>
             <el-radio-button label="_">None</el-radio-button>
           </el-radio-group>
@@ -122,7 +141,12 @@
           </span>
         </div>
         <div class="filter">
-          <el-checkbox-group class="cb-filter" v-model="rarities" size="mini" @change="reload()">
+          <el-checkbox-group
+            class="cb-filter"
+            v-model="rarities"
+            size="mini"
+            @change="reload()"
+          >
             <el-checkbox label="5">
               <img class="icon-rarity" src="/dl-sim/pic/rarity/5.png" alt="K" />
             </el-checkbox>
@@ -141,22 +165,47 @@
           </span>
         </div>
         <div class="filter">
-          <el-checkbox-group class="cb-filter" v-model="elements" size="mini" @change="reload()">
+          <el-checkbox-group
+            class="cb-filter"
+            v-model="elements"
+            size="mini"
+            @change="reload()"
+          >
             <el-checkbox label="flame">
-              <img class="icon-element" src="/dl-sim/pic/icons/flame.png" alt="K" />
+              <img
+                class="icon-element"
+                src="/dl-sim/pic/icons/flame.png"
+                alt="K"
+              />
             </el-checkbox>
             <el-checkbox label="water">
-              <img class="icon-element" src="/dl-sim/pic/icons/water.png" alt="K" />
+              <img
+                class="icon-element"
+                src="/dl-sim/pic/icons/water.png"
+                alt="K"
+              />
             </el-checkbox>
             <el-checkbox label="wind">
-              <img class="icon-element" src="/dl-sim/pic/icons/wind.png" alt="K" />
+              <img
+                class="icon-element"
+                src="/dl-sim/pic/icons/wind.png"
+                alt="K"
+              />
             </el-checkbox>
             <br />
             <el-checkbox label="light">
-              <img class="icon-element" src="/dl-sim/pic/icons/light.png" alt="K" />
+              <img
+                class="icon-element"
+                src="/dl-sim/pic/icons/light.png"
+                alt="K"
+              />
             </el-checkbox>
             <el-checkbox label="shadow">
-              <img class="icon-element" src="/dl-sim/pic/icons/shadow.png" alt="K" />
+              <img
+                class="icon-element"
+                src="/dl-sim/pic/icons/shadow.png"
+                alt="K"
+              />
             </el-checkbox>
           </el-checkbox-group>
         </div>
@@ -167,7 +216,12 @@
           </span>
         </div>
         <div class="filter">
-          <el-checkbox-group class="cb-filter" v-model="weapons" size="mini" @change="reload()">
+          <el-checkbox-group
+            class="cb-filter"
+            v-model="weapons"
+            size="mini"
+            @change="reload()"
+          >
             <el-checkbox label="sword">
               <img class="icon-weapon" src="/dl-sim/pic/icons/sword.png" />
             </el-checkbox>
@@ -203,13 +257,14 @@
                 class="toggle"
                 href="https://github.com/Mushymato/Mushymato.github.io/commits/master"
                 target="github"
-              >See more</a>
+                >See more</a
+              >
             </span>
           </div>
           <ul class="commits">
-            <li v-for="(c) in lastCommits" :key="c.sha" class="mr-20">
-              <span class="message">{{c.message}}</span>
-              <span class="date">{{c.at}}</span>
+            <li v-for="c in lastCommits" :key="c.sha" class="mr-20">
+              <span class="message">{{ c.message }}</span>
+              <span class="date">{{ c.at }}</span>
             </li>
           </ul>
         </section>
@@ -218,8 +273,11 @@
           <div class="links">
             <a
               href="https://github.com/Mushymato/Mushymato.github.io/blob/master/dl-sim/README.md"
-            >About</a>
-            <a class="pl-15" href="https://github.com/Mushymato/dl/issues/new">Feedback</a>
+              >About</a
+            >
+            <a class="pl-15" href="https://github.com/Mushymato/dl/issues/new"
+              >Feedback</a
+            >
           </div>
           <!-- <div class="powerby mb-5">powered by <a href="https://cn.vuejs.org/">Vue</a> and <a href="https://element.eleme.cn/">Element</a></div> -->
         </div>
@@ -279,12 +337,16 @@ export default class DpsComponent extends Vue {
 
   public async reload() {
     this.loading = true;
-    await this.sleeep(200);
     await this.$nextTick();
+    await this.reloadOps();
+    await this.$nextTick();
+    this.loading = false;
+  }
+
+  public async reloadOps() {
     if (this.csvUrl !== this.cachedCsvUrl) {
       const csv = await this.loadCsv();
       if (!csv) {
-        this.loading = false;
         return;
       }
 
@@ -308,10 +370,6 @@ export default class DpsComponent extends Vue {
     localStorage.setItem("rarities", this.rarities.join());
     localStorage.setItem("elements", this.elements.join());
     localStorage.setItem("weapons", this.weapons.join());
-
-    await this.$nextTick();
-    await this.sleeep(200);
-    this.loading = false;
   }
 
   public mounted() {
@@ -385,9 +443,13 @@ export default class DpsComponent extends Vue {
 
   private async toggleFactor(category?: string) {
     this.loading = true;
-    await this.sleeep(200);
     await this.$nextTick();
+    await this.toggleFactorOps(category);
+    await this.$nextTick();
+    this.loading = false;
+  }
 
+  private async toggleFactorOps(category?: string) {
     if (!category) {
       this.dpsCategories = this.allCategories.slice();
     } else if (this.dpsCategories.length == this.allCategories.length) {
@@ -408,9 +470,6 @@ export default class DpsComponent extends Vue {
     this.adventurers.forEach((a) => {
       a.dps.updateWidths(maxd);
     });
-    await this.$nextTick();
-    await this.sleeep(200);
-    this.loading = false;
   }
 
   private sleeep(ms: number): Promise<boolean> {
