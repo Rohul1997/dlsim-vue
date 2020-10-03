@@ -627,7 +627,7 @@ export default class DpsComponent extends Vue {
 .holder li {
   list-style: none;
   display: grid;
-  grid-template-columns: 280px 1fr 90px;
+  grid-template-columns: 350px 1fr 90px;
 }
 
 .holder .title {
@@ -786,7 +786,7 @@ div.adt-body {
 
 .avatar-slot-grid {
   display: grid;
-  grid-template-columns: 1fr 30px 30px 8px 30px 30px 30px;
+  grid-template-columns: 1fr 30px 8px 30px 30px 30px 8px 30px 30px 30px;
   grid-template-rows: 30px 30px;
   /* display: flex;
   align-items: center; */
@@ -1155,9 +1155,9 @@ span.f-title {
   }
 
   .mobile-holder .content .chains {
-    border-left: 1px solid #ccc;
-    padding-left: 3px;
-    margin-left: 3px;
+    border-right: 1px solid #ccc;
+    padding-right: 3px;
+    margin-right: 3px;
     height: 30px;
   }
 
@@ -1198,10 +1198,6 @@ span.f-title {
   .mobile-holder img.wyrmprint {
     width: 30px;
     height: 30px;
-  }
-
-  .mobile-holder .drogon:first-child {
-    padding-left: 2px;
   }
 
   .mobile-holder .mobile-comment {

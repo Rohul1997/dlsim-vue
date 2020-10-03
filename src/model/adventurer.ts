@@ -11,7 +11,6 @@ const CoabLinks: Record<string, string> = {
     Axe2: 'Critical_Damage_%2B30%25_(Co-ability)',
     Dagger2: 'Standard_Attack_Damage_%2B20%25',
 };
-const HasTier2 = ['flame', 'shadow'];
 
 class IconObj {
     public icon: string;
@@ -38,7 +37,7 @@ class IconObj {
     }
 
     public get qual() {
-        return unidecode(this.name).replace(/[^0-9a-zA-Z ]/, '').replace(' ', '_');
+        return unidecode(this.name).replace(/[^0-9a-zA-Z ]/g, '').replace(/ /g, '_');
     }
 }
 
@@ -67,7 +66,9 @@ export class Adventurer {
     public rarity: string;
     public ele: string;
     public wt: string;
-    public slots: IconObj[] = [];
+    public drg: IconObj;
+    public wep: IconObj;
+    public wps: IconObj[] = [];
     public coabs: IconObj[] = [];
     public share: IconObj[] = [];
     public condition: string;
@@ -82,16 +83,14 @@ export class Adventurer {
         this.ele = n[3];
         this.wt = n[4];
         // this.att = n[5];
-        if (HasTier2.includes(this.ele)) { n[12] += ' (Tier II)'; }
-        this.slots = [
-            new IconObj(n[12], n[13], 'weapon'), // weapon
-            new IconObj(n[10], n[11], 'dragon'), // dragon
-            new IconObj(n[6], n[7], 'amulet'), // wp1
-            new IconObj(n[8], n[9], 'amulet'), // wp2
-        ];
+        this.drg = new IconObj(n[6], n[7], 'dragon');
+        this.wep = new IconObj(n[8], n[9], 'weapon');
+        for (let i = 10; i < 19; i += 2) {
+            this.wps.push(new IconObj(n[i], n[i + 1], 'amulet'));
+        }
         const uniqueC = [];
         const genericC = [];
-        for (let i = 14; i < 20; i += 2) {
+        for (let i = 20; i < 26; i += 2) {
             const c_name = n[i];
             if (!c_name) {
                 continue;
@@ -104,19 +103,19 @@ export class Adventurer {
             }
         }
         this.coabs = uniqueC.concat(genericC);
-        if (n[20] === 'Weapon') {
-            this.share.push(new IconObj(n[20], 'weaponskill', 'icons', NO));
+        if (n[26] === 'Weapon') {
+            this.share.push(new IconObj(n[26], 'weaponskill', 'icons', NO));
         } else {
-            this.share.push(new IconObj(n[20], n[21]));
+            this.share.push(new IconObj(n[26], n[27]));
         }
-        if (n[22]) {
-            this.share.push(new IconObj(n[22], n[23]));
+        if (n[28]) {
+            this.share.push(new IconObj(n[28], n[29]));
         }
-        this.condition = n[24];
-        this.comment = n[25];
+        this.condition = n[30];
+        this.comment = n[31];
 
         let team = 0;
-        for (const s of n[26].split(';')) {
+        for (const s of n[32].split(';')) {
             if (!s) {
                 continue;
             }
@@ -128,7 +127,7 @@ export class Adventurer {
                 this.stats.push(new IconObj(p[1], p[0], 'icons', NO));
             }
         }
-        this.dps = new Dps(n.slice(27), team);
+        this.dps = new Dps(n.slice(33), team);
     }
 }
 
