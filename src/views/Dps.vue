@@ -64,6 +64,8 @@
           >
         </div>
         <div class="splitter"></div>
+        <div class="last-modified">Last modified: {{ lastModified }}</div>
+        <div class="splitter"></div>
         <div class="title">
           Legend
           <span v-if="dpsCategories.length < allCategories.length">
@@ -248,26 +250,6 @@
             </el-checkbox>
           </el-checkbox-group>
         </div>
-        <section v-if="lastCommits.length > 0">
-          <div class="splitter"></div>
-          <div class="title">
-            Latest updates
-            <span class="fr mr-20">
-              <a
-                class="toggle"
-                href="https://github.com/Mushymato/Mushymato.github.io/commits/master"
-                target="github"
-                >See more</a
-              >
-            </span>
-          </div>
-          <ul class="commits">
-            <li v-for="c in lastCommits" :key="c.sha" class="mr-20">
-              <span class="message">{{ c.message }}</span>
-              <span class="date">{{ c.at }}</span>
-            </li>
-          </ul>
-        </section>
         <div class="splitter"></div>
         <div class="filter footer">
           <div class="links">
@@ -296,9 +278,9 @@ import DpsMobile from "./DpsMobile.vue";
 import { ElPopover } from "element-ui/types/popover";
 // @ts-ignore
 import Popper from "vue-popperjs";
-import { GithubCommit } from "@/model/github-commit";
 // @ts-ignore
 import VirtualList from "vue-virtual-scroll-list";
+import { humanized_time_span } from "@/service/time-span";
 
 @Component({
   components: {
@@ -310,8 +292,6 @@ export default class DpsComponent extends Vue {
   public dpsEntry = DpsEntry;
   public dpsMobile = DpsMobile;
 
-  public lastCommits: GithubCommit[] = [];
-
   public get csvUrl(): string {
     return `/dl-sim/page/${this.category}_${this.aff}.csv`;
   }
@@ -322,6 +302,7 @@ export default class DpsComponent extends Vue {
   public elements: string[] = []; // ['flame', 'water', 'wind', 'light', 'shadow'];
   public weapons: string[] = []; // ['sword', 'blade', 'dagger', 'axe', 'lance', 'bow', 'wand', 'staff'];
   [index: string]: any;
+  public lastModified: string = "";
 
   public allCategories = CATEGORIES;
   public dpsCategories: string[] = CATEGORIES.slice();
@@ -390,19 +371,8 @@ export default class DpsComponent extends Vue {
       this.mobileView = window.outerWidth <= 800;
     };
     this.mobileView = window.outerWidth <= 800;
+    this.loadLastModified();
     this.reload();
-
-    (window as any).changelog = (cmits: any) => {
-      this.lastCommits = (cmits.data as any[]).slice(0, 3).map((c) => {
-        return GithubCommit.fromApiCommit(c);
-      });
-    };
-    const $changelog = document.createElement("script");
-    $changelog.setAttribute(
-      "src",
-      "https://api.github.com/repos/mushymato/mushymato.github.io/commits?page=1&callback=changelog"
-    );
-    document.head.appendChild($changelog);
   }
 
   private toggleRarity() {
@@ -487,6 +457,12 @@ export default class DpsComponent extends Vue {
     } catch (e) {
       return "";
     }
+  }
+
+  private async loadLastModified() {
+    this.lastModified = humanized_time_span(
+      new Date(await Http.Get(`/dl-sim/page/lastmodified`, "text"))
+    );
   }
 
   private matched(adventurer: Adventurer): boolean {
@@ -676,6 +652,10 @@ export default class DpsComponent extends Vue {
   width: 5px;
   border-right: 3px solid white;
   border-top: 3px solid white; */
+}
+.last-modified {
+  color: #666;
+  font-size: 0.9em;
 }
 
 .custom-sim-link {
@@ -927,6 +907,7 @@ span.f-title {
   bottom: 0;
   font-size: 14px !important;
   border-left: 1px solid #eee;
+  background-color: white;
 
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
