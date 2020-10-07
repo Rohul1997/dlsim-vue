@@ -66,7 +66,16 @@
         <div class="splitter"></div>
         <div class="last-modified">
           <div class="mb-5">Last modified: {{ lastModifiedTime }}</div>
-          <div>Changed: {{ lastModifiedList }}</div>
+          <div>
+            <div>Changed:</div>
+            <div class="last-modified-icons">
+              <img
+                v-for="lm in lastModifiedList"
+                :key="lm"
+                :src="`/dl-sim/pic/character/${lm}.png`"
+              />
+            </div>
+          </div>
         </div>
         <div class="splitter"></div>
         <div class="title">
@@ -306,7 +315,7 @@ export default class DpsComponent extends Vue {
   public weapons: string[] = []; // ['sword', 'blade', 'dagger', 'axe', 'lance', 'bow', 'wand', 'staff'];
   [index: string]: any;
   public lastModifiedTime: string = "";
-  public lastModifiedList: string = "";
+  public lastModifiedList: string[] = [];
 
   public allCategories = CATEGORIES;
   public dpsCategories: string[] = CATEGORIES.slice();
@@ -469,7 +478,7 @@ export default class DpsComponent extends Vue {
     this.lastModifiedTime = humanized_time_span(
       new Date(parseInt(lastmod.timestamp))
     );
-    this.lastModifiedList = lastmod.message.join(", ");
+    this.lastModifiedList = lastmod.message;
   }
 
   private matched(adventurer: Adventurer): boolean {
@@ -663,6 +672,13 @@ export default class DpsComponent extends Vue {
 .last-modified {
   color: #666;
   font-size: 0.9em;
+}
+.last-modified-icons {
+  margin-right: 12px;
+}
+.last-modified-icons > img {
+  width: 30px;
+  height: 30px;
 }
 
 .last-modified-list {
