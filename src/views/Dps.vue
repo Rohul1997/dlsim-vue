@@ -64,7 +64,10 @@
           >
         </div>
         <div class="splitter"></div>
-        <div class="last-modified">Last modified: {{ lastModified }}</div>
+        <div class="last-modified">
+          <div class="mb-5">Last modified: {{ lastModifiedTime }}</div>
+          <div>Changed: {{ lastModifiedList }}</div>
+        </div>
         <div class="splitter"></div>
         <div class="title">
           Legend
@@ -302,7 +305,8 @@ export default class DpsComponent extends Vue {
   public elements: string[] = []; // ['flame', 'water', 'wind', 'light', 'shadow'];
   public weapons: string[] = []; // ['sword', 'blade', 'dagger', 'axe', 'lance', 'bow', 'wand', 'staff'];
   [index: string]: any;
-  public lastModified: string = "";
+  public lastModifiedTime: string = "";
+  public lastModifiedList: string = "";
 
   public allCategories = CATEGORIES;
   public dpsCategories: string[] = CATEGORIES.slice();
@@ -461,9 +465,11 @@ export default class DpsComponent extends Vue {
   }
 
   private async loadLastModified() {
-    this.lastModified = humanized_time_span(
-      new Date(await Http.Get(`/dl-sim/page/lastmodified`, "text"))
+    const lastmod = await Http.Get(`/dl-sim/page/lastmodified.json`, "json");
+    this.lastModifiedTime = humanized_time_span(
+      new Date(parseInt(lastmod.timestamp))
     );
+    this.lastModifiedList = lastmod.message.join(", ");
   }
 
   private matched(adventurer: Adventurer): boolean {
@@ -657,6 +663,11 @@ export default class DpsComponent extends Vue {
 .last-modified {
   color: #666;
   font-size: 0.9em;
+}
+
+.last-modified-list {
+  margin-top: 5px;
+  display: flex;
 }
 
 .custom-sim-link {
