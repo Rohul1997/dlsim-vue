@@ -248,16 +248,16 @@
             <el-checkbox label="staff">
               <img class="icon-weapon" src="/dl-sim/pic/icons/staff.png" />
             </el-checkbox>
+            <el-checkbox label="gun">
+              <img class="icon-weapon" src="/dl-sim/pic/icons/gun.png" />
+            </el-checkbox>
           </el-checkbox-group>
         </div>
         <div class="splitter"></div>
         <div class="filter footer">
           <div class="links">
-            <a
-              href="https://github.com/Mushymato/Mushymato.github.io/blob/master/dl-sim/README.md"
-              >About</a
-            >
-            <a class="pl-15" href="https://github.com/Mushymato/dl/issues/new"
+            <a href="https://github.com/dl-stuff/dl/wiki">About</a>
+            <a class="pl-15" href="https://github.com/dl-stuff/dl/issues/new"
               >Feedback</a
             >
           </div>
@@ -404,6 +404,7 @@ export default class DpsComponent extends Vue {
         "bow",
         "wand",
         "staff",
+        "gun",
       ];
     } else {
       this.weapons = [];
