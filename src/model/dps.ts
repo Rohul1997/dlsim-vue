@@ -1,5 +1,5 @@
 export const CATEGORIES = [
-    'attack', 'fs', 'other', 'team',
+    'x', 'fs', 'other', 'team',
     's1', 's2', 's3', 's4',
     'dx', 'ds',
 ];

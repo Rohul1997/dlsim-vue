@@ -436,14 +436,19 @@ export default class DpsComponent extends Vue {
   private async toggleFactorOps(category?: string) {
     if (!category) {
       this.dpsCategories = this.allCategories.slice();
-    } else if (this.dpsCategories.length == this.allCategories.length) {
-      this.dpsCategories = [category];
-    } else if (!this.dpsCategories.includes(category)) {
-      this.dpsCategories.push(category);
-    } else if (this.dpsCategories.length > 1) {
-      this.dpsCategories.splice(this.dpsCategories.indexOf(category), 1);
+    } else if (this.dpsCategories.includes(category)){
+      if (this.dpsCategories.length > 1) {
+        this.dpsCategories.splice(this.dpsCategories.indexOf(category), 1);
+      } else {
+        this.dpsCategories = this.allCategories.slice();
+        this.dpsCategories.splice(this.dpsCategories.indexOf(category), 1);
+      }
     } else {
-      this.dpsCategories = this.allCategories.slice();
+      if (this.dpsCategories.length == this.allCategories.length - 1) {
+        this.dpsCategories = [category];
+      } else {
+        this.dpsCategories.push(category);
+      }
     }
 
     this.filtered.forEach((a) => {
@@ -863,7 +868,7 @@ div.full {
   font-size: 12px;
   line-height: 12px;
 }
-.c-attack {
+.c-x {
   background-color: #6495ed !important;
 }
 .c-fs {
