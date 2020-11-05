@@ -351,7 +351,11 @@ export default class DpsComponent extends Vue {
   ) {
     if (!next || current.length === 0) {
       return complete.slice();
-    } else if (current.includes(next)) {
+    }
+    if (current.length === complete.length) {
+      return [next];
+    }
+    if (current.includes(next)) {
       if (current.length === 1) {
         current = complete.slice();
       }
