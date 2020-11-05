@@ -150,74 +150,43 @@
         <div class="splitter"></div>
         <div class="title">
           Rarity
-          <span v-if="rarities.length > 0">
+          <span v-if="rarities.length < allRarities.length">
             <a class="toggle" @click="toggleRarity()">Reset</a>
           </span>
         </div>
         <div class="filter">
-          <el-checkbox-group
-            class="cb-filter"
-            v-model="rarities"
-            size="mini"
-            @change="reload()"
-          >
-            <el-checkbox label="5">
-              <img class="icon-rarity" src="/dl-sim/pic/rarity/5.png" alt="K" />
-            </el-checkbox>
-            <el-checkbox label="4">
-              <img class="icon-rarity" src="/dl-sim/pic/rarity/4.png" alt="K" />
-            </el-checkbox>
-            <el-checkbox label="3">
-              <img class="icon-rarity" src="/dl-sim/pic/rarity/3.png" alt="K" />
+          <el-checkbox-group class="cb-filter" v-model="rarities" size="mini">
+            <el-checkbox
+              v-for="r in allRarities"
+              :key="r"
+              :label="r"
+              @change="toggleRarity(r)"
+            >
+              <img
+                class="icon-rarity"
+                :src="`/dl-sim/pic/rarity/${r}.png`"
+                alt="K"
+              />
             </el-checkbox>
           </el-checkbox-group>
         </div>
         <div class="title">
           Element
-          <span v-if="elements.length > 0">
+          <span v-if="elements.length < allElements.length">
             <a class="toggle" @click="toggleElement()">Reset</a>
           </span>
         </div>
         <div class="filter">
-          <el-checkbox-group
-            class="cb-filter"
-            v-model="elements"
-            size="mini"
-            @change="reload()"
-          >
-            <el-checkbox label="flame">
+          <el-checkbox-group class="cb-filter" v-model="elements" size="mini">
+            <el-checkbox
+              v-for="e in allElements"
+              :key="e"
+              :label="e"
+              @change="toggleElement(e)"
+            >
               <img
                 class="icon-element"
-                src="/dl-sim/pic/icons/flame.png"
-                alt="K"
-              />
-            </el-checkbox>
-            <el-checkbox label="water">
-              <img
-                class="icon-element"
-                src="/dl-sim/pic/icons/water.png"
-                alt="K"
-              />
-            </el-checkbox>
-            <el-checkbox label="wind">
-              <img
-                class="icon-element"
-                src="/dl-sim/pic/icons/wind.png"
-                alt="K"
-              />
-            </el-checkbox>
-            <br />
-            <el-checkbox label="light">
-              <img
-                class="icon-element"
-                src="/dl-sim/pic/icons/light.png"
-                alt="K"
-              />
-            </el-checkbox>
-            <el-checkbox label="shadow">
-              <img
-                class="icon-element"
-                src="/dl-sim/pic/icons/shadow.png"
+                :src="`/dl-sim/pic/icons/${e}.png`"
                 alt="K"
               />
             </el-checkbox>
@@ -225,43 +194,19 @@
         </div>
         <div class="title">
           Class
-          <span v-if="weapons.length > 0">
+          <span v-if="weapons.length < allWeapons.length">
             <a class="toggle" @click="toggleWeapon()">Reset</a>
           </span>
         </div>
         <div class="filter">
-          <el-checkbox-group
-            class="cb-filter"
-            v-model="weapons"
-            size="mini"
-            @change="reload()"
-          >
-            <el-checkbox label="sword">
-              <img class="icon-weapon" src="/dl-sim/pic/icons/sword.png" />
-            </el-checkbox>
-            <el-checkbox label="blade">
-              <img class="icon-weapon" src="/dl-sim/pic/icons/blade.png" />
-            </el-checkbox>
-            <el-checkbox label="dagger">
-              <img class="icon-weapon" src="/dl-sim/pic/icons/dagger.png" />
-            </el-checkbox>
-            <el-checkbox label="lance">
-              <img class="icon-weapon" src="/dl-sim/pic/icons/lance.png" />
-            </el-checkbox>
-            <el-checkbox label="axe">
-              <img class="icon-weapon" src="/dl-sim/pic/icons/axe.png" />
-            </el-checkbox>
-            <el-checkbox label="bow">
-              <img class="icon-weapon" src="/dl-sim/pic/icons/bow.png" />
-            </el-checkbox>
-            <el-checkbox label="wand">
-              <img class="icon-weapon" src="/dl-sim/pic/icons/wand.png" />
-            </el-checkbox>
-            <el-checkbox label="staff">
-              <img class="icon-weapon" src="/dl-sim/pic/icons/staff.png" />
-            </el-checkbox>
-            <el-checkbox label="gun">
-              <img class="icon-weapon" src="/dl-sim/pic/icons/gun.png" />
+          <el-checkbox-group class="cb-filter" v-model="weapons" size="mini">
+            <el-checkbox
+              v-for="w in allWeapons"
+              :key="w"
+              :label="w"
+              @change="toggleWeapon(w)"
+            >
+              <img class="icon-weapon" :src="`/dl-sim/pic/icons/${w}.png`" />
             </el-checkbox>
           </el-checkbox-group>
         </div>
@@ -283,7 +228,12 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { Http } from "@/service/http";
-import { Adventurer } from "../model/adventurer";
+import {
+  Adventurer,
+  RARITYTYPES,
+  ELEMENTTYPES,
+  WEAPONTYPES,
+} from "../model/adventurer";
 import { CATEGORIES } from "../model/dps";
 import DpsEntry from "./DpsEntry.vue";
 import DpsMobile from "./DpsMobile.vue";
@@ -310,9 +260,15 @@ export default class DpsComponent extends Vue {
   public category: "sp" | "60" | "120" | "180" = "180";
   public aff: string = "affliction";
   public teamDPS: number = 30000;
-  public rarities: string[] = []; // ['5', '4', '3'];
-  public elements: string[] = []; // ['flame', 'water', 'wind', 'light', 'shadow'];
-  public weapons: string[] = []; // ['sword', 'blade', 'dagger', 'axe', 'lance', 'bow', 'wand', 'staff'];
+  public allRarities = RARITYTYPES;
+  public prevRarities = RARITYTYPES.slice();
+  public rarities: string[] = RARITYTYPES.slice();
+  public allElements = ELEMENTTYPES;
+  public prevElements = ELEMENTTYPES.slice();
+  public elements: string[] = ELEMENTTYPES.slice();
+  public allWeapons = WEAPONTYPES;
+  public prevWeapons = WEAPONTYPES.slice();
+  public weapons: string[] = WEAPONTYPES.slice();
   [index: string]: any;
   public lastModifiedTime: string = "";
   public lastModifiedList: string[] = [];
@@ -388,40 +344,55 @@ export default class DpsComponent extends Vue {
     this.reload();
   }
 
-  private toggleRarity() {
-    if (this.rarities.length === 0) {
-      this.rarities = ["5", "4", "3"];
+  private toggleCheckboxGroup(
+    next: string,
+    current: string[],
+    complete: string[]
+  ) {
+    if (!next || current.length === 0) {
+      return complete.slice();
+    } else if (current.includes(next)) {
+      if (current.length === 1) {
+        current = complete.slice();
+      }
+      current.splice(current.indexOf(next), 1);
     } else {
-      this.rarities = [];
+      if (current.length == complete.length - 1) {
+        current = [next];
+      } else {
+        current.push(next);
+      }
     }
+    return current;
+  }
+
+  private toggleRarity(rarity: string) {
+    this.rarities = this.toggleCheckboxGroup(
+      rarity,
+      this.prevRarities,
+      this.allRarities
+    );
+    this.prevRarities = this.rarities;
     this.reload();
   }
 
-  private toggleElement() {
-    if (this.elements.length === 0) {
-      this.elements = ["flame", "water", "wind", "light", "shadow"];
-    } else {
-      this.elements = [];
-    }
+  private toggleElement(element: string) {
+    this.elements = this.toggleCheckboxGroup(
+      element,
+      this.prevElements,
+      this.allElements
+    );
+    this.prevElements = this.elements;
     this.reload();
   }
 
-  private toggleWeapon() {
-    if (this.weapons.length === 0) {
-      this.weapons = [
-        "sword",
-        "blade",
-        "dagger",
-        "axe",
-        "lance",
-        "bow",
-        "wand",
-        "staff",
-        "gun",
-      ];
-    } else {
-      this.weapons = [];
-    }
+  private toggleWeapon(weapon: string) {
+    this.weapons = this.toggleCheckboxGroup(
+      weapon,
+      this.prevWeapons,
+      this.allWeapons
+    );
+    this.prevWeapons = this.weapons;
     this.reload();
   }
 
@@ -436,13 +407,11 @@ export default class DpsComponent extends Vue {
   private async toggleFactorOps(category?: string) {
     if (!category) {
       this.dpsCategories = this.allCategories.slice();
-    } else if (this.dpsCategories.includes(category)){
-      if (this.dpsCategories.length > 1) {
-        this.dpsCategories.splice(this.dpsCategories.indexOf(category), 1);
-      } else {
+    } else if (this.dpsCategories.includes(category)) {
+      if (this.dpsCategories.length === 1) {
         this.dpsCategories = this.allCategories.slice();
-        this.dpsCategories.splice(this.dpsCategories.indexOf(category), 1);
       }
+      this.dpsCategories.splice(this.dpsCategories.indexOf(category), 1);
     } else {
       if (this.dpsCategories.length == this.allCategories.length - 1) {
         this.dpsCategories = [category];

@@ -1,5 +1,18 @@
 import { Dps } from './dps';
 
+export const RARITYTYPES = [
+    '5', '4', '3'
+];
+
+export const ELEMENTTYPES = [
+    'flame', 'water', 'wind', 'light', 'shadow'
+];
+
+export const WEAPONTYPES = [
+    'sword', 'blade', 'dagger', 'axe',
+    'lance', 'bow', 'wand', 'staff', 'gun'
+];
+
 const unidecode = require('unidecode');
 
 const NO = '<NO>';
