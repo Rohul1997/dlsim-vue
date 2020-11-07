@@ -1,5 +1,8 @@
 import { Dps } from './dps';
 
+const Entities = require('html-entities').AllHtmlEntities;
+const entities = new Entities();
+
 export const RARITYTYPES = [
     '5', '4', '3'
 ];
@@ -32,7 +35,7 @@ class IconObj {
     public link: string;
     public generic: boolean = false;
     constructor(name: string, icon: string, cat?: string, link?: string) {
-        this.name = name;
+        this.name = entities.decode(name);
         this.icon = icon;
         this.cat = cat || 'character';
         this.link = link || encodeURI(name);
