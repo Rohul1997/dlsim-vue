@@ -109,10 +109,22 @@
             size="mini"
             @change="reload()"
           >
-            <el-radio-button label="180">180s</el-radio-button>
-            <el-radio-button label="120">120s</el-radio-button>
-            <el-radio-button label="60">60s</el-radio-button>
+            <el-radio-button label="180" value="180">180s</el-radio-button>
+            <el-radio-button label="60" value="60">60s</el-radio-button>
+            <el-radio-button label="mono" value="mono">Mono</el-radio-button>
             <el-radio-button label="sp" value="sp">Special</el-radio-button>
+          </el-radio-group>
+        </div>
+        <div class="title">Affliction</div>
+        <div class="filter">
+          <el-radio-group
+            class="rg-filter"
+            v-model="aff"
+            size="mini"
+            @change="reload()"
+          >
+            <el-radio-button label="aff">100%</el-radio-button>
+            <el-radio-button label="none">None</el-radio-button>
           </el-radio-group>
         </div>
         <div class="title">
@@ -134,18 +146,6 @@
             size="mini"
             @change="reload()"
           ></el-input-number>
-        </div>
-        <div class="title">Affliction</div>
-        <div class="filter">
-          <el-radio-group
-            class="rg-filter"
-            v-model="aff"
-            size="mini"
-            @change="reload()"
-          >
-            <el-radio-button label="affliction">100%</el-radio-button>
-            <el-radio-button label="_">None</el-radio-button>
-          </el-radio-group>
         </div>
         <div class="splitter"></div>
         <div class="title">
@@ -257,8 +257,8 @@ export default class DpsComponent extends Vue {
   public get csvUrl(): string {
     return `/dl-sim/page/${this.category}_${this.aff}.csv`;
   }
-  public category: "sp" | "60" | "120" | "180" = "180";
-  public aff: string = "affliction";
+  public category: "sp" | "mono" | "60" | "180" = "180";
+  public aff: "aff" | "none" = "aff";
   public teamDPS: number = 30000;
   public allRarities = RARITYTYPES;
   public prevRarities = RARITYTYPES.slice();
