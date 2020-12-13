@@ -123,8 +123,8 @@
             size="mini"
             @change="reload()"
           >
-            <el-radio-button label="aff">100%</el-radio-button>
-            <el-radio-button label="none">None</el-radio-button>
+            <el-radio-button label="affliction">100%</el-radio-button>
+            <el-radio-button label="_">None</el-radio-button>
           </el-radio-group>
         </div>
         <div class="title">
@@ -258,7 +258,7 @@ export default class DpsComponent extends Vue {
     return `/dl-sim/page/${this.category}_${this.aff}.csv`;
   }
   public category: "sp" | "mono" | "60" | "180" = "180";
-  public aff: "aff" | "none" = "aff";
+  public aff: "affliction" | "_" = "affliction";
   public teamDPS: number = 30000;
   public allRarities = RARITYTYPES;
   public prevRarities = RARITYTYPES.slice();
@@ -296,10 +296,10 @@ export default class DpsComponent extends Vue {
   public async reloadOps() {
     if (this.csvUrl !== this.cachedCsvUrl) {
       const csv = await this.loadCsv();
+      console.log(csv);
       if (!csv) {
         return;
       }
-
       this.adventurers = Adventurer.ParseCSV(csv);
       this.cachedCsvUrl = this.adventurers.length > 0 ? this.csvUrl : "";
     }
