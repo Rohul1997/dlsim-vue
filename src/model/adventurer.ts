@@ -47,7 +47,7 @@ class IconObj {
 
     public get wiki() {
         if (this.link != NO) {
-            return `https://dragalialost.gamepedia.com/${this.link}`;
+            return `https://dragalialost.wiki/w/${this.link}`;
         }
         return '';
     }
