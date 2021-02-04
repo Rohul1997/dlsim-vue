@@ -38,7 +38,7 @@ class IconObj {
         this.name = entities.decode(name);
         this.icon = icon;
         this.cat = cat || 'character';
-        this.link = link || encodeURI(name);
+        this.link = link || this.name;
     }
 
     public get src() {
