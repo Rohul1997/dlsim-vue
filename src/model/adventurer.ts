@@ -101,12 +101,13 @@ export class Adventurer {
         // this.att = n[5];
         this.drg = new IconObj(n[6], n[7], 'dragon');
         this.wep = new IconObj(n[8], n[9], 'weapon');
-        for (let i = 10; i < 19; i += 2) {
+        // do not pick last 2 slot yet
+        for (let i = 10; i < 23; i += 2) {
             this.wps.push(new IconObj(n[i], n[i + 1], 'amulet'));
         }
         const uniqueC = [];
         const genericC = [];
-        for (let i = 20; i < 26; i += 2) {
+        for (let i = 24; i < 29; i += 2) {
             const c_name = n[i];
             if (!c_name) {
                 continue;
@@ -119,19 +120,19 @@ export class Adventurer {
             }
         }
         this.coabs = uniqueC.concat(genericC);
-        if (n[26] === 'Weapon') {
-            this.share.push(new IconObj(n[26], 'weaponskill', 'icons', NO));
+        if (n[30] === 'Weapon') {
+            this.share.push(new IconObj(n[30], 'weaponskill', 'icons', NO));
         } else {
-            this.share.push(new IconObj(n[26], n[27]));
+            this.share.push(new IconObj(n[30], n[31]));
         }
-        if (n[28]) {
-            this.share.push(new IconObj(n[28], n[29]));
+        if (n[32]) {
+            this.share.push(new IconObj(n[32], n[33]));
         }
-        this.condition = n[30];
-        this.comment = n[31];
+        this.condition = n[34];
+        this.comment = n[35];
 
         let team = 0;
-        for (const s of n[32].split(';')) {
+        for (const s of n[36].split(';')) {
             if (!s) {
                 continue;
             }
@@ -143,7 +144,7 @@ export class Adventurer {
                 this.stats.push(new IconObj(p[1], p[0], 'icons', NO));
             }
         }
-        this.dps = new Dps(n.slice(33), team);
+        this.dps = new Dps(n.slice(37), team);
     }
 }
 
