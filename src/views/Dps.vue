@@ -110,7 +110,6 @@
             @change="reload()"
           >
             <el-radio-button label="180" value="180">180s</el-radio-button>
-            <el-radio-button label="60" value="60">60s</el-radio-button>
             <el-radio-button label="mono" value="mono">Mono</el-radio-button>
             <el-radio-button label="sp" value="sp">Special</el-radio-button>
           </el-radio-group>
@@ -124,7 +123,8 @@
             @change="reload()"
           >
             <el-radio-button label="affliction">100%</el-radio-button>
-            <el-radio-button label="_">None</el-radio-button>
+            <el-radio-button label="_">Self</el-radio-button>
+            <el-radio-button label="noaffliction">0%</el-radio-button>
           </el-radio-group>
         </div>
         <div class="title">
@@ -237,7 +237,6 @@ import {
 import { CATEGORIES } from "../model/dps";
 import DpsEntry from "./DpsEntry.vue";
 import DpsMobile from "./DpsMobile.vue";
-import { ElPopover } from "element-ui/types/popover";
 // @ts-ignore
 import Popper from "vue-popperjs";
 // @ts-ignore
@@ -257,8 +256,8 @@ export default class DpsComponent extends Vue {
   public get csvUrl(): string {
     return `/dl-sim/page/${this.category}_${this.aff}.csv`;
   }
-  public category: "sp" | "mono" | "60" | "180" = "180";
-  public aff: "affliction" | "_" = "affliction";
+  public category: "sp" | "mono" | "180" = "180";
+  public aff: "affliction" | "_" | "noaffliction" = "affliction";
   public teamDPS: number = 30000;
   public allRarities = RARITYTYPES;
   public prevRarities = RARITYTYPES.slice();
@@ -296,7 +295,6 @@ export default class DpsComponent extends Vue {
   public async reloadOps() {
     if (this.csvUrl !== this.cachedCsvUrl) {
       const csv = await this.loadCsv();
-      console.log(csv);
       if (!csv) {
         return;
       }
@@ -745,7 +743,7 @@ export default class DpsComponent extends Vue {
 
 .holder li .comment {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 12px;
   color: #666;
 }
 /* .holder .comment,
@@ -1189,7 +1187,7 @@ span.f-title {
 
   .mobile-holder .mobile-comment {
     font-size: 12px;
-    line-height: 16px;
+    line-height: 12px;
     color: #aaaaaa;
   }
 }
