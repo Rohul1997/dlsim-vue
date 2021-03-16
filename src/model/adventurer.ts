@@ -103,7 +103,11 @@ export class Adventurer {
         this.wep = new IconObj(n[8], n[9], 'weapon');
         // do not pick last 2 slot yet
         for (let i = 10; i < 23; i += 2) {
-            this.wps.push(new IconObj(n[i], n[i + 1], 'amulet'));
+            if (n[i]) {
+                this.wps.push(new IconObj(n[i], n[i + 1], 'amulet'));
+            } else {
+                this.wps.push(new IconObj(`Empty ${(i - 8) / 2}`, 'formC', 'icons', NO));
+            }
         }
         const uniqueC = [];
         const genericC = [];

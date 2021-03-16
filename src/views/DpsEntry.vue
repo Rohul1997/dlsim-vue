@@ -21,13 +21,17 @@
         </popper>
         <div>&nbsp;</div>
         <popper
-          v-for="i in [0, 1, 2]"
-          :key="'sl' + source.wps[i].name"
+          v-for="i in [0, 1, 2, 5]"
+          :key="'sl' + source.wps[i].name + i"
           trigger="hover"
           :options="{ placement: 'top' }"
         >
           <div class="popper">{{ source.wps[i].name }}</div>
-          <a slot="reference" :href="source.wps[i].wiki" target="wiki">
+          <a
+            slot="reference"
+            :href="source.wps[i].wiki || undefined"
+            target="wiki"
+          >
             <img class="d-f wyrmprint" :src="source.wps[i].src" />
           </a>
         </popper>
@@ -58,13 +62,17 @@
           <img class="d-f" :src="`/dl-sim/pic/icons/amulet.png`" />
         </div>
         <popper
-          v-for="i in [3, 4]"
-          :key="'sl' + source.wps[i].name"
+          v-for="i in [3, 4, 6]"
+          :key="'sl' + source.wps[i].name + i"
           trigger="hover"
           :options="{ placement: 'top' }"
         >
           <div class="popper">{{ source.wps[i].name }}</div>
-          <a slot="reference" :href="source.wps[i].wiki" target="wiki">
+          <a
+            slot="reference"
+            :href="source.wps[i].wiki || undefined"
+            target="wiki"
+          >
             <img class="d-f wyrmprint" :src="source.wps[i].src" />
           </a>
         </popper>
@@ -79,7 +87,11 @@
           :options="{ placement: 'top' }"
         >
           <div class="popper">S{{ i + 3 }} {{ source.share[i].name }}</div>
-          <a slot="reference" :href="source.share[i].wiki" target="wiki">
+          <a
+            slot="reference"
+            :href="source.share[i].wiki || undefined"
+            target="wiki"
+          >
             <img class="d-f wyrmprint" :src="source.share[i].src" />
           </a>
         </popper>
@@ -115,9 +127,6 @@
                 :class="'c-' + f.kind"
                 :style="{ width: f.width + '%' }"
               ></div>
-              <div class="full">
-                <b>{{ source.dps.total }}</b>
-              </div>
             </div>
           </popper>
         </div>
@@ -142,6 +151,9 @@
           <span v-html="source.comment"></span>
         </div>
       </div>
+    </div>
+    <div class="dib full">
+      <b>{{ source.dps.total }}</b>
     </div>
   </li>
 </template>

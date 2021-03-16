@@ -595,7 +595,7 @@ export default class DpsComponent extends Vue {
 .holder li {
   list-style: none;
   display: grid;
-  grid-template-columns: 350px 1fr 90px;
+  grid-template-columns: 380px 1fr 60px;
 }
 
 .holder .title {
@@ -770,7 +770,7 @@ div.adt-body {
 
 .avatar-slot-grid {
   display: grid;
-  grid-template-columns: 1fr 30px 8px 30px 30px 30px 8px 30px 30px 30px;
+  grid-template-columns: 1fr 30px 8px 30px 30px 30px 30px 8px 30px 30px 30px;
   grid-template-rows: 30px 30px;
   /* display: flex;
   align-items: center; */
@@ -832,9 +832,16 @@ div.adt-body {
   cursor: pointer;
 }
 
-div.full {
+.holder .full {
+  position: relative;
+  top: 12px;
+  height: 12px;
+  font-size: 12px;
+  line-height: 12px;
+}
+.mobile-holder .full {
   float: right;
-  margin-right: -40px;
+  margin-right: -42px;
   height: 12px;
   font-size: 12px;
   line-height: 12px;
