@@ -118,7 +118,7 @@
         <div class="filter">
           <el-radio-group
             class="rg-filter"
-            v-model="aff"
+            v-model="affliction"
             size="mini"
             @change="reload()"
           >
@@ -140,7 +140,7 @@
         </div>
         <div class="filter">
           <el-input-number
-            v-model="teamDPS"
+            v-model="teamdps"
             :min="0"
             :step="5000"
             size="mini"
@@ -254,11 +254,12 @@ export default class DpsComponent extends Vue {
   public dpsMobile = DpsMobile;
 
   public get csvUrl(): string {
-    return `/dl-sim/page/${this.category}_${this.aff}.csv`;
+    return `/dl-sim/page/${this.category}_${this.affliction}.csv`;
   }
-  public category: "sp" | "mono" | "180" = "180";
-  public aff: "affliction" | "_" | "noaffliction" = "affliction";
-  public teamDPS: number = 30000;
+  public category: string = localStorage.getItem("category") || "180"; //  "sp" | "mono" | "180"
+  public affliction: string =
+    localStorage.getItem("affliction") || "affliction"; // "affliction" | "_" | "noaffliction"
+  public teamdps: number = 30000;
   public allRarities = RARITYTYPES;
   public prevRarities = RARITYTYPES.slice();
   public rarities: string[] = RARITYTYPES.slice();
@@ -303,7 +304,7 @@ export default class DpsComponent extends Vue {
     }
 
     this.adventurers.forEach((a) => {
-      a.dps.team.value = this.teamDPS;
+      a.dps.team.value = this.teamdps;
       a.dps.filterFactors(this.dpsCategories);
     });
 
@@ -314,10 +315,16 @@ export default class DpsComponent extends Vue {
       a.dps.updateWidths(maxd);
     });
 
-    localStorage.setItem("teamdps", this.teamDPS.toString());
-    localStorage.setItem("rarities", this.rarities.join());
-    localStorage.setItem("elements", this.elements.join());
-    localStorage.setItem("weapons", this.weapons.join());
+    for (const key of [
+      "teamdps",
+      "rarities",
+      "elements",
+      "weapons",
+      "category",
+      "affliction",
+    ]) {
+      localStorage.setItem(key, this[key].toString());
+    }
   }
 
   public mounted() {
@@ -325,7 +332,7 @@ export default class DpsComponent extends Vue {
     (window as any).$http = Http;
 
     if (localStorage.getItem("teamdps")) {
-      this.teamDPS = parseInt(localStorage.getItem("teamdps")!, 10);
+      this.teamdps = parseInt(localStorage.getItem("teamdps")!, 10);
     }
     for (const key of ["rarities", "elements", "weapons"]) {
       const value = localStorage.getItem(key);
