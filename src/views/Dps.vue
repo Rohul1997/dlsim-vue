@@ -71,8 +71,8 @@
             <div class="last-modified-icons">
               <img
                 v-for="lm in lastModifiedList"
-                :key="lm"
-                :src="`/dl-sim/pic/character/${lm}.png`"
+                :key="lm.name"
+                :src="lm.src"
               />
             </div>
           </div>
@@ -101,43 +101,48 @@
           </div>
         </div>
         <div class="splitter"></div>
-        <div class="title">Mode</div>
-        <div class="filter">
-          <el-radio-group
-            class="rg-filter"
-            v-model="category"
-            size="mini"
-            @change="reload()"
-          >
-            <el-radio-button label="180" value="180">180s</el-radio-button>
-            <el-radio-button label="mono" value="mono">Mono</el-radio-button>
-            <el-radio-button label="sp" value="sp">Special</el-radio-button>
-          </el-radio-group>
-        </div>
         <div class="title">Affliction</div>
         <div class="filter">
           <el-radio-group
             class="rg-filter"
-            v-model="affliction"
+            v-model="afflict"
             size="mini"
             @change="reload()"
           >
-            <el-radio-button label="affliction">100%</el-radio-button>
-            <el-radio-button label="_">Self</el-radio-button>
-            <el-radio-button label="noaffliction">0%</el-radio-button>
+            <el-radio-button label="ALWAYS">100%</el-radio-button>
+            <el-radio-button label="SELF">Self</el-radio-button>
+            <el-radio-button label="IMMUNE">0%</el-radio-button>
           </el-radio-group>
         </div>
-        <div class="title">
-          Team DPS
-          <el-tooltip
-            class="item"
-            effect="dark"
-            content="Team DPS is the total personal damage of your OTHER team members"
-            placement="top-start"
+        <div class="title">Situation</div>
+        <div class="filter">
+          <el-checkbox
+            label="NIHILISM"
+            v-model="nihilismChecked"
+            @change="reload()"
           >
-            <i class="el-icon-question"></i>
-          </el-tooltip>
+            Curse of Nihility
+          </el-checkbox>
         </div>
+        <div class="filter">
+          <el-checkbox label="MONO" v-model="monoChecked" @change="reload()">
+            Element Lock
+          </el-checkbox>
+        </div>
+        <div class="title">Special Variants</div>
+        <div class="filter">
+          <el-radio-group
+            class="rg-filter"
+            v-model="variant"
+            size="mini"
+            @change="reload()"
+          >
+            <el-radio-button label="HIDDEN">Hidden</el-radio-button>
+            <el-radio-button label="VISIBLE">Visible</el-radio-button>
+            <el-radio-button label="ONLY">Only</el-radio-button>
+          </el-radio-group>
+        </div>
+        <div class="title">Team DPS</div>
         <div class="filter">
           <el-input-number
             v-model="teamdps"
@@ -148,28 +153,6 @@
           ></el-input-number>
         </div>
         <div class="splitter"></div>
-        <div class="title">
-          Rarity
-          <span v-if="rarities.length < allRarities.length">
-            <a class="toggle" @click="toggleRarity()">Reset</a>
-          </span>
-        </div>
-        <div class="filter">
-          <el-checkbox-group class="cb-filter" v-model="rarities" size="mini">
-            <el-checkbox
-              v-for="r in allRarities"
-              :key="r"
-              :label="r"
-              @change="toggleRarity(r)"
-            >
-              <img
-                class="icon-rarity"
-                :src="`/dl-sim/pic/rarity/${r}.png`"
-                alt="K"
-              />
-            </el-checkbox>
-          </el-checkbox-group>
-        </div>
         <div class="title">
           Element
           <span v-if="elements.length < allElements.length">
@@ -193,7 +176,7 @@
           </el-checkbox-group>
         </div>
         <div class="title">
-          Class
+          Weapon
           <span v-if="weapons.length < allWeapons.length">
             <a class="toggle" @click="toggleWeapon()">Reset</a>
           </span>
@@ -228,12 +211,8 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { Http } from "@/service/http";
-import {
-  Adventurer,
-  RARITYTYPES,
-  ELEMENTTYPES,
-  WEAPONTYPES,
-} from "../model/adventurer";
+import { Adventurer, ELEMENTTYPES, WEAPONTYPES } from "../model/adventurer";
+import { Icon } from "../model/icon";
 import { CATEGORIES } from "../model/dps";
 import DpsEntry from "./DpsEntry.vue";
 import DpsMobile from "./DpsMobile.vue";
@@ -253,16 +232,18 @@ export default class DpsComponent extends Vue {
   public dpsEntry = DpsEntry;
   public dpsMobile = DpsMobile;
 
-  public get csvUrl(): string {
-    return `/dl-sim/page/${this.category}_${this.affliction}.csv`;
+  public get simPageURL(): string {
+    this.situation = this.nihilismChecked ? "NIHILISM" : "NORMAL";
+    this.elelock = this.monoChecked ? "MONO" : "ANY";
+    return `/dl-sim/page/${this.afflict}-${this.situation}-${this.elelock}.json`;
   }
-  public category: string = localStorage.getItem("category") || "180"; //  "sp" | "mono" | "180"
-  public affliction: string =
-    localStorage.getItem("affliction") || "affliction"; // "affliction" | "_" | "noaffliction"
+  public afflict: string = localStorage.getItem("afflict") || "ALWAYS"; // "ALWAYS" | "SELF" | "IMMUNE"
+  public situation: string = localStorage.getItem("situation") || "NORMAL"; //  "NORMAL" | "NIHILISM"
+  private nihilismChecked: boolean = false;
+  public elelock: string = localStorage.getItem("elelock") || "ANY"; // "ANY" | "MONO"
+  private monoChecked: boolean = false;
+  public variant: string = localStorage.getItem("variant") || "HIDDEN"; // "VISIBLE" | "HIDDEN" | "ONLY"
   public teamdps: number = 30000;
-  public allRarities = RARITYTYPES;
-  public prevRarities = RARITYTYPES.slice();
-  public rarities: string[] = RARITYTYPES.slice();
   public allElements = ELEMENTTYPES;
   public prevElements = ELEMENTTYPES.slice();
   public elements: string[] = ELEMENTTYPES.slice();
@@ -280,10 +261,9 @@ export default class DpsComponent extends Vue {
   private asideHidden: boolean = true;
   private loading: boolean = true;
 
-  private cachedCsvUrl: string = "";
+  private cachedPageURL: string = "";
   private adventurers: Adventurer[] = [];
   private filtered: Adventurer[] = [];
-  private rendered: Adventurer[] = [];
 
   public async reload() {
     this.loading = true;
@@ -294,13 +274,13 @@ export default class DpsComponent extends Vue {
   }
 
   public async reloadOps() {
-    if (this.csvUrl !== this.cachedCsvUrl) {
-      const csv = await this.loadCsv();
-      if (!csv) {
+    if (this.simPageURL !== this.cachedPageURL) {
+      const simData = await this.loadSimPage();
+      if (!simData) {
         return;
       }
-      this.adventurers = Adventurer.ParseCSV(csv);
-      this.cachedCsvUrl = this.adventurers.length > 0 ? this.csvUrl : "";
+      this.adventurers = Adventurer.fromJSON(simData);
+      this.cachedPageURL = this.adventurers.length > 0 ? this.csvUrl : "";
     }
 
     this.adventurers.forEach((a) => {
@@ -317,11 +297,12 @@ export default class DpsComponent extends Vue {
 
     for (const key of [
       "teamdps",
-      "rarities",
       "elements",
       "weapons",
-      "category",
-      "affliction",
+      "afflict",
+      "situation",
+      "elelock",
+      "variant",
     ]) {
       localStorage.setItem(key, this[key].toString());
     }
@@ -334,7 +315,7 @@ export default class DpsComponent extends Vue {
     if (localStorage.getItem("teamdps")) {
       this.teamdps = parseInt(localStorage.getItem("teamdps")!, 10);
     }
-    for (const key of ["rarities", "elements", "weapons"]) {
+    for (const key of ["elements", "weapons"]) {
       const value = localStorage.getItem(key);
       if (value) {
         this[key] = value.split(",");
@@ -345,6 +326,9 @@ export default class DpsComponent extends Vue {
       this.mobileView = window.outerWidth <= 800;
     };
     this.mobileView = window.outerWidth <= 800;
+    this.nihilismChecked = this.situation == "NIHILISM";
+    this.monoChecked = this.elelock == "MONO";
+    this.loadIconIndex();
     this.loadLastModified();
     this.reload();
   }
@@ -375,15 +359,7 @@ export default class DpsComponent extends Vue {
     return current;
   }
 
-  private toggleRarity(rarity: string) {
-    this.rarities = this.toggleCheckboxGroup(
-      rarity,
-      this.prevRarities,
-      this.allRarities
-    );
-    this.prevRarities = this.rarities;
-    this.reload();
-  }
+  private toggleNihilism() {}
 
   private toggleElement(element: string) {
     this.elements = this.toggleCheckboxGroup(
@@ -439,42 +415,46 @@ export default class DpsComponent extends Vue {
     });
   }
 
-  private sleeep(ms: number): Promise<boolean> {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(true);
-      }, ms);
-    });
-  }
-
-  private async loadCsv(): Promise<string> {
+  private async loadSimPage(): Promise<Object> {
     try {
-      const csv: string = await Http.Get(this.csvUrl, "text");
-      return csv;
+      const page: Object = await Http.Get(this.simPageURL, "json");
+      return page;
     } catch (e) {
       return "";
     }
   }
 
+  private async loadIconIndex() {
+    try {
+      const iconIndex = await Http.Get("/dl-sim/pic/index.json", "json");
+      for (const [key, value] of Object.entries(iconIndex)) {
+        iconIndex[key] = new Icon(key, value as Object);
+      }
+      Adventurer.iconIndex = iconIndex;
+    } catch (e) {}
+  }
+
   private async loadLastModified() {
-    const lastmod = await Http.Get(`/dl-sim/page/lastmodified.json`, "json");
-    this.lastModifiedTime = humanized_time_span(
-      new Date(parseInt(lastmod.timestamp))
-    );
-    this.lastModifiedList = lastmod.message;
+    try {
+      const lastmod = await Http.Get(`/dl-sim/page/lastmodified.json`, "json");
+      this.lastModifiedTime = humanized_time_span(
+        new Date(parseInt(lastmod.timestamp))
+      );
+      this.lastModifiedList = lastmod.message.map(Adventurer.getIcon);
+    } catch (e) {}
   }
 
   private matched(adventurer: Adventurer): boolean {
-    if (
-      this.rarities.length > 0 &&
-      !this.rarities.includes(adventurer.rarity)
-    ) {
-      return false;
-    }
     if (this.elements.length > 0 && !this.elements.includes(adventurer.ele)) {
       return false;
     }
     if (this.weapons.length > 0 && !this.weapons.includes(adventurer.wt)) {
+      return false;
+    }
+    if (this.variant == "HIDDEN" && adventurer.variant != null) {
+      return false;
+    }
+    if (this.variant == "ONLY" && adventurer.variant == null) {
       return false;
     }
     return true;
@@ -591,6 +571,15 @@ export default class DpsComponent extends Vue {
   padding-top: 5px;
 }
 
+.holder .variant {
+  background-image: linear-gradient(to right, rgba(64, 158, 255, 0.4), white);
+  border-radius: 10em;
+}
+
+.mobile-holder .variant {
+  background-image: linear-gradient(to right, rgba(64, 158, 255, 0.7), white);
+}
+
 .holder {
   min-width: 1000px;
   width: 100%;
@@ -692,7 +681,7 @@ export default class DpsComponent extends Vue {
 
 .holder .name a.avatar {
   /* margin-right: 5px; */
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 .holder .name img.wyrmprint {
@@ -724,12 +713,6 @@ export default class DpsComponent extends Vue {
   width: 20px;
   height: 20px;
   margin: 5px;
-}
-
-.holder .name img.generic,
-.mobile-holder img.generic {
-  filter: grayscale(100%);
-  /* opacity: 0.5; */
 }
 
 .holder .dps {
@@ -779,6 +762,7 @@ div.adt-body {
   display: grid;
   grid-template-columns: 1fr 30px 8px 30px 30px 30px 30px 8px 30px 30px 30px;
   grid-template-rows: 30px 30px;
+  margin-left: 25px;
   /* display: flex;
   align-items: center; */
 }
@@ -991,10 +975,6 @@ span.f-title {
   height: 16px;
   line-height: 16px;
   margin-bottom: -3px;
-}
-.icon-rarity {
-  width: 70px;
-  line-height: 16px;
 }
 
 .aside .aside-container {

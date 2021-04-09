@@ -21,7 +21,7 @@ export class DpsFactor {
 
     public get scaled() {
         if (this.name === 'team') {
-            return Math.round(this.value * this.scale / 100);
+            return Math.round(this.value * this.scale);
         } else {
             return Math.round(this.value);
         }
@@ -33,10 +33,9 @@ export class Dps {
     public filtered: DpsFactor[] = [];
     public filter: string[] = CATEGORIES.slice();
     public team: DpsFactor;
-    constructor(n: string[], team: number) {
-        for (const d of n) {
-            const p = d.split(':');
-            this.factors.push(new DpsFactor(p[0], parseInt(p[1])));
+    constructor(team: number, slices: [string, number][]) {
+        for (const p of slices) {
+            this.factors.push(new DpsFactor(p[0], p[1]));
         }
         this.team = new DpsFactor('team', 0, team);
         if (team > 0) {

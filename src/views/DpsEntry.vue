@@ -1,9 +1,9 @@
 <template>
   <li>
     <div class="dib name h-70 mb-5">
-      <div class="avatar-slot-grid">
+      <div class="avatar-slot-grid" v-bind:class="{ variant: source.variant }">
         <popper trigger="hover" :options="{ placement: 'top' }">
-          <div class="popper">{{ source.chara.name }}</div>
+          <div class="popper">{{ source.id }}</div>
           <a
             slot="reference"
             class="d-f avatar"
@@ -44,11 +44,7 @@
         >
           <div class="popper">{{ ca.name }}</div>
           <a slot="reference" :href="ca.wiki" target="wiki">
-            <img
-              class="d-f wyrmprint"
-              v-bind:class="{ generic: ca.generic }"
-              :src="ca.src"
-            />
+            <img class="d-f wyrmprint" :src="ca.src" />
           </a>
         </popper>
         <popper trigger="hover" :options="{ placement: 'top' }">
@@ -98,15 +94,9 @@
       </div>
     </div>
     <div class="dib dps shift">
-      <a
-        class="custom-sim-link"
-        :href="
-          'https://wildshinobu.pythonanywhere.com/ui/dl_simc.html?adv_name=' +
-          source.chara.qual
-        "
-        target="websim"
-      >
-        <span>Customize</span>
+      <a class="custom-sim-link" :href="source.customsim" target="websim">
+        <span v-if="!source.variant">Customize</span>
+        <span v-else>Variant: {{ source.variant }}</span>
       </a>
       <div class="dps-holder">
         <div class="factors mb-1">
@@ -145,9 +135,7 @@
           </popper>
         </div>
         <div class="comment">
-          <span v-if="source.condition != ' '"
-            >&lt;{{ source.condition }}&gt;</span
-          >
+          <span v-if="source.cond != ''">&lt;{{ source.cond }}&gt;</span>
           <span v-html="source.comment"></span>
         </div>
       </div>

@@ -1,18 +1,12 @@
 <template>
   <li class="mb-10">
-    <div class="dib">
-      <a
-        class="avatar-box"
-        :href="
-          'https://wildshinobu.pythonanywhere.com/ui/dl_simc.html?adv_name=' +
-          source.chara.qual
-        "
-        target="websim"
-      >
+    <div class="dib" v-bind:class="{ variant: source.variant }">
+      <a class="avatar-box" :href="source.customsim" target="websim">
         <a slot="reference" :href="source.chara.wiki" target="wiki">
           <img class="avatar" :src="source.chara.src" />
         </a>
-        <span>Custom</span>
+        <span v-if="!source.variant">Customize</span>
+        <span v-else>{{ source.variant }}</span>
       </a>
     </div>
     <div class="dib content">
@@ -32,11 +26,7 @@
         <div class="dib chains">
           <div v-for="coab in source.coabs" :key="'ca' + coab.name" class="dib">
             <a slot="reference" :href="coab.wiki" target="wiki">
-              <img
-                class="wyrmprint"
-                v-bind:class="{ generic: coab.generic }"
-                :src="coab.src"
-              />
+              <img class="wyrmprint" :src="coab.src" />
             </a>
           </div>
         </div>
@@ -76,7 +66,7 @@
         </div>
       </div>
       <div class="mobile-comment">
-        <div v-if="source.condition != ' '">&lt;{{ source.condition }}&gt;</div>
+        <div v-if="source.cond != ''">&lt;{{ source.cond }}&gt;</div>
         <span v-html="source.comment"></span>
       </div>
     </div>
