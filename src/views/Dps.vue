@@ -672,10 +672,8 @@ export default class DpsComponent extends Vue {
 }
 
 .holder .name .avatar img {
-  /* widows: 60px;
-  height: 60px; */
-  width: 80px;
-  height: 80px;
+  width: 85px;
+  height: 85px;
   position: relative;
   top: -2.5px;
 }
