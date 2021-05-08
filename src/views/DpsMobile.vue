@@ -39,7 +39,8 @@
         </div>
         <div class="dib">
           <div class="dib" v-for="sl in source.wps" :key="'sl' + sl.name">
-            <a slot="reference" :href="sl.wiki">
+            <a slot="reference" :href="sl.wiki" class="wp-deco-holder">
+              <img v-if="sl.deco" class="deco" :src="sl.deco_src" />
               <img class="wyrmprint" :src="sl.src" />
             </a>
           </div>

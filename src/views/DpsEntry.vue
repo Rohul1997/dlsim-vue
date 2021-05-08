@@ -1,6 +1,6 @@
 <template>
   <li>
-    <div class="dib name h-70 mb-5">
+    <div class="dib name mb-5">
       <div class="avatar-slot-grid" v-bind:class="{ variant: source.variant }">
         <popper trigger="hover" :options="{ placement: 'top' }">
           <div class="popper">{{ source.id }}</div>
@@ -32,6 +32,11 @@
             :href="source.wps[i].wiki || undefined"
             target="wiki"
           >
+            <img
+              v-if="source.wps[i].deco"
+              class="d-f deco"
+              :src="source.wps[i].deco_src"
+            />
             <img class="d-f wyrmprint" :src="source.wps[i].src" />
           </a>
         </popper>
@@ -69,6 +74,11 @@
             :href="source.wps[i].wiki || undefined"
             target="wiki"
           >
+            <img
+              v-if="source.wps[i].deco"
+              class="d-f deco"
+              :src="source.wps[i].deco_src"
+            />
             <img class="d-f wyrmprint" :src="source.wps[i].src" />
           </a>
         </popper>
@@ -93,7 +103,7 @@
         </popper>
       </div>
     </div>
-    <div class="dib dps shift">
+    <div class="dib dps">
       <a class="custom-sim-link" :href="source.customsim" target="websim">
         <span v-if="!source.variant">Customize</span>
         <span v-else>Variant: {{ source.variant }}</span>

@@ -539,9 +539,6 @@ export default class DpsComponent extends Vue {
 .mb-10 {
   margin-bottom: 10px;
 }
-.h-70 {
-  height: 70px;
-}
 .h-50 {
   height: 50px;
 }
@@ -591,7 +588,10 @@ export default class DpsComponent extends Vue {
 .holder li {
   list-style: none;
   display: grid;
-  grid-template-columns: 380px 1fr 60px;
+  grid-template-columns: 430px 1fr 60px;
+}
+.holder li .name {
+  height: 80px;
 }
 
 .holder .title {
@@ -668,25 +668,33 @@ export default class DpsComponent extends Vue {
 
 .holder .name a {
   display: inline-block;
+  position: relative;
 }
 
 .holder .name .avatar img {
   /* widows: 60px;
   height: 60px; */
-  width: 65px;
-  height: 65px;
+  width: 80px;
+  height: 80px;
   position: relative;
   top: -2.5px;
 }
 
 .holder .name a.avatar {
   /* margin-right: 5px; */
-  margin-left: 25px;
+  margin-left: 0px;
 }
 
 .holder .name img.wyrmprint {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+}
+
+.holder .name img.deco {
+  height: 16px;
+  position: absolute;
+  top: 12px;
+  z-index: 2;
 }
 
 .stats {
@@ -708,7 +716,11 @@ export default class DpsComponent extends Vue {
   text-align: right;
   padding-right: 1px;
 }
-.holder .name .skillshare > img,
+.holder .name .skillshare > img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
 .mobile-holder img.skillshare {
   width: 20px;
   height: 20px;
@@ -717,7 +729,7 @@ export default class DpsComponent extends Vue {
 
 .holder .dps {
   padding: 0px 10px;
-  height: 60px;
+  height: 80px;
   position: relative;
 }
 
@@ -760,15 +772,15 @@ div.adt-body {
 
 .avatar-slot-grid {
   display: grid;
-  grid-template-columns: 1fr 30px 8px 30px 30px 30px 30px 8px 30px 30px 30px;
-  grid-template-rows: 30px 30px;
-  margin-left: 25px;
+  grid-template-columns: 1fr 40px 8px 40px 40px 40px 40px 8px 40px 40px 40px;
+  grid-template-rows: 40px 40px;
+  margin-left: 15px;
   /* display: flex;
   align-items: center; */
 }
 
 .avatar-slot-grid span {
-  height: 30px;
+  height: 40px;
 }
 
 .avatar-slot-grid span:first-child {
@@ -825,7 +837,7 @@ div.adt-body {
 
 .holder .full {
   position: relative;
-  top: 12px;
+  top: 20px;
   height: 12px;
   font-size: 12px;
   line-height: 12px;
@@ -969,8 +981,7 @@ span.f-title {
 }
 
 .icon-weapon,
-.icon-element,
-.icon-weapon {
+.icon-element {
   width: 16px;
   height: 16px;
   line-height: 16px;
@@ -1177,6 +1188,17 @@ span.f-title {
   .mobile-holder img.wyrmprint {
     width: 30px;
     height: 30px;
+  }
+  .mobile-holder .wp-deco-holder {
+    display: inline-block;
+    position: relative;
+  }
+  .mobile-holder img.deco {
+    width: 12px;
+    height: 12px;
+    top: 9px;
+    position: absolute;
+    z-index: 2;
   }
 
   .mobile-holder .mobile-comment {
