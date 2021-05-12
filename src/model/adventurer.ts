@@ -80,7 +80,7 @@ export class Adventurer {
         this.stats = [];
         if (data.stats) {
             for (const [key, value] of Object.entries(data.stats)) {
-                this.stats.push(new Icon(key, { name: value, icon: `icons/${key}.png`, link: NO }));
+                this.stats.push(new Icon(key, { name: key, icon: `icons/${key}.png`, link: value }));
             }
         }
         this.dps = new Dps(data.team, data.slices);

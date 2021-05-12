@@ -137,10 +137,10 @@
             trigger="hover"
             :options="{ placement: 'top' }"
           >
-            <div class="popper">{{ s.icon + ": " + s.name }}</div>
+            <div class="popper">{{ s.name + ": " + s.link }}</div>
             <span slot="reference" class="stats">
               <img class="stats-icon" :src="s.src" />
-              <span class="stats-txt">{{ s.name }}</span>
+              <span class="stats-txt">{{ s.link }}</span>
             </span>
           </popper>
         </div>
