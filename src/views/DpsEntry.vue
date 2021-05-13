@@ -1,6 +1,9 @@
 <template>
   <li>
     <div class="dib name mb-5">
+      <span class="variant-txt" v-if="source.variant">{{
+        source.variant
+      }}</span>
       <div class="avatar-slot-grid" v-bind:class="{ variant: source.variant }">
         <popper trigger="hover" :options="{ placement: 'top' }">
           <div class="popper">{{ source.id }}</div>

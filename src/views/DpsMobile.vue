@@ -6,7 +6,7 @@
           <img class="avatar" :src="source.chara.src" />
         </a>
         <span v-if="!source.variant">Customize</span>
-        <span v-else>{{ source.variant }}</span>
+        <span class="variant-txt" v-else>{{ source.variant }}</span>
       </a>
     </div>
     <div class="dib content">
@@ -74,7 +74,6 @@
   </li>
 </template>
 <script>
-import { Vue } from "vue-property-decorator";
 import { Adventurer } from "../model/adventurer";
 
 export default {

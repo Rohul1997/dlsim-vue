@@ -568,9 +568,49 @@ export default class DpsComponent extends Vue {
   padding-top: 5px;
 }
 
+/* .holder .variant {
+  background-image: linear-gradient(to right, rgba(64, 158, 255, 0.7), white);
+  position: relative;
+}
+
+.mobile-holder .variant {
+  position: relative;
+  background-color: transparent;
+} */
 .holder .variant,
 .mobile-holder .variant {
+  position: relative;
+  background-color: transparent;
+}
+.holder .variant::before,
+.mobile-holder .variant::before {
+  position: absolute;
+  content: " ";
   background-image: linear-gradient(to right, rgba(64, 158, 255, 0.7), white);
+  z-index: -1;
+}
+.holder .variant::before {
+  width: 75vw;
+  height: 100%;
+}
+.mobile-holder .variant::before {
+  width: 90vw;
+  height: 92%;
+}
+
+.variant-txt {
+  color: white;
+}
+
+.holder .variant-txt {
+  position: absolute;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  top: 4px;
+  left: 1px;
+  font-size: 0.8em;
+  font-weight: 700;
+  z-index: 2;
 }
 
 .holder {
@@ -588,6 +628,7 @@ export default class DpsComponent extends Vue {
 }
 .holder li .name {
   height: 80px;
+  position: relative;
 }
 
 .holder .title {
@@ -1172,7 +1213,7 @@ span.f-title {
   }
 
   .mobile-holder .avatar-box span {
-    line-height: 30px;
+    line-height: 25px;
   }
 
   .mobile-holder img.avatar {
