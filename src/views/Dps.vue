@@ -568,11 +568,7 @@ export default class DpsComponent extends Vue {
   padding-top: 5px;
 }
 
-.holder .variant {
-  background-image: linear-gradient(to right, rgba(64, 158, 255, 0.4), white);
-  border-radius: 10em;
-}
-
+.holder .variant,
 .mobile-holder .variant {
   background-image: linear-gradient(to right, rgba(64, 158, 255, 0.7), white);
 }
@@ -772,7 +768,7 @@ div.adt-body {
   display: grid;
   grid-template-columns: 1fr 40px 8px 40px 40px 40px 40px 8px 40px 40px 40px;
   grid-template-rows: 40px 40px;
-  margin-left: 15px;
+  padding-left: 15px;
   /* display: flex;
   align-items: center; */
 }
