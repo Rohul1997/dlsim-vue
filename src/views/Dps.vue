@@ -908,11 +908,11 @@ div.adt-body {
 .c-dx {
   background-color: #8a2be2 !important;
 }
-.c-ds1 {
+.c-ds {
   background-color: #9370db !important;
 }
-.c-ds2 {
-  background-color: #9370db !important;
+.c-dfs {
+  background-color: #9400d3 !important;
 }
 .c-other {
   background-color: #008080 !important;

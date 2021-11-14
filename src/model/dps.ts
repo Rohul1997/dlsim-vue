@@ -1,7 +1,7 @@
 export const CATEGORIES = [
     'x', 'fs', 'other', 'team',
     's1', 's2', 's3', 's4',
-    'dx', 'ds1',
+    'dx', 'ds', 'dfs'
 ];
 
 export class DpsFactor {
@@ -14,7 +14,15 @@ export class DpsFactor {
     constructor(name: string, value: number, scale?: number) {
         this.name = name;
         this.kind = name.split('_')[0];
-        if (this.kind.substr(0, 2) == 'fs') { this.kind = 'fs'; } else if (!CATEGORIES.includes(this.kind)) { this.kind = 'other'; }
+        if (this.kind.startsWith('fs')) {
+            this.kind = 'fs';
+        } else if (this.kind.startsWith('ds')) {
+            this.kind = 'ds';
+        } else if (this.kind.startsWith('dfs')) {
+            this.kind = 'dfs';
+        } else if (!CATEGORIES.includes(this.kind)) {
+            this.kind = 'other';
+        }
         this.value = value;
         this.scale = scale || 0;
     }
